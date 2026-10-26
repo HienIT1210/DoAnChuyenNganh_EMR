@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-tertiary-fixed":"#001e2e","surface-container-lowest":"#ffffff","tertiary-fixed":"#c7e7ff","inverse-primary":"#89ceff","surface-tint":"#006591","on-secondary-fixed-variant":"#930001","primary-container":"#007cb1","on-primary-fixed-variant":"#004c6e","secondary-container":"#e2261a","inverse-on-surface":"#e4f3ff","surface-container":"#def0ff","on-tertiary":"#ffffff","surface-bright":"#f5faff","tertiary-container":"#397ba1","outline":"#6f7881","on-secondary":"#ffffff","primary-fixed-dim":"#89ceff","background":"#f5faff","primary":"#00628d","error":"#ba1a1a","error-container":"#ffdad6","surface-variant":"#cde6f9","surface-container-high":"#d2ecff","tertiary":"#176287","inverse-surface":"#1b3342","primary-fixed":"#c9e6ff","on-background":"#031e2c","on-primary":"#ffffff","surface":"#f5faff","outline-variant":"#bec8d1","surface-dim":"#c4ddf0","secondary-fixed":"#ffdad5","on-secondary-fixed":"#410000","on-surface-variant":"#3f4850","tertiary-fixed-dim":"#8fcef7","on-tertiary-fixed-variant":"#004c6c","surface-container-low":"#eaf5ff","secondary":"#bc0002","surface-container-highest":"#cde6f9","on-secondary-container":"#fffbff","on-primary-container":"#fcfcff","on-tertiary-container":"#fcfcff","on-primary-fixed":"#001e2f","on-error-container":"#93000a","on-error":"#ffffff","on-surface":"#031e2c","secondary-fixed-dim":"#ffb4a8"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-lg":"3rem","gutter-lg":"2rem","space-sm":"0.5rem","space-xl":"2rem","gutter":"1rem","space-2xl":"3rem","gutter-md":"1.5rem","space-lg":"1.5rem","margin-md":"2rem","space-md":"1rem","space-xs":"0.25rem","margin":"1rem"},"fontFamily":{"headline-xl-mobile":["Be Vietnam Pro"],"caption":["Be Vietnam Pro"],"headline-lg-mobile":["Be Vietnam Pro"],"badge-label":["Be Vietnam Pro"],"body-patient-medium":["Be Vietnam Pro"],"body-base":["Be Vietnam Pro"],"headline-xl":["Be Vietnam Pro"],"button-text":["Be Vietnam Pro"],"headline-sm":["Be Vietnam Pro"],"body-patient-primary":["Be Vietnam Pro"],"body-patient-bold":["Be Vietnam Pro"],"headline-lg":["Be Vietnam Pro"],"body-base-medium":["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"]},"fontSize":{"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"caption":["16px",{"lineHeight":"22px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"badge-label":["14px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}],"body-patient-medium":["18px",{"lineHeight":"28px","fontWeight":"500"}],"body-base":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"button-text":["18px",{"lineHeight":"24px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-patient-primary":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-patient-bold":["18px",{"lineHeight":"28px","fontWeight":"700"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-base-medium":["16px",{"lineHeight":"24px","fontWeight":"500"}],"headline-md":["22px",{"lineHeight":"30px","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-base text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="p-space-md border-b border-outline-variant/30"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[24px]">local_hospital</span><div class="flex flex-col"><span class="font-headline-sm text-[15px] font-bold text-primary leading-tight uppercase tracking-tight">BV Nguyễn Tri Phương</span><span class="font-caption text-[11px] text-on-surface-variant font-medium leading-none">Quản trị &amp; Điều hành EMR</span></div></div><div class="mt-space-sm pt-2 flex items-center justify-between text-on-surface-variant font-caption text-[12px] bg-surface-container-low px-2.5 py-1.5 rounded-lg"><div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-medium text-on-surface">Ca trực: Sáng</span></div><span class="text-outline font-medium">26/10/2026</span></div></div><nav class="flex flex-col px-space-sm py-space-sm gap-1" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg shadow-sm"><div class="px-2 py-1.5 text-[11px] font-bold tracking-wider text-outline uppercase font-badge-label">Phân hệ Nghiệp vụ Lâm sàng</div><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-base text-[14px]" data-path="kham-benh-emr" href="#"><span class="material-symbols-outlined text-[20px]">stethoscope</span><span>Khám bệnh EMR (BS)</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-base text-[14px]" data-path="tiep-nhan-benh-nhan" href="#"><span class="material-symbols-outlined text-[20px]">how_to_reg</span><span>Tiếp nhận (NV)</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-base text-[14px]" data-path="can-lam-sang" href="#"><span class="material-symbols-outlined text-[20px]">chips</span><span>Cận lâm sàng (CLS)</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-base text-[14px]" data-path="vien-phi" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Viện phí (TN)</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-base text-[14px]" data-path="duoc-phat-thuoc" href="#"><span class="material-symbols-outlined text-[20px]">medication</span><span>Dược &amp; Phát thuốc (PT)</span></a><div class="mt-3 px-2 py-1.5 text-[11px] font-bold tracking-wider text-primary uppercase font-badge-label flex items-center justify-between"><span>Quản trị &amp; Báo cáo</span><span class="material-symbols-outlined text-[14px] text-primary">tune</span></div><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-base text-[14px]" data-path="thong-ke-bao-cao" href="#"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span>QT-01: Thống kê &amp; Báo cáo</span></a><a aria-current="page" class="flex items-center gap-3 px-3 py-2 transition-all bg-primary-container text-on-primary-container font-bold rounded-lg shadow-sm" data-path="tai-khoan-phan-quyen" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span>QT-02: Tài khoản &amp; Phân quyền</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-base text-[14px]" data-path="quan-ly-danh-muc-y-te" href="#"><span class="material-symbols-outlined text-[20px]">clinical_notes</span><span>QT-03: Danh mục y tế</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-base text-[14px]" data-path="quan-ly-noi-dung-cong-thong-tin" href="#"><span class="material-symbols-outlined text-[20px]">public</span><span>QT-04: Nội dung Cổng TT</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-base text-[14px]" data-path="nhat-ky-thao-tac-audit-log" href="#"><span class="material-symbols-outlined text-[20px]">history_toggle_off</span><span>QT-05: Nhật ký Audit Log</span></a></nav></div><div class="p-space-md border-t border-outline-variant/30 bg-surface-container-lowest"><div class="flex flex-col gap-2"><div class="flex items-center justify-between text-[12px] font-caption"><div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-600"></span><span class="text-on-surface font-medium">HIS Trực tuyến</span></div><span class="text-outline text-[11px]">99.98%</span></div><div class="flex items-center justify-between text-[12px] font-caption"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px] text-primary">verified_user</span><span class="text-on-surface font-medium">Bảo mật VNeID</span></div><span class="text-outline text-[11px]">Đã kết nối</span></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-4 flex-1 max-w-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-16 bg-surface-container-low rounded-lg text-on-surface font-body-base text-[14px] outline-none focus:ring-2 focus:ring-primary placeholder:text-outline" placeholder="Tìm kiếm hồ sơ bệnh án, mã BN, chức năng hệ thống..." type="text"/><span class="absolute right-2.5 top-1/2 -translate-y-1/2 text-[11px] font-semibold text-outline bg-surface-container-highest px-1.5 py-0.5 rounded border border-outline-variant/50">Ctrl+K</span></div></div><div class="flex items-center gap-4"><button class="relative w-10 h-10 rounded-lg flex items-center justify-center hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-on-surface-variant text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-secondary rounded-full"></span></button><div class="h-8 w-px bg-outline-variant/40"></div><div class="flex items-center gap-3"><div class="flex flex-col text-right"><span class="font-body-base-medium text-[14px] text-on-surface font-semibold leading-tight">Nguyễn Hoàng Long</span><span class="font-caption text-[12px] text-on-surface-variant leading-tight">Admin (QT-001) · Quản trị viên</span></div><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 min-h-screen bg-background"><div class="w-full max-w-[1200px] mx-auto px-space-lg py-space-xl"><div class="flex flex-col w-full">
+<section class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-badge-label text-badge-label bg-surface-container-high text-primary px-2.5 py-1 rounded-full uppercase tracking-wider">QT-02 Hệ thống EMR/HIS</span>
+<span class="text-outline text-caption font-caption">Cập nhật: 10:45 26/10/2026</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Quản lý tài khoản &amp; Phân quyền bảo mật</h1>
+<p class="font-body-base text-body-base text-on-surface-variant">Kiểm soát danh tính, phân quyền ký số chứng thư PKI và điều phối truy cập hồ sơ bệnh án.</p>
+</div>
+<div class="flex items-center gap-3">
+<button class="h-12 px-4 rounded-xl bg-surface-container-lowest text-primary font-body-base-medium text-body-base flex items-center gap-2 shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Xuất dữ liệu Excel</span>
+</button>
+<button class="h-12 px-6 rounded-xl bg-secondary-container hover:bg-secondary text-on-secondary-container font-button-text text-button-text flex items-center gap-2 shadow-md transition-all active:scale-[0.98]" onclick="document.getElementById('modal-add-user').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[22px]">person_add</span>
+<span>Thêm tài khoản mới</span>
+</button>
+</div>
+</section>
+<!-- Metric Overview Cards -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-caption text-caption text-on-surface-variant">Tổng tài khoản hệ thống</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">156</span>
+<span class="font-caption text-caption text-tertiary">Toàn viện</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">groups</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-caption text-caption text-on-surface-variant">Đang hoạt động trực tiếp</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">148</span>
+<span class="font-badge-label text-badge-label text-primary font-semibold">94.8%</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">check_circle</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-caption text-caption text-on-surface-variant">Bị khóa / Tạm dừng</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl font-bold text-secondary">08</span>
+<span class="font-caption text-caption text-outline">Nghỉ phép / Kỷ luật</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">lock_clock</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-caption text-caption text-on-surface-variant">Xác thực 2 bước (2FA/PKI)</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl font-bold text-primary">100%</span>
+<span class="font-badge-label text-badge-label text-primary font-semibold">Bảo mật cao</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">shield</span>
+</div>
+</div>
+</section>
+<!-- Filter & Search Toolbar -->
+<section class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex flex-col gap-4 mb-6">
+<div class="flex flex-col lg:flex-row items-center gap-3 w-full">
+<div class="relative flex-1 w-full">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[22px]">search</span>
+<input class="w-full h-12 pl-12 pr-4 rounded-xl bg-surface-container-low text-on-surface font-body-base text-body-base placeholder:text-outline outline-none focus:bg-surface-container-lowest shadow-inner" id="filter-keyword" placeholder="Tìm theo Họ tên, Mã nhân viên (BS-1094), Tên đăng nhập, Email bệnh viện..." type="text"/>
+</div>
+<div class="flex items-center gap-2 w-full lg:w-auto">
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-2 rounded-xl text-on-surface font-body-base text-body-base">
+<span class="material-symbols-outlined text-outline text-[20px]">filter_alt</span>
+<span class="font-caption text-caption text-outline">Khoa phòng:</span>
+<select class="bg-transparent text-on-surface font-body-base-medium text-body-base outline-none cursor-pointer">
+<option value="">Tất cả khoa phòng</option>
+<option value="noitieuhoa">Nội Tiêu hóa</option>
+<option value="ngoaitongquat">Ngoại Tổng quát</option>
+<option value="khambenh">Khoa Khám bệnh</option>
+<option value="cls">Khoa Xét nghiệm (CLS)</option>
+<option value="duoc">Khoa Dược lâm sàng</option>
+<option value="taichinh">Phòng Tài chính Kế toán</option>
+</select>
+</div>
+<button class="h-12 px-4 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-primary font-body-base-medium text-body-base flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">restart_alt</span>
+<span>Đặt lại</span>
+</button>
+</div>
+</div>
+<!-- Role Filter Chips -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 text-badge-label font-badge-label">
+<span class="text-outline shrink-0 font-caption text-caption mr-1">Vai trò:</span>
+<button class="role-chip active px-4 py-2 rounded-full bg-primary-container text-on-primary font-bold shadow-sm shrink-0" type="button">Tất cả (156)</button>
+<button class="role-chip px-4 py-2 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface shrink-0 transition-colors" type="button">Bác sĩ (52)</button>
+<button class="role-chip px-4 py-2 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface shrink-0 transition-colors" type="button">Điều dưỡng &amp; Tiếp nhận (44)</button>
+<button class="role-chip px-4 py-2 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface shrink-0 transition-colors" type="button">Dược sĩ (18)</button>
+<button class="role-chip px-4 py-2 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface shrink-0 transition-colors" type="button">Kỹ thuật viên (22)</button>
+<button class="role-chip px-4 py-2 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface shrink-0 transition-colors" type="button">Thu ngân (12)</button>
+<button class="role-chip px-4 py-2 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface shrink-0 transition-colors" type="button">Cán bộ quản lý (8)</button>
+</div>
+</section>
+<!-- 2-Column Split Layout: Table (65%) & Detail Drawer (35%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- Left Column: Master Account Table (Approx 65% / 8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-4">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="px-5 py-4 flex items-center justify-between bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">badge</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Danh sách nhân sự &amp; Tài khoản HIS</span>
+</div>
+<span class="font-caption text-caption text-outline">Hiển thị 6 / 156 cán bộ</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-caption text-caption uppercase tracking-wider">
+<th class="py-3 px-4 font-semibold">Tên &amp; Mã NV</th>
+<th class="py-3 px-4 font-semibold">Tên đăng nhập</th>
+<th class="py-3 px-4 font-semibold">Vai trò / Chuyên môn</th>
+<th class="py-3 px-4 font-semibold">Khoa / Phòng</th>
+<th class="py-3 px-4 font-semibold text-center">Trạng thái</th>
+<th class="py-3 px-4 font-semibold">Đăng nhập cuối</th>
+<th class="py-3 px-4 font-semibold text-right">Thao tác</th>
+</tr>
+</thead>
+<tbody class="divide-none text-body-base font-body-base">
+<!-- Row 1: Selected Doctor BS.CKI Phạm Quốc Bảo -->
+<tr class="user-row bg-surface-container cursor-pointer transition-colors group" onclick="selectUser('BS-1094', 'BS.CKI Phạm Quốc Bảo', 'bs.baopq', 'Khoa Nội tiêu hóa', 'Bác sĩ chuyên khoa', '10:42 26/10/2026')">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-[14px]">
+                      PB
+                    </div>
+<div class="flex flex-col">
+<span class="font-body-base-medium text-body-base-medium font-bold text-primary group-hover:underline">BS.CKI Phạm Quốc Bảo</span>
+<span class="font-caption text-[13px] text-outline">Mã NV: BS-1094</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-base text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">alternate_email</span>
+<span class="font-medium">bs.baopq</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-badge-label text-[13px] font-semibold text-primary bg-surface-container-high px-2.5 py-1 rounded-lg">Bác sĩ khám EMR</span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-caption text-caption">Khoa Nội tiêu hóa</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-badge-label font-badge-label font-bold bg-surface-container-low text-primary">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+                    Đang hoạt động
+                  </span>
+</td>
+<td class="py-3.5 px-4 font-caption text-[13px] text-outline">10:42 26/10/2026</td>
+<td class="py-3.5 px-4 text-right">
+<button class="w-9 h-9 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container-highest inline-flex items-center justify-center transition-colors" title="Xem phân quyền" type="button">
+<span class="material-symbols-outlined text-[18px]">security</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: Y tá Lê Thị Mai -->
+<tr class="user-row bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-colors group" onclick="selectUser('NV-8834', 'Y tá Lê Thị Mai', 'nhanvien.mailt', 'Khoa Khám bệnh - Tiếp nhận', 'Điều dưỡng tiếp nhận', '07:15 26/10/2026')">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-[14px]">
+                      LM
+                    </div>
+<div class="flex flex-col">
+<span class="font-body-base-medium text-body-base-medium font-bold text-on-surface group-hover:text-primary">Y tá Lê Thị Mai</span>
+<span class="font-caption text-[13px] text-outline">Mã NV: NV-8834</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-base text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">alternate_email</span>
+<span class="font-medium">nhanvien.mailt</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-badge-label text-[13px] font-semibold text-on-surface bg-surface-container-high px-2.5 py-1 rounded-lg">Tiếp nhận / Phân luồng</span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-caption text-caption">Khoa Khám bệnh</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-badge-label font-badge-label font-bold bg-surface-container-low text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                    Đang hoạt động
+                  </span>
+</td>
+<td class="py-3.5 px-4 font-caption text-[13px] text-outline">07:15 26/10/2026</td>
+<td class="py-3.5 px-4 text-right">
+<button class="w-9 h-9 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high inline-flex items-center justify-center transition-colors" title="Xem phân quyền" type="button">
+<span class="material-symbols-outlined text-[18px]">security</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Huỳnh Văn Phúc -->
+<tr class="user-row bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-colors group" onclick="selectUser('NV-4421', 'KTV Huỳnh Văn Phúc', 'ktv.phuchv', 'Khoa Xét nghiệm (CLS)', 'Kỹ thuật viên xét nghiệm', '08:30 26/10/2026')">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-[14px]">
+                      HP
+                    </div>
+<div class="flex flex-col">
+<span class="font-body-base-medium text-body-base-medium font-bold text-on-surface group-hover:text-primary">KTV Huỳnh Văn Phúc</span>
+<span class="font-caption text-[13px] text-outline">Mã NV: NV-4421</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-base text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">alternate_email</span>
+<span class="font-medium">ktv.phuchv</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-badge-label text-[13px] font-semibold text-on-surface bg-surface-container-high px-2.5 py-1 rounded-lg">Cận lâm sàng</span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-caption text-caption">Khoa Xét nghiệm</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-badge-label font-badge-label font-bold bg-surface-container-low text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                    Đang hoạt động
+                  </span>
+</td>
+<td class="py-3.5 px-4 font-caption text-[13px] text-outline">08:30 26/10/2026</td>
+<td class="py-3.5 px-4 text-right">
+<button class="w-9 h-9 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high inline-flex items-center justify-center transition-colors" title="Xem phân quyền" type="button">
+<span class="material-symbols-outlined text-[18px]">security</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: Trương Thị Hồng -->
+<tr class="user-row bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-colors group" onclick="selectUser('TN-2041', 'Thu ngân Trương Thị Hồng', 'thu.hongtt', 'Phòng Tài chính Kế toán', 'Nhân viên viện phí', '07:45 26/10/2026')">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-[14px]">
+                      TH
+                    </div>
+<div class="flex flex-col">
+<span class="font-body-base-medium text-body-base-medium font-bold text-on-surface group-hover:text-primary">Thu ngân Trương Thị Hồng</span>
+<span class="font-caption text-[13px] text-outline">Mã NV: TN-2041</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-base text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">alternate_email</span>
+<span class="font-medium">thu.hongtt</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-badge-label text-[13px] font-semibold text-on-surface bg-surface-container-high px-2.5 py-1 rounded-lg">Viện phí &amp; BHYT</span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-caption text-caption">Tài chính Kế toán</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-badge-label font-badge-label font-bold bg-surface-container-low text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                    Đang hoạt động
+                  </span>
+</td>
+<td class="py-3.5 px-4 font-caption text-[13px] text-outline">07:45 26/10/2026</td>
+<td class="py-3.5 px-4 text-right">
+<button class="w-9 h-9 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high inline-flex items-center justify-center transition-colors" title="Xem phân quyền" type="button">
+<span class="material-symbols-outlined text-[18px]">security</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: Ngô Văn Lộc -->
+<tr class="user-row bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-colors group" onclick="selectUser('PT-3094', 'Dược sĩ Ngô Văn Lộc', 'duoc.locnv', 'Khoa Dược lâm sàng', 'Dược sĩ cấp phát', 'Hôm qua 17:10')">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-[14px]">
+                      NL
+                    </div>
+<div class="flex flex-col">
+<span class="font-body-base-medium text-body-base-medium font-bold text-on-surface group-hover:text-primary">Dược sĩ Ngô Văn Lộc</span>
+<span class="font-caption text-[13px] text-outline">Mã NV: PT-3094</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-base text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">alternate_email</span>
+<span class="font-medium">duoc.locnv</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-badge-label text-[13px] font-semibold text-on-surface bg-surface-container-high px-2.5 py-1 rounded-lg">Dược &amp; Phát thuốc</span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-caption text-caption">Khoa Dược</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-badge-label font-badge-label font-bold bg-surface-container-low text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                    Đang hoạt động
+                  </span>
+</td>
+<td class="py-3.5 px-4 font-caption text-[13px] text-outline">Hôm qua 17:10</td>
+<td class="py-3.5 px-4 text-right">
+<button class="w-9 h-9 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high inline-flex items-center justify-center transition-colors" title="Xem phân quyền" type="button">
+<span class="material-symbols-outlined text-[18px]">security</span>
+</button>
+</td>
+</tr>
+<!-- Row 6: Nguyễn Hoàng Long (Admin) -->
+<tr class="user-row bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-colors group" onclick="selectUser('QT-001', 'Quản trị viên Nguyễn Hoàng Long', 'admin.longnh', 'Phòng CNTT &amp; Quản trị mạng', 'Quản trị toàn quyền EMR', '10:48 26/10/2026')">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-bold text-[14px]">
+                      NL
+                    </div>
+<div class="flex flex-col">
+<span class="font-body-base-medium text-body-base-medium font-bold text-on-surface group-hover:text-primary">Nguyễn Hoàng Long</span>
+<span class="font-caption text-[13px] text-outline">Mã NV: QT-001 (Hiện tại)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-base text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">alternate_email</span>
+<span class="font-medium">admin.longnh</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-badge-label text-[13px] font-semibold text-tertiary bg-tertiary-fixed px-2.5 py-1 rounded-lg">Quản trị viên Hệ thống</span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-caption text-caption">Phòng CNTT</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-badge-label font-badge-label font-bold bg-surface-container-low text-primary">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    Đang hoạt động
+                  </span>
+</td>
+<td class="py-3.5 px-4 font-caption text-[13px] text-outline">10:48 26/10/2026</td>
+<td class="py-3.5 px-4 text-right">
+<button class="w-9 h-9 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high inline-flex items-center justify-center transition-colors" title="Xem phân quyền" type="button">
+<span class="material-symbols-outlined text-[18px]">security</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Footer -->
+<div class="p-4 bg-surface-container-lowest flex items-center justify-between text-caption font-caption text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span>Hiển thị</span>
+<select class="bg-surface-container-low text-on-surface rounded-lg px-2 py-1 outline-none">
+<option>10 dòng</option>
+<option>25 dòng</option>
+<option>50 dòng</option>
+</select>
+<span>trên tổng 156 tài khoản</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-outline flex items-center justify-center hover:bg-surface-container-high" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-bold flex items-center justify-center" type="button">1</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface flex items-center justify-center hover:bg-surface-container-high" type="button">2</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface flex items-center justify-center hover:bg-surface-container-high" type="button">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface flex items-center justify-center hover:bg-surface-container-high" type="button">16</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface flex items-center justify-center hover:bg-surface-container-high" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Audit quick card -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-base-medium text-body-base font-bold text-on-surface">Nhật ký Audit Log phân quyền gần nhất</span>
+<span class="font-caption text-caption text-outline">Admin QT-001 cấp quyền ký số PKI cho BS-1094 lúc 09:12 hôm nay</span>
+</div>
+</div>
+<a class="font-button-text text-caption text-primary hover:underline flex items-center gap-1" href="#">
+<span>Xem chi tiết QT-05</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Detail & Permissions Drawer Panel (Approx 35% / 4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-4">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-6 flex flex-col gap-5 sticky top-20">
+<!-- Header Profile of Selected User -->
+<div class="flex items-start justify-between pb-4 bg-surface-container-low p-4 rounded-xl">
+<div class="flex items-center gap-3">
+<div class="w-14 h-14 rounded-2xl bg-primary text-on-primary flex items-center justify-center text-[22px] font-bold shadow-sm">
+              PB
+            </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface" id="detail-name">BS.CKI Phạm Quốc Bảo</span>
+<span class="font-caption text-caption text-outline" id="detail-code">Mã NV: BS-1094 · bs.baopq</span>
+<span class="font-badge-label text-[12px] font-semibold text-primary mt-1" id="detail-dept">Khoa Nội tiêu hóa</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-badge-label font-badge-label font-bold bg-surface-container-high text-primary">
+            Hoạt động
+          </span>
+</div>
+<!-- PKI Token / 2FA Status -->
+<div class="bg-surface-container-low p-3.5 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[22px]">vpn_key</span>
+<div class="flex flex-col">
+<span class="font-body-base-medium text-[14px] text-on-surface font-bold">Chứng thư số PKI EMR</span>
+<span class="font-caption text-[12px] text-outline">VNPT-CA Serial: 5404...BA89</span>
+</div>
+</div>
+<span class="font-badge-label text-[12px] font-bold text-primary bg-surface-container-high px-2 py-0.5 rounded">Hợp lệ (2028)</span>
+</div>
+<!-- Permissions Assignment Section -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[16px] font-bold text-on-surface uppercase tracking-tight">Nhóm quyền tác nghiệp</span>
+<span class="font-caption text-[13px] text-primary cursor-pointer hover:underline">Chọn tất cả</span>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Perm 1 -->
+<label class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer">
+<input checked="" class="mt-1 w-5 h-5 rounded text-primary focus:ring-primary cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-base-medium text-[15px] font-semibold text-on-surface">Bác sĩ điều trị ngoại trú</span>
+<span class="font-caption text-[13px] text-on-surface-variant">Khám bệnh, chỉ định giường, ghi nhận diễn tiến ca bệnh</span>
+</div>
+</label>
+<!-- Perm 2 -->
+<label class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer">
+<input checked="" class="mt-1 w-5 h-5 rounded text-primary focus:ring-primary cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-base-medium text-[15px] font-semibold text-on-surface">Kê đơn thuốc điện tử</span>
+<span class="font-caption text-[13px] text-on-surface-variant">Lập đơn thuốc BHYT &amp; viện phí, kiểm tra tương tác thuốc</span>
+</div>
+</label>
+<!-- Perm 3 -->
+<label class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer">
+<input checked="" class="mt-1 w-5 h-5 rounded text-primary focus:ring-primary cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-base-medium text-[15px] font-semibold text-on-surface">Ký số bệnh án EMR (Token PKI)</span>
+<span class="font-caption text-[13px] text-on-surface-variant">Ký số văn bản điện tử thay thế hồ sơ giấy theo TT 46/2018</span>
+</div>
+</label>
+<!-- Perm 4 -->
+<label class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors cursor-pointer">
+<input checked="" class="mt-1 w-5 h-5 rounded text-primary focus:ring-primary cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-base-medium text-[15px] font-semibold text-on-surface">Chỉ định cận lâm sàng (CLS)</span>
+<span class="font-caption text-[13px] text-on-surface-variant">Xét nghiệm sinh hóa, huyết học, X-quang, MRI, siêu âm</span>
+</div>
+</label>
+</div>
+</div>
+<!-- High Security & Sensitive Data Access Control -->
+<div class="flex flex-col gap-2.5 p-4 rounded-xl bg-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">security</span>
+<span class="font-body-base-medium text-[15px] font-bold text-on-surface">Quyền dữ liệu bảo mật cao</span>
+</div>
+<p class="font-caption text-[13px] text-on-surface-variant">Yêu cầu xác thực VNeID định danh mức 2 trước khi kích hoạt</p>
+<div class="flex items-center justify-between pt-2">
+<span class="font-body-base text-[14px] text-on-surface font-medium">Xem dữ liệu cá nhân &amp; VNeID người bệnh</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<!-- Management Actions -->
+<div class="flex flex-col gap-3 pt-2">
+<button class="h-12 w-full rounded-xl bg-surface-container-low hover:bg-surface-container-high text-primary font-body-base-medium text-body-base flex items-center justify-center gap-2 transition-colors" onclick="savePermissions()" type="button">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Lưu thay đổi phân quyền</span>
+</button>
+<div class="grid grid-cols-2 gap-3">
+<button class="h-12 rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface font-body-base text-[14px] font-medium flex items-center justify-center gap-1.5 transition-colors" onclick="document.getElementById('modal-reset-pwd').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">password</span>
+<span>Đặt lại mật khẩu</span>
+</button>
+<button class="h-12 rounded-xl bg-error-container hover:bg-error/20 text-error font-body-base text-[14px] font-semibold flex items-center justify-center gap-1.5 transition-colors" onclick="document.getElementById('modal-lock-acc').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>Khóa tài khoản</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal 1: Reset Password Confirmation -->
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4 hidden" id="modal-reset-pwd">
+<div class="bg-surface-container-lowest rounded-2xl max-w-md w-full p-6 shadow-2xl flex flex-col gap-4">
+<div class="flex items-center gap-3 text-primary">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">key</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Đặt lại mật khẩu tài khoản</span>
+<span class="font-caption text-caption text-outline">Xác nhận cấp phát mật khẩu ngẫu nhiên mới</span>
+</div>
+</div>
+<p class="font-body-base text-body-base text-on-surface-variant">
+        Hệ thống sẽ tạo mật khẩu ngẫu nhiên bảo mật cao và gửi qua SMS / Email công vụ của cán bộ <strong>BS.CKI Phạm Quốc Bảo</strong>. Người dùng sẽ bắt buộc đổi mật khẩu khi đăng nhập lần tiếp theo.
+      </p>
+<div class="bg-surface-container-low p-3.5 rounded-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]">info</span>
+<span class="font-caption text-[13px] text-on-surface-variant">Tài khoản này sẽ bị ngắt toàn bộ phiên đăng nhập EMR trên các máy trạm hiện tại.</span>
+</div>
+<div class="flex items-center justify-end gap-3 pt-2">
+<button class="h-11 px-5 rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface font-body-base-medium text-body-base" onclick="document.getElementById('modal-reset-pwd').classList.add('hidden')" type="button">Hủy bỏ</button>
+<button class="h-11 px-5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-body-base-medium text-body-base" onclick="confirmResetPassword()" type="button">Xác nhận gửi mật khẩu</button>
+</div>
+</div>
+</div>
+<!-- Modal 2: Lock Account Warning -->
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4 hidden" id="modal-lock-acc">
+<div class="bg-surface-container-lowest rounded-2xl max-w-md w-full p-6 shadow-2xl flex flex-col gap-4">
+<div class="flex items-center gap-3 text-error">
+<div class="w-12 h-12 rounded-xl bg-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">lock_person</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-error">Tạm khóa tài khoản cán bộ</span>
+<span class="font-caption text-caption text-outline">Hành động quản trị bảo mật cao</span>
+</div>
+</div>
+<p class="font-body-base text-body-base text-on-surface-variant">
+        Bạn đang thực hiện khóa quyền truy cập của cán bộ <strong>BS.CKI Phạm Quốc Bảo (BS-1094)</strong>. Bác sĩ sẽ không thể truy cập hệ thống khám bệnh EMR và chứng thư ký số PKI sẽ bị tạm dừng hiệu lực tức thì.
+      </p>
+<div class="flex flex-col gap-1.5">
+<label class="font-caption text-caption text-on-surface font-semibold">Lý do khóa tài khoản:</label>
+<select class="w-full h-11 px-3 rounded-xl bg-surface-container-low text-on-surface font-body-base text-body-base outline-none">
+<option>Nghỉ phép dài hạn / Đi công tác</option>
+<option>Nghi ngờ rò rỉ thông tin đăng nhập</option>
+<option>Đình chỉ công tác chuyên môn</option>
+<option>Lý do quản trị khác</option>
+</select>
+</div>
+<div class="flex items-center justify-end gap-3 pt-2">
+<button class="h-11 px-5 rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface font-body-base-medium text-body-base" onclick="document.getElementById('modal-lock-acc').classList.add('hidden')" type="button">Quay lại</button>
+<button class="h-11 px-5 rounded-xl bg-error hover:bg-red-700 text-on-error font-body-base-medium text-body-base" onclick="confirmLockAccount()" type="button">Xác nhận khóa</button>
+</div>
+</div>
+</div>
+<!-- Modal 3: Add Account (Drawer/Modal) -->
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4 hidden" id="modal-add-user">
+<div class="bg-surface-container-lowest rounded-2xl max-w-xl w-full p-6 shadow-2xl flex flex-col gap-4 max-h-[921px] overflow-y-auto">
+<div class="flex items-center justify-between pb-3 bg-surface-container-low p-4 rounded-xl">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">person_add</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Tạo mới tài khoản EMR/HIS</span>
+<span class="font-caption text-caption text-outline">Khai báo hồ sơ cán bộ nhân viên y tế</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high flex items-center justify-center text-outline" onclick="document.getElementById('modal-add-user').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-4" onsubmit="handleCreateUser(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-caption text-caption text-on-surface font-semibold">Họ và tên cán bộ (*)</label>
+<input class="h-11 px-3.5 rounded-xl bg-surface-container-low text-on-surface font-body-base text-body-base outline-none" placeholder="Ví dụ: Trần Minh Quân" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-caption text-caption text-on-surface font-semibold">Mã nhân viên HIS (*)</label>
+<input class="h-11 px-3.5 rounded-xl bg-surface-container-low text-on-surface font-body-base text-body-base outline-none" placeholder="BS-2201" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-caption text-caption text-on-surface font-semibold">Tên đăng nhập (*)</label>
+<input class="h-11 px-3.5 rounded-xl bg-surface-container-low text-on-surface font-body-base text-body-base outline-none" placeholder="bs.quantm" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-caption text-caption text-on-surface font-semibold">Email công vụ</label>
+<input class="h-11 px-3.5 rounded-xl bg-surface-container-low text-on-surface font-body-base text-body-base outline-none" placeholder="quantm@bvnpt.vn" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-caption text-caption text-on-surface font-semibold">Khoa / Phòng ban (*)</label>
+<select class="h-11 px-3 rounded-xl bg-surface-container-low text-on-surface font-body-base text-body-base outline-none">
+<option>Khoa Nội tiêu hóa</option>
+<option>Khoa Ngoại Chấn thương</option>
+<option>Khoa Cấp cứu</option>
+<option>Khoa Nhi</option>
+<option>Khoa Khám bệnh</option>
+<option>Khoa Dược</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-caption text-caption text-on-surface font-semibold">Vai trò nghiệp vụ (*)</label>
+<select class="h-11 px-3 rounded-xl bg-surface-container-low text-on-surface font-body-base text-body-base outline-none">
+<option>Bác sĩ điều trị EMR</option>
+<option>Điều dưỡng / Tiếp nhận</option>
+<option>Dược sĩ cấp phát</option>
+<option>Kỹ thuật viên CLS</option>
+<option>Thu ngân viện phí</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-2 p-3 bg-surface-container-low rounded-xl">
+<label class="flex items-center gap-2 font-caption text-caption font-semibold text-on-surface">
+<input checked="" class="w-4 h-4 rounded text-primary" type="checkbox"/>
+<span>Kích hoạt chứng thư ký số PKI Soft/Hard Token</span>
+</label>
+<label class="flex items-center gap-2 font-caption text-caption font-semibold text-on-surface">
+<input checked="" class="w-4 h-4 rounded text-primary" type="checkbox"/>
+<span>Bắt buộc xác thực 2 bước (2FA OTP)</span>
+</label>
+</div>
+<div class="flex items-center justify-end gap-3 pt-3">
+<button class="h-11 px-5 rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface font-body-base-medium text-body-base" onclick="document.getElementById('modal-add-user').classList.add('hidden')" type="button">Hủy</button>
+<button class="h-11 px-6 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-body-base-medium text-body-base" type="submit">Hoàn tất lưu tài khoản</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Notification Toast feedback -->
+<div class="fixed bottom-6 right-6 z-50 bg-inverse-surface text-inverse-on-surface px-5 py-3.5 rounded-xl shadow-xl flex items-center gap-3 transition-opacity duration-300 opacity-0 pointer-events-none" id="system-toast">
+<span class="material-symbols-outlined text-[20px] text-inverse-primary" id="toast-icon">check_circle</span>
+<span class="font-body-base text-body-base font-medium" id="toast-msg">Đã cập nhật phân quyền thành công!</span>
+</div>
+<script>
+    function showToast(message, icon = 'check_circle') {
+      const toast = document.getElementById('system-toast');
+      const msg = document.getElementById('toast-msg');
+      const ic = document.getElementById('toast-icon');
+      if (toast && msg) {
+        msg.textContent = message;
+        ic.textContent = icon;
+        toast.classList.remove('opacity-0', 'pointer-events-none');
+        setTimeout(() => {
+          toast.classList.add('opacity-0', 'pointer-events-none');
+        }, 3200);
+      }
+    }
+
+    function selectUser(code, name, username, dept, role, lastLogin) {
+      document.querySelectorAll('.user-row').forEach(row => {
+        row.classList.remove('bg-surface-container');
+        row.classList.add('bg-surface-container-lowest');
+      });
+      event.currentTarget.classList.remove('bg-surface-container-lowest');
+      event.currentTarget.classList.add('bg-surface-container');
+
+      document.getElementById('detail-name').textContent = name;
+      document.getElementById('detail-code').textContent = 'Mã NV: ' + code + ' · ' + username;
+      document.getElementById('detail-dept').textContent = dept;
+      showToast('Đã chọn hồ sơ: ' + name, 'person');
+    }
+
+    function savePermissions() {
+      showToast('Đã lưu cấu hình phân quyền và ghi nhận Audit Log', 'save');
+    }
+
+    function confirmResetPassword() {
+      document.getElementById('modal-reset-pwd').classList.add('hidden');
+      showToast('Đã cấp lại mật khẩu và gửi OTP qua SMS cán bộ', 'mark_email_read');
+    }
+
+    function confirmLockAccount() {
+      document.getElementById('modal-lock-acc').classList.add('hidden');
+      showToast('Đã tạm dừng hoạt động và thu hồi Token EMR của cán bộ', 'lock');
+    }
+
+    function handleCreateUser(e) {
+      e.preventDefault();
+      document.getElementById('modal-add-user').classList.add('hidden');
+      showToast('Đã khởi tạo tài khoản mới thành công!', 'how_to_reg');
+    }
+
+    // Role chip filter toggle
+    document.querySelectorAll('.role-chip').forEach(chip => {
+      chip.addEventListener('click', function() {
+        document.querySelectorAll('.role-chip').forEach(c => {
+          c.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold');
+          c.classList.add('bg-surface-container-high', 'text-on-surface');
+        });
+        this.classList.remove('bg-surface-container-high', 'text-on-surface');
+        this.classList.add('bg-primary-container', 'text-on-primary', 'font-bold');
+      });
+    });
+
+    // Real-time table filter search
+    document.getElementById('filter-keyword')?.addEventListener('input', function(e) {
+      const val = e.target.value.toLowerCase();
+      document.querySelectorAll('.user-row').forEach(row => {
+        const text = row.innerText.toLowerCase();
+        row.style.display = text.includes(val) ? '' : 'none';
+      });
+    });
+  </script>
+</div></div></main></div></body></html>

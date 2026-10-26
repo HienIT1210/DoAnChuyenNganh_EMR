@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed-dim":"#89ceff","on-tertiary-fixed-variant":"#004c6c","inverse-surface":"#1b3342","background":"#f5faff","surface-container-high":"#d2ecff","primary-fixed":"#c9e6ff","on-primary-container":"#fcfcff","inverse-primary":"#89ceff","surface-container":"#def0ff","primary":"#00628d","on-secondary-fixed":"#410000","surface-container-highest":"#cde6f9","on-error-container":"#93000a","surface-bright":"#f5faff","on-surface-variant":"#3f4850","secondary-fixed":"#ffdad5","on-background":"#031e2c","error":"#ba1a1a","on-error":"#ffffff","primary-container":"#007cb1","surface":"#f5faff","error-container":"#ffdad6","tertiary-container":"#397ba1","on-tertiary":"#ffffff","surface-container-low":"#eaf5ff","on-primary":"#ffffff","on-secondary":"#ffffff","secondary":"#bc0002","tertiary-fixed-dim":"#8fcef7","surface-tint":"#006591","secondary-container":"#e2261a","tertiary":"#176287","outline-variant":"#bec8d1","surface-dim":"#c4ddf0","tertiary-fixed":"#c7e7ff","surface-variant":"#cde6f9","secondary-fixed-dim":"#ffb4a8","on-secondary-container":"#fffbff","outline":"#6f7881","on-secondary-fixed-variant":"#930001","on-tertiary-fixed":"#001e2e","surface-container-lowest":"#ffffff","on-tertiary-container":"#fcfcff","inverse-on-surface":"#e4f3ff","on-primary-fixed":"#001e2f","on-primary-fixed-variant":"#004c6e","on-surface":"#031e2c"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","gutter":"1rem","margin-md":"2rem","gutter-md":"1.5rem","gutter-lg":"2rem","space-md":"1rem","space-lg":"1.5rem","margin":"1rem","space-2xl":"3rem","space-xl":"2rem","margin-lg":"3rem"},"fontFamily":{"button-text":["Be Vietnam Pro"],"headline-lg":["Be Vietnam Pro"],"body-base-medium":["Be Vietnam Pro"],"badge-label":["Be Vietnam Pro"],"headline-sm":["Be Vietnam Pro"],"body-patient-bold":["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"],"body-base":["Be Vietnam Pro"],"body-patient-medium":["Be Vietnam Pro"],"headline-xl-mobile":["Be Vietnam Pro"],"headline-xl":["Be Vietnam Pro"],"headline-lg-mobile":["Be Vietnam Pro"],"body-patient-primary":["Be Vietnam Pro"],"caption":["Be Vietnam Pro"]},"fontSize":{"button-text":["18px",{"lineHeight":"24px","fontWeight":"700"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-base-medium":["16px",{"lineHeight":"24px","fontWeight":"500"}],"badge-label":["14px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-patient-bold":["18px",{"lineHeight":"28px","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","fontWeight":"600"}],"body-base":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-patient-medium":["18px",{"lineHeight":"28px","fontWeight":"500"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-patient-primary":["18px",{"lineHeight":"28px","fontWeight":"400"}],"caption":["16px",{"lineHeight":"22px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-base text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-low"><div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-on-primary font-headline-sm font-bold text-headline-sm">NTP</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">BV NGUYỄN TRI PHƯƠNG</span><span class="font-caption text-caption text-on-surface-variant text-xs">Hệ thống Quản trị &amp; Điều hành</span></div></div><div class="px-space-md py-space-sm"><div class="p-space-sm rounded-xl bg-surface-container-low flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px]">schedule</span><div class="flex flex-col"><span class="font-badge-label text-badge-label text-on-surface">Ca Sáng • 26/10/2026</span><span class="font-caption text-caption text-on-surface-variant text-xs">07:00 - 15:30</span></div></div></div><nav class="px-space-md flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-xl"><div class="pt-space-xs pb-space-xs"><span class="px-space-sm font-badge-label text-badge-label text-tertiary uppercase tracking-wider">Phân Hệ Cận Lâm Sàng</span></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="danh-sach-chi-dinh" href="#"><span class="material-symbols-outlined text-[20px]">checklist</span><span class="font-body-base-medium text-body-base-medium">CLS-01: DS Chỉ định</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="nhap-ket-qua-xet-nghiem" href="#"><span class="material-symbols-outlined text-[20px]">chips</span><span class="font-body-base-medium text-body-base-medium">CLS-02: Nhập kết quả</span></a><div class="pt-space-sm pb-space-xs"><span class="px-space-sm font-badge-label text-badge-label text-tertiary uppercase tracking-wider">Phân Hệ Viện Phí &amp; Thu Ngân</span></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="hoa-don-cho-thu" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-base-medium text-body-base-medium">TN-01: Hóa đơn chờ thu</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="chi-tiet-vien-phi-thu-tien" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span class="font-body-base-medium text-body-base-medium">TN-02: Thu tiền viện phí</span></a><div class="pt-space-sm pb-space-xs"><span class="px-space-sm font-badge-label text-badge-label text-tertiary uppercase tracking-wider">Phân Hệ Dược &amp; Phát Thuốc</span></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="quet-ma-don-thuoc" href="#"><span class="material-symbols-outlined text-[20px]">qr_code_scanner</span><span class="font-body-base-medium text-body-base-medium">PT-01: Quét mã đơn thuốc</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ket-qua-xac-thuc-phat-thuoc" href="#"><span class="material-symbols-outlined text-[20px]">medication</span><span class="font-body-base-medium text-body-base-medium">PT-02: Xác thực &amp; Phát thuốc</span></a><div class="pt-space-sm pb-space-xs"><span class="px-space-sm font-badge-label text-badge-label text-tertiary uppercase tracking-wider">Quản Trị &amp; Báo Cáo</span></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="thong-ke-bao-cao" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-body-base-medium text-body-base-medium">QT-01: Thống kê &amp; Báo cáo</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="phan-quyen-nguoi-dung" href="#"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span><span class="font-body-base-medium text-body-base-medium">QT-02: Phân quyền</span></a></nav></div><div class="p-space-md"><div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">wifi</span><span class="font-badge-label text-badge-label text-on-surface-variant">HIS Online</span></div><span class="w-2.5 h-2.5 rounded-full bg-primary-container inline-block"></span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-low rounded-xl text-on-surface placeholder:text-on-surface-variant font-caption text-caption focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Tìm kiếm bệnh nhân, mã hồ sơ... (Ctrl+K)" type="text"/></div><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container-high text-primary font-badge-label text-badge-label"><span class="material-symbols-outlined text-[16px]">domain</span><span>Khoa Xét Nghiệm / Thu Ngân / Nhà Thuốc</span></div></div><div class="flex items-center gap-space-md"><button class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right"><span class="font-body-base-medium text-body-base-medium text-on-surface font-semibold">KTV Huỳnh Văn Phúc</span><span class="font-caption text-caption text-on-surface-variant text-xs">ID: NV-8834 • Khu C</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen w-full px-space-lg py-space-md"><div class="flex flex-col w-full max-w-[1240px] mx-auto pb-16 space-y-6">
+<!-- Breadcrumb & Pharmacy Station Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-surface-container-lowest p-5 rounded-xl shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-on-surface-variant font-caption text-caption">
+<span class="hover:text-primary cursor-pointer">Bàn làm việc</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="hover:text-primary cursor-pointer">Dược ngoại trú</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="font-body-base-medium text-body-base-medium text-primary">PT-02: Kết quả xác thực mã đơn &amp; Cấp phát thuốc</span>
+</div>
+<div class="flex items-center gap-3 mt-1">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-badge-label text-badge-label flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">storefront</span>
+          Quầy phát thuốc BHYT Số 02
+        </span>
+<span class="text-on-surface-variant font-caption text-caption">•</span>
+<span class="font-body-base-medium text-body-base-medium text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[18px]">badge</span>
+          Dược sĩ phụ trách: <strong class="text-primary">Ngô Văn Lộc (DS-3094)</strong>
+</span>
+</div>
+</div>
+<!-- Quick Switcher Demo Tabs for Acceptance Team -->
+<div class="flex items-center bg-surface-container-low p-1.5 rounded-xl self-start md:self-auto shadow-inner">
+<button class="px-4 py-2 rounded-lg font-badge-label text-badge-label bg-surface-container-lowest text-primary shadow-sm flex items-center gap-1.5 transition-all" id="btn-tab-state1" onclick="switchState(1)">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+        Trạng thái 1: HỢP LỆ &amp; ĐÃ ĐÓNG TIỀN
+      </button>
+<button class="px-3.5 py-2 rounded-lg font-badge-label text-badge-label text-on-surface-variant hover:text-on-surface flex items-center gap-1.5 transition-all" id="btn-tab-state2" onclick="switchState(2)">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+        TT 2: Chưa đóng phí
+      </button>
+<button class="px-3.5 py-2 rounded-lg font-badge-label text-badge-label text-on-surface-variant hover:text-on-surface flex items-center gap-1.5 transition-all" id="btn-tab-state3" onclick="switchState(3)">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+        TT 3: Đã phát / Khóa
+      </button>
+</div>
+</div>
+<!-- MAIN DYNAMIC CONTAINER -->
+<div class="flex flex-col gap-6" id="view-state-1">
+<!-- Hero Validation Banner: High Contrast, 32px Headline, Immediate Directive -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-6 shadow-sm">
+<div class="absolute -right-8 -top-8 w-44 h-44 rounded-full bg-surface-container pointer-events-none opacity-60"></div>
+<div class="flex flex-col md:flex-row items-start md:items-center gap-5 relative z-10">
+<div class="w-16 h-16 rounded-xl bg-surface-container-low text-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[48px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-surface-container text-primary font-badge-label text-badge-label uppercase">Xác thực thành công 100%</span>
+<span class="font-caption text-caption text-on-surface-variant">Thời gian quét: 08:41:19 - 26/10/2026</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary mt-1 leading-tight tracking-tight">
+            ĐƠN THUỐC HỢP LỆ &amp; ĐÃ THANH TOÁN VIỆN PHÍ
+          </h1>
+<p class="font-body-patient-primary text-body-patient-primary text-on-surface mt-1">
+<strong>Chỉ dẫn lâm sàng:</strong> Đủ điều kiện cấp phát thuốc BHYT ngay cho người bệnh. Dược sĩ kiểm tra <strong>3 tra 5 đối</strong> và chuẩn bị soạn thuốc theo danh mục kho chi tiết bên dưới.
+          </p>
+</div>
+<div class="shrink-0 self-start md:self-center bg-surface-container-low p-3 rounded-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-badge-label text-badge-label text-primary">Biên lai HD-261026-0215</span>
+<span class="font-caption text-caption text-on-surface-variant text-xs">Quầy thu ngân 03 • Đã thu</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Patient Identity + Clinical Bar -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- Patient & Prescription Info (8 cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">person_pin</span>
+<span class="font-badge-label text-badge-label uppercase text-primary tracking-wide">Hồ sơ cấp phát thuốc ngoại trú</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-primary font-badge-label text-badge-label">
+              Mã Đơn: DT-261026-0072
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant text-xs uppercase">Bệnh nhân</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">NGUYỄN VĂN HÙNG</span>
+<span class="font-caption text-caption text-on-surface mt-1">Nam • 68 Tuổi (1958)</span>
+<span class="font-badge-label text-badge-label text-primary mt-1">Mã BN: BN-1956-0883</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant text-xs uppercase">Chế độ &amp; Viện phí</span>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">BHYT 95%</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary font-badge-label text-badge-label text-xs">Đúng tuyến</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant mt-1">Thẻ: GD-4-79-11-2038491</span>
+<span class="font-caption text-caption text-primary font-medium mt-1">Đã đồng chi trả: 42.500 đ</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant text-xs uppercase">Bác sĩ kê toa</span>
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface mt-1">BS.CKI Phạm Quốc Bảo</span>
+<span class="font-caption text-caption text-on-surface-variant mt-1">Khoa Nội Tiêu hóa (P.204)</span>
+<span class="font-caption text-caption text-on-surface-variant mt-1">Chẩn đoán: K29.5 - Viêm dạ dày mạn</span>
+</div>
+</div>
+</div>
+<!-- Allergy & Clinical Drug Safety Alert -->
+<div class="mt-4 p-4 rounded-xl bg-surface-container-high flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">crisis_alert</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-badge-label text-badge-label text-secondary uppercase tracking-wider">Cảnh báo dị ứng: TIỀN SỬ DỊ ỨNG PENICILLIN</span>
+<span class="px-2 py-0.2 rounded-full bg-surface-container-lowest text-primary font-badge-label text-badge-label text-xs">Đã kiểm duyệt</span>
+</div>
+<p class="font-caption text-caption text-on-surface mt-0.5">
+                Toa thuốc an toàn: Các thuốc kê không thuộc dẫn xuất Beta-lactam, không có tương tác kháng sinh nguy hiểm.
+              </p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+</div>
+</div>
+<!-- 3 Tra 5 Doi Checklist & Visual Cue (4 cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3">
+<div class="flex items-center gap-2 text-primary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+<span>Kiểm chuẩn 3 Tra 5 Đối</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-badge-label text-badge-label">4/4 Tiêu chí</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mb-4">
+            Quy trình bắt buộc trước khi bàn giao túi thuốc tận tay bệnh nhân:
+          </p>
+<div class="space-y-2.5">
+<label class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="w-5 h-5 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-base-medium text-body-base-medium text-on-surface leading-tight">1. Đúng người bệnh</span>
+<span class="font-caption text-caption text-on-surface-variant text-xs">Nguyễn Văn Hùng - CCCD 079058004123</span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="w-5 h-5 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-base-medium text-body-base-medium text-on-surface leading-tight">2. Đúng tên &amp; nồng độ thuốc</span>
+<span class="font-caption text-caption text-on-surface-variant text-xs">Đúng biệt dược, hàm lượng Esomeprazole 40mg...</span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="w-5 h-5 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-base-medium text-body-base-medium text-on-surface leading-tight">3. Đúng liều &amp; đường dùng</span>
+<span class="font-caption text-caption text-on-surface-variant text-xs">Uống trước ăn 30p, uống khi đau dạ dày</span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="w-5 h-5 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-base-medium text-body-base-medium text-on-surface leading-tight">4. Đúng hạn dùng &amp; chất lượng</span>
+<span class="font-caption text-caption text-on-surface-variant text-xs">Toàn bộ thuốc còn hạn &gt; 12 tháng (HSD 2027)</span>
+</div>
+</label>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+            Thời gian soạn: 01 phút 40 giây
+          </span>
+<span class="font-badge-label text-badge-label text-primary">Đạt chuẩn ISO</span>
+</div>
+</div>
+</div>
+<!-- Medicine Dispensing List & Warehouse Shelf Locations -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-4 gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">medication</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Danh mục soạn dược phẩm theo toa</h2>
+<p class="font-caption text-caption text-on-surface-variant">Tổng cộng 03 khoản thuốc • Đã kiểm tồn kho trực tuyến</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1.5 rounded-xl bg-surface-container-low text-primary font-badge-label text-badge-label flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">qr_code_2</span>
+            Kho chẵn &amp; Kho lẻ: Sẵn sàng
+          </span>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-badge-label text-badge-label">
+<th class="py-3 px-4 rounded-l-lg">STT</th>
+<th class="py-3 px-4">TÊN THUỐC, HOẠT CHẤT &amp; HÀM LƯỢNG</th>
+<th class="py-3 px-4 text-center">SỐ LƯỢNG</th>
+<th class="py-3 px-4">VỊ TRÍ KHO SOẠN</th>
+<th class="py-3 px-4">HƯỚNG DẪN DÙNG CHO BỆNH NHÂN</th>
+<th class="py-3 px-4 rounded-r-lg text-center">TRẠNG THÁI SOẠN</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 space-y-2">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-4 font-headline-sm text-headline-sm text-primary">01</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center shrink-0">
+<img class="w-10 h-10 object-contain rounded" data-alt="Hộp thuốc Nexium Mups 40mg chuẩn dược bệnh viện Nguyễn Tri Phương, chụp macro rõ nhãn hiệu trên khay y tế màu xanh nhạt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSOzPSk5-r-QLlDaPPGIPiVQhwDGDQDa61AjgDdS7sXiDlAXmBc2jxvXQzkYkCRKjQLm5fgSioCaERw-YDODtHGjuEY_JDb7f248jOd1ZaEJDdxEZF9fOpV6uVWwMFuTKp4-ci7GXeacjLh2OVY_eXwk_En4jm_rS7y7KZUBAEBxD0CTHnBV5Q08QYyDo2RFrXZ0vhDDye8fDTKzr3mApc7w52WRV1lidlfU2o-m9414UbvI5XuG1s9A"/>
+</div>
+<div>
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface block">Nexium Mups 40mg</span>
+<span class="font-caption text-caption text-on-surface-variant">Esomeprazole magnesium • Hộp 30 viên</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">30</span>
+<span class="font-caption text-caption text-on-surface-variant block text-xs">Viên (01 Hộp)</span>
+</td>
+<td class="py-4 px-4">
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-badge-label text-badge-label inline-flex items-center gap-1.5 font-bold">
+<span class="material-symbols-outlined text-[16px]">shelves</span>
+                  KỆ A1-04
+                </span>
+<span class="block font-caption text-caption text-on-surface-variant text-xs mt-1">Dãy tủ Bảo quản Tiêu hóa</span>
+</td>
+<td class="py-4 px-4 max-w-xs">
+<div class="bg-surface-container-low p-2.5 rounded-lg">
+<span class="font-body-base-medium text-body-base-medium text-primary block">Uống sáng 1 viên</span>
+<span class="font-caption text-caption text-on-surface-variant">Trước bữa ăn sáng 30 phút. Uống nguyên viên.</span>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="px-3 py-1 rounded-full bg-surface-container text-primary font-badge-label text-badge-label inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">done</span> Đã lấy thuốc
+                </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-4 font-headline-sm text-headline-sm text-primary">02</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center shrink-0">
+<img class="w-10 h-10 object-contain rounded" data-alt="Vỉ thuốc Motilium-M 10mg Janssen hộp y tế bệnh viện sắc nét trên nền xanh nhạt tiệt trùng" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqOVocPl-FH8Rfwbgs-8cISY57pjpHUVKkz2G6DLu-dS8WZ0Kp77GXmwRMuZ86fjF5YJ-MxgpkBuHHSsoqK88GdsMXQLAegktbL8Kern5w_wcXmh8s2tueCHmhMqKHZW_z9iZB2cAAKREGui3EhCNzFgn6B1qDaTDITXEww1QiEfP6PtQsEvvpl_WyXc5IoPiZJaDTU49BsvF-YRjk2b_cVc9M1BT5h1TWy1NROC6sHIjdFK6suK7Nyw"/>
+</div>
+<div>
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface block">Motilium-M 10mg</span>
+<span class="font-caption text-caption text-on-surface-variant">Domperidone maleate • Vỉ 10 viên</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">60</span>
+<span class="font-caption text-caption text-on-surface-variant block text-xs">Viên (06 Vỉ)</span>
+</td>
+<td class="py-4 px-4">
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-badge-label text-badge-label inline-flex items-center gap-1.5 font-bold">
+<span class="material-symbols-outlined text-[16px]">shelves</span>
+                  KỆ B2-11
+                </span>
+<span class="block font-caption text-caption text-on-surface-variant text-xs mt-1">Tủ thuốc Chống nôn &amp; Nhu động</span>
+</td>
+<td class="py-4 px-4 max-w-xs">
+<div class="bg-surface-container-low p-2.5 rounded-lg">
+<span class="font-body-base-medium text-body-base-medium text-primary block">Uống ngày 2 lần, mỗi lần 1 viên</span>
+<span class="font-caption text-caption text-on-surface-variant">Trước ăn trưa và tối 15-30 phút.</span>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="px-3 py-1 rounded-full bg-surface-container text-primary font-badge-label text-badge-label inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">done</span> Đã lấy thuốc
+                </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-4 font-headline-sm text-headline-sm text-primary">03</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center shrink-0">
+<img class="w-10 h-10 object-contain rounded" data-alt="Hộp thuốc chữ P vàng Phosphalugel 20g dạng gói gel uống tráng dạ dày, đặt gọn gàng trên kệ thuốc bệnh viện" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjJHtCWWc46xRTYa_ekTlgofTRz1O5duWSvJt30tzg0Y_HQuXYRnp1K9Zg4BYqPcIYPyRz8SRG90GIOpJ83GJZpjgWhD7PnsmvVztaO013t49TvlFyf9HIvQMbbIc9go2co8SIFpTajnsCjfhWaqoG8hGDrUNma3Q62_shCymAo0DqX0aRn-SiysjQJg2g_C9Y6MpJxY1jN55RzSHFFliXuaMMLG228RiOrUOUMtr5we-OXvi6Cu4TIw"/>
+</div>
+<div>
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface block">Phosphalugel 20g (Thuốc chữ P)</span>
+<span class="font-caption text-caption text-on-surface-variant">Aluminium phosphate gel • Hộp 26 gói</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">30</span>
+<span class="font-caption text-caption text-on-surface-variant block text-xs">Gói (01 Hộp + 4 gói)</span>
+</td>
+<td class="py-4 px-4">
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-badge-label text-badge-label inline-flex items-center gap-1.5 font-bold">
+<span class="material-symbols-outlined text-[16px]">shelves</span>
+                  KỆ C3-08
+                </span>
+<span class="block font-caption text-caption text-on-surface-variant text-xs mt-1">Dãy tầng 3 Kho dung dịch gói</span>
+</td>
+<td class="py-4 px-4 max-w-xs">
+<div class="bg-surface-container-low p-2.5 rounded-lg">
+<span class="font-body-base-medium text-body-base-medium text-primary block">Uống khi đau hoặc sau ăn 2 giờ</span>
+<span class="font-caption text-caption text-on-surface-variant">Mỗi lần 1 gói. Không uống cùng các thuốc khác.</span>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="px-3 py-1 rounded-full bg-surface-container text-primary font-badge-label text-badge-label inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">done</span> Đã lấy thuốc
+                </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Fixed Action Bar at Bottom of State 1 (Max 1 Red Button Rule) -->
+<div class="sticky bottom-4 z-30 bg-surface-container-lowest/95 backdrop-blur-md p-4 rounded-xl shadow-xl flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<a class="px-4 py-3 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface font-body-base-medium text-body-base-medium flex items-center gap-2 transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+          Quay lại quét QR (PT-01)
+        </a>
+<button class="px-4 py-3 rounded-xl bg-surface-container-high text-primary font-body-base-medium text-body-base-medium flex items-center gap-2 hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">print</span>
+          In nhãn hướng dẫn sử dụng A6
+        </button>
+</div>
+<div class="flex items-center gap-3 w-full md:w-auto">
+<div class="hidden lg:flex flex-col text-right">
+<span class="font-caption text-caption text-on-surface-variant text-xs">Thao tác chốt xuất kho</span>
+<span class="font-badge-label text-badge-label text-primary">Cập nhật dữ liệu thẻ BHYT &amp; Cổng Dược</span>
+</div>
+<!-- Singular Critical High-Intent Solid Red Button -->
+<button class="flex-1 md:flex-none px-8 py-3.5 rounded-xl bg-secondary text-on-secondary font-button-text text-button-text flex items-center justify-center gap-3 shadow-md hover:bg-secondary-container transition-transform active:scale-[0.99]" onclick="confirmDispense()" type="button">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+          XÁC NHẬN ĐÃ PHÁT THUỐC CHO NGƯỜI BỆNH (F4)
+        </button>
+</div>
+</div>
+</div>
+<!-- VIEW STATE 2: CHƯA THANH TOÁN (DEMO/SWITCHABLE) -->
+<div class="hidden flex-col gap-6" id="view-state-2">
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
+<div class="flex flex-col md:flex-row items-start md:items-center gap-5">
+<div class="w-16 h-16 rounded-xl bg-secondary-fixed text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[48px]" style="font-variation-settings: 'FILL' 1;">lock</span>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-secondary-fixed text-secondary font-badge-label text-badge-label uppercase">Cảnh báo tài chính</span>
+<span class="font-caption text-caption text-on-surface-variant">Mã đơn: DT-261026-0078</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-secondary mt-1">
+            ĐƠN THUỐC CHƯA THANH TOÁN VIỆN PHÍ
+          </h2>
+<p class="font-body-patient-primary text-body-patient-primary text-on-surface mt-1">
+<strong>Khóa quyền phát thuốc:</strong> Vui lòng hướng dẫn người bệnh hoặc người nhà đến <strong>Quầy thu ngân số 03</strong> để hoàn tất viện phí trước khi nhận thuốc tại quầy dược BHYT.
+          </p>
+</div>
+<div class="shrink-0 bg-surface-container-low p-4 rounded-xl text-center">
+<span class="font-caption text-caption text-on-surface-variant block text-xs">Số tiền cần đóng</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">118.400 đ</span>
+<span class="font-caption text-caption text-on-surface-variant block text-xs mt-1">Biên lai: Chưa lập</span>
+</div>
+</div>
+</div>
+<!-- Patient info for State 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-surface-container-low p-4 rounded-xl">
+<span class="font-caption text-caption text-on-surface-variant text-xs">Bệnh nhân</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">PHẠM THỊ BÍCH</p>
+<span class="font-caption text-caption text-on-surface">Nữ • 54 Tuổi (1972) • Mã: BN-1972-0442</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl">
+<span class="font-caption text-caption text-on-surface-variant text-xs">Bác sĩ kê toa</span>
+<p class="font-body-patient-bold text-body-patient-bold text-on-surface mt-1">BS. Đặng Hồng Cúc</p>
+<span class="font-caption text-caption text-on-surface-variant">Khoa Cơ Xương Khớp</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl flex items-center justify-between">
+<div>
+<span class="font-caption text-caption text-on-surface-variant text-xs">Hành động khả dụng</span>
+<p class="font-badge-label text-badge-label text-secondary mt-1">Hệ thống đang khóa nút cấp phát</p>
+</div>
+<button class="px-3 py-2 rounded-lg bg-surface-container text-primary font-badge-label text-badge-label" type="button">
+            In phiếu hẹn thu ngân
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- VIEW STATE 3: ĐÃ PHÁT HOẶC KHÔNG HỢP LỆ (DEMO/SWITCHABLE) -->
+<div class="hidden flex-col gap-6" id="view-state-3">
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
+<div class="flex flex-col md:flex-row items-start md:items-center gap-5">
+<div class="w-16 h-16 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[48px]" style="font-variation-settings: 'FILL' 1;">info</span>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-surface-container text-primary font-badge-label text-badge-label uppercase">Lịch sử cấp phát dược</span>
+<span class="font-caption text-caption text-on-surface-variant">Mã đơn: DT-261026-0068</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">
+            ĐƠN THUỐC ĐÃ ĐƯỢC PHÁT TRƯỚC ĐÓ
+          </h2>
+<p class="font-body-patient-primary text-body-patient-primary text-on-surface mt-1">
+            Đơn thuốc này đã hoàn tất cấp phát lúc <strong>08:10 ngày 26/10/2026</strong> bởi <strong>Dược sĩ Ngô Văn Lộc</strong>. Nghiêm cấm cấp phát trùng lặp dược phẩm BHYT.
+          </p>
+</div>
+<div class="shrink-0 bg-surface-container-low p-4 rounded-xl text-center">
+<span class="font-caption text-caption text-on-surface-variant block text-xs">Tình trạng đơn</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">HOÀN TẤT</span>
+<span class="font-caption text-caption text-on-surface-variant block text-xs mt-1">Mã xác thực: XP-88192</span>
+</div>
+</div>
+</div>
+<!-- Patient info for State 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-surface-container-low p-4 rounded-xl">
+<span class="font-caption text-caption text-on-surface-variant text-xs">Bệnh nhân</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">LÊ VĂN ĐƯỢC</p>
+<span class="font-caption text-caption text-on-surface">Nam • 71 Tuổi (1955) • Mã: BN-1955-0912</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl">
+<span class="font-caption text-caption text-on-surface-variant text-xs">Chi tiết giao thuốc</span>
+<p class="font-body-patient-bold text-body-patient-bold text-on-surface mt-1">Người nhận: Con gái Lê Thị Mai</p>
+<span class="font-caption text-caption text-on-surface-variant">Ký nhận điện tử: Đã lưu hồ sơ HIS</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl flex items-center justify-between">
+<div>
+<span class="font-caption text-caption text-on-surface-variant text-xs">Biên lai &amp; Đơn thuốc</span>
+<p class="font-badge-label text-badge-label text-primary mt-1">Đã khấu trừ kho dược BHYT</p>
+</div>
+<button class="px-3 py-2 rounded-lg bg-surface-container text-primary font-badge-label text-badge-label" type="button">
+            Xem lại lịch sử đơn
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION MINH HỌA PHỤ ĐỒNG THỜI: 2 TRẠNG THÁI CÒN LẠI DÀNH CHO HỘI ĐỒNG NGHIỆM THU -->
+<div class="mt-8 pt-6">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary text-[20px]">preview</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Mô phỏng đồng thời 2 trạng thái còn lại (Quy chuẩn B7 &amp; Phần C Đợt 5)</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Minh họa Trạng thái 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-secondary font-badge-label text-badge-label">
+              Trạng thái 2: Chưa thanh toán
+            </span>
+<span class="font-caption text-caption text-on-surface-variant text-xs">Ca BN: Phạm Thị Bích • DT-261026-0078</span>
+</div>
+<div class="flex items-start gap-4 mt-3">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[32px]">lock</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-secondary font-bold">ĐƠN THUỐC CHƯA THANH TOÁN VIỆN PHÍ</h4>
+<p class="font-caption text-caption text-on-surface mt-1">
+                Khóa quyền phát thuốc. Vui lòng hướng dẫn người bệnh hoặc người nhà đến Quầy thu ngân số 03 để hoàn tất viện phí trước khi nhận thuốc.
+              </p>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between bg-surface-container-low p-3 rounded-lg">
+<span class="font-caption text-caption text-on-surface-variant">Nút xác nhận phát thuốc: <strong>Vô hiệu hóa (Disabled)</strong></span>
+<span class="material-symbols-outlined text-secondary text-[20px]">block</span>
+</div>
+</div>
+<!-- Minh họa Trạng thái 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-badge-label text-badge-label">
+              Trạng thái 3: Đã phát trước đó
+            </span>
+<span class="font-caption text-caption text-on-surface-variant text-xs">Ca BN: Lê Văn Được • DT-261026-0068</span>
+</div>
+<div class="flex items-start gap-4 mt-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[32px]">info</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold">ĐƠN THUỐC ĐÃ ĐƯỢC PHÁT TRƯỚC ĐÓ</h4>
+<p class="font-caption text-caption text-on-surface mt-1">
+                Đơn thuốc này đã hoàn tất cấp phát lúc 08:10 ngày 26/10/2026 bởi Dược sĩ Ngô Văn Lộc. Không cấp phát trùng lặp.
+              </p>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between bg-surface-container-low p-3 rounded-lg">
+<span class="font-caption text-caption text-on-surface-variant">Lần phát: <strong>1/1 lần</strong> • Đã tích hợp sổ khám điện tử</span>
+<span class="material-symbols-outlined text-primary text-[20px]">check</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Switcher Script -->
+<script>
+  function switchState(stateNum) {
+    const s1 = document.getElementById('view-state-1');
+    const s2 = document.getElementById('view-state-2');
+    const s3 = document.getElementById('view-state-3');
+    
+    const b1 = document.getElementById('btn-tab-state1');
+    const b2 = document.getElementById('btn-tab-state2');
+    const b3 = document.getElementById('btn-tab-state3');
+
+    // Reset visibility
+    s1.classList.add('hidden');
+    s2.classList.add('hidden');
+    s3.classList.add('hidden');
+
+    // Reset tab active styling
+    [b1, b2, b3].forEach(b => {
+      b.className = 'px-3.5 py-2 rounded-lg font-badge-label text-badge-label text-on-surface-variant hover:text-on-surface flex items-center gap-1.5 transition-all';
+    });
+
+    if (stateNum === 1) {
+      s1.classList.remove('hidden');
+      b1.className = 'px-4 py-2 rounded-lg font-badge-label text-badge-label bg-surface-container-lowest text-primary shadow-sm flex items-center gap-1.5 transition-all';
+    } else if (stateNum === 2) {
+      s2.classList.remove('hidden');
+      b2.className = 'px-4 py-2 rounded-lg font-badge-label text-badge-label bg-surface-container-lowest text-secondary shadow-sm flex items-center gap-1.5 transition-all';
+    } else if (stateNum === 3) {
+      s3.classList.remove('hidden');
+      b3.className = 'px-4 py-2 rounded-lg font-badge-label text-badge-label bg-surface-container-lowest text-primary shadow-sm flex items-center gap-1.5 transition-all';
+    }
+  }
+
+  function confirmDispense() {
+    alert('Hệ thống HIS Nguyễn Tri Phương ghi nhận:\nĐã xuất kho và cấp phát thành công đơn thuốc DT-261026-0072 cho người bệnh NGUYỄN VĂN HÙNG.');
+  }
+
+  // Keyboard shortcut F4 support
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'F4') {
+      e.preventDefault();
+      confirmDispense();
+    }
+  });
+</script></main></div></body></html>

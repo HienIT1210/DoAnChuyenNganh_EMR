@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"secondary":"#bc0002","on-surface":"#031e2c","on-error":"#ffffff","outline":"#6f7881","on-primary-fixed-variant":"#004c6e","primary-fixed":"#c9e6ff","tertiary-fixed-dim":"#8fcef7","surface-container-highest":"#cde6f9","surface-variant":"#cde6f9","secondary-fixed":"#ffdad5","on-error-container":"#93000a","secondary-container":"#e2261a","on-background":"#031e2c","surface-container-low":"#eaf5ff","on-secondary-fixed":"#410000","surface-tint":"#006591","tertiary-fixed":"#c7e7ff","on-tertiary-fixed":"#001e2e","outline-variant":"#bec8d1","on-secondary-fixed-variant":"#930001","surface-bright":"#f5faff","on-primary-container":"#fcfcff","background":"#f5faff","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","surface":"#f5faff","surface-container-high":"#d2ecff","surface-dim":"#c4ddf0","tertiary-container":"#397ba1","tertiary":"#176287","surface-container":"#def0ff","on-primary":"#ffffff","on-tertiary-container":"#fcfcff","on-surface-variant":"#3f4850","primary-container":"#007cb1","inverse-on-surface":"#e4f3ff","inverse-surface":"#1b3342","on-primary-fixed":"#001e2f","primary":"#00628d","primary-fixed-dim":"#89ceff","on-secondary":"#ffffff","inverse-primary":"#89ceff","error-container":"#ffdad6","on-tertiary-fixed-variant":"#004c6c","secondary-fixed-dim":"#ffb4a8","on-secondary-container":"#fffbff","error":"#ba1a1a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1rem","gutter-md":"1.5rem","margin-lg":"3rem","space-xl":"2rem","margin-md":"2rem","gutter-lg":"2rem","space-lg":"1.5rem","space-sm":"0.5rem","space-md":"1rem","space-2xl":"3rem","gutter":"1rem","space-xs":"0.25rem"},"fontFamily":{"caption":["Be Vietnam Pro"],"badge-label":["Be Vietnam Pro"],"headline-xl":["Be Vietnam Pro"],"headline-xl-mobile":["Be Vietnam Pro"],"body-patient-bold":["Be Vietnam Pro"],"body-base-medium":["Be Vietnam Pro"],"body-patient-primary":["Be Vietnam Pro"],"body-base":["Be Vietnam Pro"],"headline-sm":["Be Vietnam Pro"],"headline-lg":["Be Vietnam Pro"],"button-text":["Be Vietnam Pro"],"body-patient-medium":["Be Vietnam Pro"],"headline-lg-mobile":["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"]},"fontSize":{"caption":["16px",{"lineHeight":"22px","fontWeight":"400"}],"badge-label":["14px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-patient-bold":["18px",{"lineHeight":"28px","fontWeight":"700"}],"body-base-medium":["16px",{"lineHeight":"24px","fontWeight":"500"}],"body-patient-primary":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-base":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"button-text":["18px",{"lineHeight":"24px","fontWeight":"700"}],"body-patient-medium":["18px",{"lineHeight":"28px","fontWeight":"500"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-base text-body-base text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(3,30,44,0.06)]"><div class="h-20 w-full px-8 flex items-center justify-between gap-6"><div class="flex items-center gap-8"><div class="h-11 px-4 bg-surface-container-lowest rounded-lg flex items-center gap-3 shadow-[0_1px_2px_rgba(11,37,51,0.08)]"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[22px]">local_hospital</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm leading-tight text-primary font-bold tracking-tight uppercase">BỆNH VIỆN NGUYỄN TRI PHƯƠNG</span><span class="text-[11px] font-medium tracking-widest text-on-surface-variant uppercase">Hệ Thống Y Tế &amp; Chăm Sóc Sức Khỏe Toàn Diện</span></div></div><nav class="hidden xl:flex items-center gap-2" data-active-classes="bg-primary-container text-on-primary-container font-body-patient-bold text-body-patient-bold rounded-lg px-4 py-2.5 shadow-sm"><a class="text-on-surface-variant hover:text-on-surface font-body-patient-medium text-body-patient-medium px-3.5 py-2 rounded-lg transition-colors" data-path="trang-chu" href="#">Trang chủ</a><a class="text-on-surface-variant hover:text-on-surface font-body-patient-medium text-body-patient-medium px-3.5 py-2 rounded-lg transition-colors" data-path="tong-quan-ho-so" href="#">Hồ sơ cá nhân</a><a class="text-on-surface-variant hover:text-on-surface font-body-patient-medium text-body-patient-medium px-3.5 py-2 rounded-lg transition-colors" data-path="dat-lich-kham" href="#">Đặt lịch khám</a></nav></div><div class="flex items-center gap-4"><div class="hidden md:flex items-center bg-surface-container-low rounded-lg p-1 gap-1" title="Điều chỉnh kích thước cỡ chữ dành cho người cao tuổi"><button aria-label="Cỡ chữ chuẩn" class="min-w-[40px] h-10 px-2.5 rounded font-body-patient-bold text-body-patient-bold text-on-surface hover:bg-surface-container-highest transition-colors flex items-center justify-center" type="button">A</button><button aria-label="Cỡ chữ lớn vừa" class="min-w-[40px] h-10 px-2.5 rounded font-body-patient-bold text-body-patient-bold text-on-surface hover:bg-surface-container-highest transition-colors flex items-center justify-center" type="button">A+</button><button aria-label="Cỡ chữ rất lớn" class="min-w-[40px] h-10 px-2.5 rounded font-body-patient-bold text-body-patient-bold text-on-surface hover:bg-surface-container-highest transition-colors flex items-center justify-center" type="button">A++</button></div><div class="relative flex items-center"><button aria-label="Thông báo y tế" class="w-12 h-12 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center transition-all" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span></button><span class="absolute top-2 right-2 w-3 h-3 bg-secondary rounded-full ring-2 ring-surface-container-lowest"></span></div><div class="h-8 w-px bg-outline-variant hidden sm:block"></div><div class="flex items-center gap-3 pl-1"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[22px]">person</span></div><div class="flex flex-col text-left"><span class="font-body-patient-bold text-body-patient-bold text-on-surface leading-tight">Nguyễn Văn Hùng</span><span class="font-caption text-caption text-on-surface-variant">68 tuổi • Nam</span></div></div></div></div></header><aside class="fixed left-0 top-20 bottom-0 w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(3,30,44,0.04)] z-40 overflow-y-auto"><div class="p-4 flex flex-col gap-1"><div class="px-3 py-2 text-caption font-caption text-on-surface-variant font-semibold tracking-wider uppercase">Mục hồ sơ sức khỏe</div><nav class="flex flex-col gap-1" data-active-classes="bg-primary text-on-primary font-body-patient-bold text-body-patient-bold shadow-sm"><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-body-patient-medium text-body-patient-medium text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="tong-quan-ho-so" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="">Tổng quan hồ sơ (PB-10)</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-body-patient-medium text-body-patient-medium text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="thong-tin-ca-nhan-y-te-nen" href="#"><span class="material-symbols-outlined text-[22px]">badge</span><span class="">Thông tin cá nhân &amp; y tế nền</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-body-patient-medium text-body-patient-medium text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="than-nhan" href="#"><span class="material-symbols-outlined text-[22px]">group</span><span class="">Thân nhân (PB-13)</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-body-patient-medium text-body-patient-medium text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="ho-so-kham" href="#"><span class="material-symbols-outlined text-[22px]">clinical_notes</span><span class="">Hồ sơ khám (PB-14)</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-body-patient-medium text-body-patient-medium text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="ket-qua-xet-nghiem" href="#"><span class="material-symbols-outlined text-[22px]">chips</span><span class="">Kết quả xét nghiệm (PB-15)</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-body-patient-medium text-body-patient-medium text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="don-thuoc" href="#"><span class="material-symbols-outlined text-[22px]">prescriptions</span><span class="">Đơn thuốc (PB-16)</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-body-patient-medium text-body-patient-medium text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="hoa-don-vien-phi" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="">Hóa đơn &amp; Viện phí (PB-17)</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-body-patient-medium text-body-patient-medium text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="bac-si-cua-toi" href="#"><span class="material-symbols-outlined text-[22px]">stethoscope</span><span class="">Bác sĩ của tôi (PB-18)</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-body-patient-medium text-body-patient-medium text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="giay-to-benh-vien" href="#"><span class="material-symbols-outlined text-[22px]">folder_shared</span><span class="">Giấy tờ bệnh viện (PB-19)</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-body-patient-medium text-body-patient-medium text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="bao-hiem-y-te" href="#"><span class="material-symbols-outlined text-[22px]">health_and_safety</span><span class="">Bảo hiểm y tế (PB-20)</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-body-patient-medium text-body-patient-medium text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="thong-bao-y-te" href="#"><span class="material-symbols-outlined text-[22px]">campaign</span><span class="">Thông báo y tế (PB-21)</span></a></nav><div class="mt-6 p-4 rounded-xl bg-surface-container-low flex flex-col gap-2"><div class="flex items-center gap-2 text-secondary"><span class="material-symbols-outlined text-[20px]">emergency</span><span class="font-body-patient-bold text-body-patient-bold">Cấp cứu 24/7</span></div><a class="font-headline-sm text-headline-sm font-bold text-secondary hover:underline" href="tel:115">115</a><span class="font-caption text-caption text-on-surface-variant">Gọi khẩn cấp khi người bệnh có dấu hiệu bất thường.</span></div></div></aside><div class="pl-72"><main class="pt-20 min-h-screen bg-background"><div class="flex flex-col w-full">
+<script>
+    (function highlightNav() {
+      const activeItem = document.querySelector('aside nav a[data-path="bao-hiem-y-te"]');
+      if (activeItem) {
+        activeItem.classList.remove('text-on-surface-variant', 'hover:bg-surface-container-low', 'hover:text-on-surface');
+        activeItem.classList.add('bg-primary', 'text-on-primary', 'font-body-patient-bold', 'shadow-sm');
+        const icon = activeItem.querySelector('.material-symbols-outlined');
+        if (icon) {
+          icon.style.fontVariationSettings = "'FILL' 1";
+        }
+      }
+    })();
+  </script>
+<div class="w-full max-w-[1200px] mx-auto px-6 py-8 flex flex-col gap-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div class="flex flex-col gap-2">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 font-caption text-caption text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[18px]">account_circle</span>
+<span>Hồ sơ cá nhân</span>
+</a>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="font-body-base-medium text-body-base-medium text-primary">Bảo hiểm y tế (PB-20)</span>
+</nav>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Thẻ Bảo hiểm y tế (BHYT) điện tử</h1>
+<p class="font-body-patient-primary text-body-patient-primary text-on-surface-variant max-w-3xl">
+          Tra cứu thông tin thẻ BHYT, kiểm tra thời hạn sử dụng, mức hưởng quyền lợi khám chữa bệnh và hướng dẫn thông tuyến KCB BHYT theo quy định của BHXH Việt Nam tại Bệnh viện Nguyễn Tri Phương.
+        </p>
+</div>
+<div class="flex items-center gap-3">
+<div class="bg-surface-container-low p-1.5 rounded-xl shadow-sm flex items-center gap-1">
+<span class="font-caption text-caption text-on-surface-variant px-2.5 font-medium hidden lg:inline">Chế độ xem mẫu:</span>
+<button class="px-3 py-2 rounded-lg font-badge-label text-badge-label bg-surface-container-lowest text-primary shadow-sm transition-all flex items-center gap-1.5" id="btn-demo-active" onclick="setInsuranceStatus('active')" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span> Còn hạn
+          </button>
+<button class="px-3 py-2 rounded-lg font-badge-label text-badge-label text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center gap-1.5" id="btn-demo-expiring" onclick="setInsuranceStatus('expiring')" type="button">
+<span class="material-symbols-outlined text-[18px]">schedule</span> Sắp hết hạn
+          </button>
+<button class="px-3 py-2 rounded-lg font-badge-label text-badge-label text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center gap-1.5" id="btn-demo-expired" onclick="setInsuranceStatus('expired')" type="button">
+<span class="material-symbols-outlined text-[18px]">error</span> Hết hạn
+          </button>
+</div>
+</div>
+</div>
+<!-- Notification Banner based on status -->
+<div class="rounded-xl p-5 bg-surface-container flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-sm transition-all" id="status-explanation-card">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-tertiary/15 text-tertiary flex items-center justify-center flex-shrink-0" id="status-icon-bubble">
+<span class="material-symbols-outlined text-[28px]" id="status-icon" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface" id="status-headline">Điều này có nghĩa là gì?</span>
+<span class="rounded-full px-3 py-1 font-badge-label text-badge-label bg-primary/10 text-primary flex items-center gap-1" id="badge-pill">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span id="badge-pill-text">Còn hạn sử dụng</span>
+</span>
+</div>
+<p class="font-body-patient-primary text-body-patient-primary text-on-surface-variant mt-1" id="status-description">
+            Thẻ BHYT của Bác đang có hiệu lực đầy đủ. Bác chỉ cần xuất trình mã QR trên thẻ hoặc CCCD gắn chip khi đến các quầy Kiosk tiếp nhận hoặc quầy đón tiếp tại Bệnh viện Nguyễn Tri Phương.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-tertiary">cloud_done</span> Đồng bộ VssID lúc 08:30 hôm nay
+        </span>
+</div>
+</div>
+<!-- Main Grid: 2 Columns scientific layout -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-8 items-start">
+<!-- LEFT COLUMN: Physical Digital Card & Core Actions (Col 7) -->
+<div class="xl:col-span-7 flex flex-col gap-6">
+<!-- The Virtual Insurance Card Canvas -->
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary via-primary-container to-tertiary text-on-primary p-6 md:p-8 shadow-xl flex flex-col justify-between min-h-[380px]">
+<!-- Watermark Cross Medical Emblem -->
+<div class="absolute -right-16 -top-16 opacity-10 pointer-events-none select-none">
+<svg fill="currentColor" height="340" viewbox="0 0 200 200" width="340">
+<rect height="180" rx="20" width="50" x="75" y="10"></rect>
+<rect height="50" rx="20" width="180" x="10" y="75"></rect>
+</svg>
+</div>
+<div class="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px] opacity-10 pointer-events-none"></div>
+<!-- Top Section of the Card -->
+<div class="relative z-10 flex items-start justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest/20 backdrop-blur flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[28px]">local_hospital</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-caption tracking-widest text-on-primary/80 uppercase font-semibold">BẢO HIỂM XÃ HỘI VIỆT NAM</span>
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-primary">THẺ BẢO HIỂM Y TẾ ĐIỆN TỬ</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest/20 backdrop-blur px-3 py-1.5 rounded-lg flex items-center gap-1.5 font-badge-label text-badge-label text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Đã xác thực CCCD</span>
+</div>
+</div>
+<!-- Mid Section: Masked Number & Information Layout -->
+<div class="relative z-10 my-6 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
+<div class="flex flex-col gap-3 flex-1">
+<div>
+<span class="font-caption text-caption text-on-primary/75 uppercase tracking-wide">Mã số thẻ BHYT (Ký hiệu GD-4)</span>
+<div class="flex items-center gap-3 mt-1">
+<span class="font-headline-lg text-headline-lg tracking-wider font-bold select-all" id="insurance-number">GD 4 79 *** *** 789</span>
+<button aria-label="Ẩn hiện số thẻ BHYT" class="w-10 h-10 rounded-full bg-surface-container-lowest/15 hover:bg-surface-container-lowest/30 text-on-primary flex items-center justify-center transition-all" onclick="toggleCardNumber()" type="button">
+<span class="material-symbols-outlined text-[22px]" id="visibility-icon">visibility</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-y-3 gap-x-4 pt-1">
+<div>
+<span class="font-caption text-caption text-on-primary/70">Họ và tên người bệnh</span>
+<p class="font-body-patient-bold text-body-patient-bold text-on-primary tracking-wide">NGUYỄN VĂN HÙNG</p>
+</div>
+<div>
+<span class="font-caption text-caption text-on-primary/70">Ngày sinh &amp; Giới tính</span>
+<p class="font-body-patient-medium text-body-patient-medium text-on-primary">12/03/1958 • Nam</p>
+</div>
+<div>
+<span class="font-caption text-caption text-on-primary/70">Số Căn cước công dân</span>
+<p class="font-body-patient-medium text-body-patient-medium text-on-primary font-mono">079 058 004 892</p>
+</div>
+<div>
+<span class="font-caption text-caption text-on-primary/70">Mức hưởng BHYT</span>
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-headline-sm text-headline-sm font-bold leading-none">95%</span>
+<span class="font-caption text-caption text-on-primary/90">(Nhóm hưu trí)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Integrated QR Container -->
+<div class="flex-shrink-0 flex flex-col items-center bg-surface-container-lowest p-3.5 rounded-2xl shadow-md text-on-surface">
+<!-- QR Code Vector Representation -->
+<svg aria-label="Mã QR tra cứu thẻ BHYT tại Kiosk" class="w-[150px] h-[150px]" height="150" viewbox="0 0 150 150" width="150">
+<rect fill="#FFFFFF" height="150" width="150"></rect>
+<!-- Top-Left Finder -->
+<rect fill="#00628d" height="36" rx="4" width="36" x="10" y="10"></rect>
+<rect fill="#ffffff" height="24" rx="2" width="24" x="16" y="16"></rect>
+<rect fill="#00628d" height="12" rx="1" width="12" x="22" y="22"></rect>
+<!-- Top-Right Finder -->
+<rect fill="#00628d" height="36" rx="4" width="36" x="104" y="10"></rect>
+<rect fill="#ffffff" height="24" rx="2" width="24" x="110" y="16"></rect>
+<rect fill="#00628d" height="12" rx="1" width="12" x="116" y="22"></rect>
+<!-- Bottom-Left Finder -->
+<rect fill="#00628d" height="36" rx="4" width="36" x="10" y="104"></rect>
+<rect fill="#ffffff" height="24" rx="2" width="24" x="16" y="110"></rect>
+<rect fill="#00628d" height="12" rx="1" width="12" x="22" y="116"></rect>
+<!-- QR Pattern data bits -->
+<rect fill="#031e2c" height="8" width="8" x="54" y="12"></rect>
+<rect fill="#031e2c" height="8" width="16" x="70" y="12"></rect>
+<rect fill="#031e2c" height="8" width="16" x="54" y="28"></rect>
+<rect fill="#031e2c" height="8" width="8" x="78" y="28"></rect>
+<rect fill="#031e2c" height="8" width="8" x="12" y="54"></rect>
+<rect fill="#031e2c" height="8" width="16" x="28" y="54"></rect>
+<rect fill="#00628d" height="8" width="8" x="54" y="54"></rect>
+<rect fill="#031e2c" height="8" width="8" x="70" y="54"></rect>
+<rect fill="#031e2c" height="8" width="16" x="86" y="54"></rect>
+<rect fill="#031e2c" height="8" width="8" x="110" y="54"></rect>
+<rect fill="#031e2c" height="8" width="14" x="126" y="54"></rect>
+<rect fill="#031e2c" height="8" width="16" x="12" y="70"></rect>
+<rect fill="#031e2c" height="8" width="8" x="36" y="70"></rect>
+<rect fill="#031e2c" height="8" width="16" x="54" y="70"></rect>
+<rect fill="#031e2c" height="8" width="16" x="78" y="70"></rect>
+<rect fill="#031e2c" height="8" width="8" x="102" y="70"></rect>
+<rect fill="#031e2c" height="8" width="22" x="118" y="70"></rect>
+<rect fill="#031e2c" height="8" width="8" x="12" y="86"></rect>
+<rect fill="#031e2c" height="8" width="8" x="28" y="86"></rect>
+<rect fill="#031e2c" height="8" width="8" x="44" y="86"></rect>
+<rect fill="#031e2c" height="8" width="16" x="62" y="86"></rect>
+<rect fill="#031e2c" height="8" width="8" x="86" y="86"></rect>
+<rect fill="#031e2c" height="8" width="16" x="102" y="86"></rect>
+<rect fill="#031e2c" height="8" width="14" x="126" y="86"></rect>
+<rect fill="#031e2c" height="8" width="16" x="54" y="102"></rect>
+<rect fill="#031e2c" height="8" width="8" x="78" y="102"></rect>
+<rect fill="#031e2c" height="8" width="16" x="94" y="102"></rect>
+<rect fill="#031e2c" height="8" width="22" x="118" y="102"></rect>
+<rect fill="#031e2c" height="8" width="8" x="54" y="118"></rect>
+<rect fill="#031e2c" height="8" width="16" x="70" y="118"></rect>
+<rect fill="#031e2c" height="8" width="8" x="94" y="118"></rect>
+<rect fill="#031e2c" height="8" width="16" x="110" y="118"></rect>
+<rect fill="#031e2c" height="8" width="24" x="54" y="134"></rect>
+<rect fill="#031e2c" height="8" width="8" x="86" y="134"></rect>
+<rect fill="#031e2c" height="8" width="24" x="102" y="134"></rect>
+</svg>
+<span class="font-caption text-[12px] leading-tight text-on-surface-variant font-medium mt-1">Quét tại Kiosk BV</span>
+</div>
+</div>
+<!-- Bottom Section: Hospital & Validity Date -->
+<div class="relative z-10 pt-4 border-t border-on-primary/20 flex flex-col md:flex-row md:items-end justify-between gap-3 text-on-primary/90 font-caption text-caption">
+<div class="flex flex-col">
+<span class="text-on-primary/70">Nơi đăng ký KCB ban đầu:</span>
+<span class="font-body-patient-bold text-body-patient-bold text-on-primary">79-026: BỆNH VIỆN NGUYỄN TRI PHƯƠNG</span>
+</div>
+<div class="flex flex-col md:text-right">
+<span class="text-on-primary/70">Giá trị sử dụng:</span>
+<span class="font-body-patient-bold text-body-patient-bold text-on-primary" id="card-validity-text">01/01/2021 đến 31/12/2026</span>
+<span class="text-primary-fixed text-[13px] font-medium">Đủ 05 năm liên tục từ: 01/01/2019</span>
+</div>
+</div>
+</div>
+<!-- Buttons Row adhering to Section B/C Rules: exactly ONE solid red primary conversion button -->
+<div class="flex flex-wrap items-center gap-4">
+<button class="min-h-[52px] px-6 py-3 rounded-xl bg-secondary text-on-secondary font-button-text text-button-text shadow-md hover:bg-secondary-container active:scale-[0.98] transition-all flex items-center justify-center gap-2.5 flex-1 sm:flex-initial" onclick="downloadInsuranceCardPDF()" type="button">
+<span class="material-symbols-outlined text-[22px]">download</span>
+<span>Tải thẻ BHYT điện tử (PDF)</span>
+</button>
+<button class="min-h-[48px] px-5 py-3 rounded-xl bg-surface-container-low text-primary font-body-patient-bold text-body-patient-bold shadow-sm hover:bg-surface-container hover:text-on-surface transition-all flex items-center justify-center gap-2" id="btn-sync" onclick="syncVNeID()" type="button">
+<span class="material-symbols-outlined text-[22px]" id="sync-icon">sync</span>
+<span>Đồng bộ lại từ VNeID / VssID</span>
+</button>
+<button class="min-h-[48px] px-4 py-3 rounded-xl bg-surface-container-lowest text-on-surface-variant font-body-base-medium text-body-base-medium hover:bg-surface-container-low transition-all flex items-center gap-2 shadow-sm" onclick="showKioskInstructions()" type="button">
+<span class="material-symbols-outlined text-[20px]">qr_code_scanner</span>
+<span>Hướng dẫn quét tại viện</span>
+</button>
+</div>
+<!-- Detailed Benefits Matrix Breakdown Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">policy</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Quyền lợi &amp; Mức thanh toán BHYT</h2>
+</div>
+<span class="font-badge-label text-badge-label px-3 py-1 rounded-full bg-surface-container text-tertiary">
+              Quy định BHXH hiện hành
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Metric 1: BHYT Pays -->
+<div class="bg-surface-container-low rounded-xl p-4 flex flex-col justify-between gap-3">
+<div class="flex items-center justify-between text-tertiary">
+<span class="font-body-base-medium text-body-base-medium">BHYT chi trả</span>
+<span class="material-symbols-outlined text-[20px]">savings</span>
+</div>
+<div>
+<span class="font-headline-xl text-headline-xl font-bold text-primary">95%</span>
+<p class="font-caption text-caption text-on-surface-variant mt-1 leading-snug">
+                  Trong danh mục thuốc, vật tư y tế và dịch vụ kỹ thuật được quỹ BHYT duyệt.
+                </p>
+</div>
+</div>
+<!-- Metric 2: Patient Co-payment -->
+<div class="bg-surface-container-low rounded-xl p-4 flex flex-col justify-between gap-3">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-body-base-medium text-body-base-medium">Đồng chi trả</span>
+<span class="material-symbols-outlined text-[20px]">person_outline</span>
+</div>
+<div>
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">5%</span>
+<p class="font-caption text-caption text-on-surface-variant mt-1 leading-snug">
+                  Người bệnh chỉ chi trả tối đa 5% chi phí KCB phát sinh trong danh mục BHYT.
+                </p>
+</div>
+</div>
+<!-- Metric 3: 5 Years Consecutive Condition -->
+<div class="bg-surface-container-high rounded-xl p-4 flex flex-col justify-between gap-3">
+<div class="flex items-center justify-between text-primary">
+<span class="font-body-base-medium text-body-base-medium">Hưởng 100% khi</span>
+<span class="material-symbols-outlined text-[20px]">stars</span>
+</div>
+<div>
+<span class="font-headline-lg text-headline-lg font-bold text-primary">Đủ 5 năm +</span>
+<p class="font-caption text-caption text-on-surface-variant mt-1 leading-snug">
+                  Tổng chi phí cùng chi trả trong năm &gt; 6 tháng lương cơ sở.
+                </p>
+</div>
+</div>
+</div>
+<!-- Deep-dive explanatory blocks for elderly readability -->
+<div class="flex flex-col gap-4 font-body-patient-primary text-body-patient-primary text-on-surface-variant">
+<div class="bg-surface-container-low/70 p-4 rounded-xl flex items-start gap-3">
+<span class="material-symbols-outlined text-[22px] text-primary flex-shrink-0 mt-0.5">alt_route</span>
+<div class="flex flex-col">
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface">Quy định thông tuyến KCB BHYT tại Bệnh viện Nguyễn Tri Phương</span>
+<p class="font-caption text-caption text-on-surface-variant mt-1">
+                  Người bệnh có BHYT đăng ký ban đầu tại BV Nguyễn Tri Phương được KCB hưởng trọn vẹn 95%. Trường hợp bệnh nhân từ các cơ sở y tế tuyến dưới hoặc quận/huyện chuyển lên cần có <strong>Giấy chuyển viện (Mẫu số 14)</strong> hợp lệ hoặc trong trường hợp cấp cứu để được hưởng chế độ đúng tuyến.
+                </p>
+</div>
+</div>
+<div class="bg-surface-container-low/70 p-4 rounded-xl flex items-start gap-3">
+<span class="material-symbols-outlined text-[22px] text-tertiary flex-shrink-0 mt-0.5">verified</span>
+<div class="flex flex-col">
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface">Quyền lợi miễn cùng chi trả (Quy định 5 năm liên tục)</span>
+<p class="font-caption text-caption text-on-surface-variant mt-1">
+                  Bác Nguyễn Văn Hùng đã tham gia BHYT đủ 05 năm liên tục từ 01/01/2019. Nếu số tiền đồng chi trả 5% trong năm 2026 vượt quá <strong>14.040.000 đ</strong> (tương đương 6 tháng lương cơ sở), Quý Bác mang hóa đơn gốc đến Cơ quan BHXH Quận 5 hoặc Phòng Tài chính BV để nhận <em>Giấy miễn cùng chi trả trong năm</em> và được hưởng 100% viện phí.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Recent Claims History & Assistance (Col 5) -->
+<div class="xl:col-span-5 flex flex-col gap-6">
+<!-- History of BHYT Usage -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-tertiary/10 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">receipt_long</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Lịch sử dùng thẻ gần đây</h3>
+<span class="font-caption text-caption text-on-surface-variant">Chi trả thực tế tại BV Nguyễn Tri Phương</span>
+</div>
+</div>
+<a class="font-caption text-caption text-primary hover:underline font-medium" href="#">Xem tất cả</a>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Usage 1: Today / Latest -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-3 transition-colors hover:bg-surface-container">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary flex-shrink-0"></span>
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface">Khoa Nội Tiêu hóa</span>
+</div>
+<span class="font-caption text-caption px-2 py-0.5 rounded bg-surface-container-highest font-medium text-primary">26/10/2026 (Hôm nay)</span>
+</div>
+<div class="grid grid-cols-2 gap-2 font-caption text-caption pt-1 border-t border-outline-variant/30">
+<div>
+<span class="text-on-surface-variant block">BHYT chi trả (95%):</span>
+<span class="font-body-patient-bold text-body-patient-bold text-primary">1.075.400 đ</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Bác đồng chi trả (5%):</span>
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface">128.300 đ</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-[13px] font-caption text-on-surface-variant">
+<span>BS khám: BSCKII. Trần Thu Dung</span>
+<span class="font-medium text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span> Đã quyết toán
+                </span>
+</div>
+</div>
+<!-- Usage 2 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest flex flex-col gap-3 shadow-sm hover:bg-surface-container-low transition-colors">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-outline flex-shrink-0"></span>
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface">Khoa Khám Ngoại trú</span>
+</div>
+<span class="font-caption text-caption px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">14/10/2026</span>
+</div>
+<div class="grid grid-cols-2 gap-2 font-caption text-caption pt-1 border-t border-outline-variant/30">
+<div>
+<span class="text-on-surface-variant block">BHYT chi trả (95%):</span>
+<span class="font-body-patient-bold text-body-patient-bold text-primary">620.000 đ</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Bác đồng chi trả (5%):</span>
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface">32.600 đ</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-[13px] font-caption text-on-surface-variant">
+<span>Chụp X-quang cột sống + Thuốc định kỳ</span>
+<span class="font-medium text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span> Đã quyết toán
+                </span>
+</div>
+</div>
+<!-- Usage 3 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest flex flex-col gap-3 shadow-sm hover:bg-surface-container-low transition-colors">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-outline flex-shrink-0"></span>
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface">Khoa Mắt (Khám mắt định kỳ)</span>
+</div>
+<span class="font-caption text-caption px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant">12/05/2026</span>
+</div>
+<div class="grid grid-cols-2 gap-2 font-caption text-caption pt-1 border-t border-outline-variant/30">
+<div>
+<span class="text-on-surface-variant block">BHYT chi trả (95%):</span>
+<span class="font-body-patient-bold text-body-patient-bold text-primary">450.000 đ</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Bác đồng chi trả (5%):</span>
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface">23.500 đ</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-[13px] font-caption text-on-surface-variant">
+<span>Đo nhãn áp &amp; cấp thuốc nhỏ mắt</span>
+<span class="font-medium text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span> Đã quyết toán
+                </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Help, Extension & Hotline Card for Elderly Accessibility -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-5">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Hỗ trợ gia hạn &amp; Thắc mắc BHYT</h3>
+<span class="font-caption text-caption text-on-surface-variant">Tư vấn viên sẵn sàng phục vụ người cao tuổi</span>
+</div>
+</div>
+<div class="flex flex-col gap-3 font-body-patient-primary text-body-patient-primary text-on-surface-variant">
+<p>
+              Nếu thẻ BHYT sắp hết hạn hoặc thông tin cá nhân trên thẻ có sai lệch (sai họ tên, ngày sinh, nơi KCB ban đầu), Bác hoặc người nhà có thể liên hệ ngay:
+            </p>
+<div class="flex flex-col gap-2.5 mt-1">
+<!-- Hotline BV -->
+<a class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex items-center justify-between text-on-surface" href="tel:02839234332">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+</div>
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Tổ BHYT - BV Nguyễn Tri Phương</span>
+<span class="font-body-patient-bold text-body-patient-bold text-primary">028 3923 4332 (Nhánh 104)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</a>
+<!-- Hotline BHXH TP.HCM -->
+<a class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex items-center justify-between text-on-surface" href="tel:19009068">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">headset_mic</span>
+</div>
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Tổng đài Chăm sóc khách hàng BHXH VN</span>
+<span class="font-body-patient-bold text-body-patient-bold text-tertiary">1900 9068</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</a>
+</div>
+<!-- Step by step guidance for renewal -->
+<div class="mt-2 pt-3 border-t border-outline-variant/30 flex flex-col gap-2 font-caption text-caption">
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface">Quy trình cấp đổi/gia hạn nhanh:</span>
+<ul class="flex flex-col gap-1.5 list-none text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary mt-0.5">counter_1</span>
+<span>Mở ứng dụng <strong>VNeID</strong> (Mức 2) hoặc <strong>VssID</strong> trên điện thoại thông minh.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary mt-0.5">counter_2</span>
+<span>Hoặc liên hệ Đại lý thu BHXH Phường nơi cư trú để đóng tiếp hạn mức kỳ tiếp theo trước khi hết hạn 15 ngày.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary mt-0.5">counter_3</span>
+<span>Đến trực tiếp Quầy số 03 - Phòng Công tác xã hội BV Nguyễn Tri Phương để được hỗ trợ thao tác.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal / Floating Notice Script & Status State Handling -->
+<script>
+    let isCardMasked = true;
+    const fullNumber = 'GD 4 79 123 456 789';
+    const maskedNumber = 'GD 4 79 *** *** 789';
+
+    function toggleCardNumber() {
+      const numberEl = document.getElementById('insurance-number');
+      const iconEl = document.getElementById('visibility-icon');
+      if (isCardMasked) {
+        numberEl.innerText = fullNumber;
+        iconEl.innerText = 'visibility_off';
+        isCardMasked = false;
+      } else {
+        numberEl.innerText = maskedNumber;
+        iconEl.innerText = 'visibility';
+        isCardMasked = true;
+      }
+    }
+
+    function setInsuranceStatus(status) {
+      const btnActive = document.getElementById('btn-demo-active');
+      const btnExpiring = document.getElementById('btn-demo-expiring');
+      const btnExpired = document.getElementById('btn-demo-expired');
+
+      const cardExplanation = document.getElementById('status-explanation-card');
+      const iconBubble = document.getElementById('status-icon-bubble');
+      const iconEl = document.getElementById('status-icon');
+      const badgePill = document.getElementById('badge-pill');
+      const badgePillText = document.getElementById('badge-pill-text');
+      const headline = document.getElementById('status-headline');
+      const desc = document.getElementById('status-description');
+      const validityEl = document.getElementById('card-validity-text');
+
+      // Reset button styles
+      [btnActive, btnExpiring, btnExpired].forEach(b => {
+        b.className = 'px-3 py-2 rounded-lg font-badge-label text-badge-label text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center gap-1.5';
+      });
+
+      if (status === 'active') {
+        btnActive.className = 'px-3 py-2 rounded-lg font-badge-label text-badge-label bg-surface-container-lowest text-primary shadow-sm transition-all flex items-center gap-1.5';
+        cardExplanation.className = 'rounded-xl p-5 bg-surface-container flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-sm transition-all';
+        iconBubble.className = 'w-12 h-12 rounded-xl bg-tertiary/15 text-tertiary flex items-center justify-center flex-shrink-0';
+        iconEl.innerText = 'verified';
+        badgePill.className = 'rounded-full px-3 py-1 font-badge-label text-badge-label bg-primary/10 text-primary flex items-center gap-1';
+        badgePillText.innerText = 'Còn hạn sử dụng';
+        headline.innerText = 'Điều này có nghĩa là gì?';
+        desc.innerText = 'Thẻ BHYT của Bác đang có hiệu lực đầy đủ. Bác chỉ cần xuất trình mã QR trên thẻ hoặc CCCD gắn chip khi đến các quầy Kiosk tiếp nhận hoặc quầy đón tiếp tại Bệnh viện Nguyễn Tri Phương.';
+        validityEl.innerText = '01/01/2021 đến 31/12/2026';
+      } else if (status === 'expiring') {
+        btnExpiring.className = 'px-3 py-2 rounded-lg font-badge-label text-badge-label bg-surface-container-lowest text-tertiary-container shadow-sm transition-all flex items-center gap-1.5';
+        cardExplanation.className = 'rounded-xl p-5 bg-surface-container-high flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-sm transition-all';
+        iconBubble.className = 'w-12 h-12 rounded-xl bg-tertiary-fixed text-tertiary-container flex items-center justify-center flex-shrink-0';
+        iconEl.innerText = 'schedule';
+        badgePill.className = 'rounded-full px-3 py-1 font-badge-label text-badge-label bg-tertiary-fixed text-on-tertiary-fixed flex items-center gap-1';
+        badgePillText.innerText = 'Sắp hết hạn (Còn 15 ngày)';
+        headline.innerText = 'Thẻ BHYT sắp hết hiệu lực';
+        desc.innerText = 'Thẻ BHYT của Bác sẽ hết hiệu lực vào ngày 10/11/2026. Bác vui lòng liên hệ cơ quan BHXH hoặc người thân hỗ trợ gia hạn qua ứng dụng VssID / VNeID để không gián đoạn quyền lợi KCB.';
+        validityEl.innerText = '01/01/2021 đến 10/11/2026';
+      } else if (status === 'expired') {
+        btnExpired.className = 'px-3 py-2 rounded-lg font-badge-label text-badge-label bg-surface-container-lowest text-secondary shadow-sm transition-all flex items-center gap-1.5';
+        cardExplanation.className = 'rounded-xl p-5 bg-error-container/40 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-sm transition-all';
+        iconBubble.className = 'w-12 h-12 rounded-xl bg-error-container text-error flex items-center justify-center flex-shrink-0';
+        iconEl.innerText = 'warning';
+        badgePill.className = 'rounded-full px-3 py-1 font-badge-label text-badge-label bg-error-container text-on-error-container flex items-center gap-1';
+        badgePillText.innerText = 'Thẻ đã hết hạn';
+        headline.innerText = 'Thẻ BHYT đã hết giá trị sử dụng';
+        desc.innerText = 'Thẻ BHYT đã hết hạn từ ngày 15/10/2026. Nếu đi khám bệnh hôm nay, Bác sẽ phải tự chi trả 100% viện phí theo diện Khám dịch vụ. Xin vui lòng liên hệ Quầy tiếp nhận số 03 để được hỗ trợ.';
+        validityEl.innerText = '01/01/2021 đến 15/10/2026 (Đã hết hạn)';
+      }
+    }
+
+    function syncVNeID() {
+      const btn = document.getElementById('btn-sync');
+      const icon = document.getElementById('sync-icon');
+      icon.classList.add('animate-spin');
+      btn.setAttribute('disabled', 'true');
+      setTimeout(() => {
+        icon.classList.remove('animate-spin');
+        btn.removeAttribute('disabled');
+        alert('Đã cập nhật dữ liệu thẻ BHYT mới nhất từ Cơ sở dữ liệu Quốc gia về Bảo hiểm.');
+      }, 1200);
+    }
+
+    function downloadInsuranceCardPDF() {
+      alert('Hệ thống đang xuất thẻ BHYT điện tử dạng file PDF có chữ ký số của Bệnh viện Nguyễn Tri Phương. Bản in có giá trị tương đương thẻ giấy.');
+    }
+
+    function showKioskInstructions() {
+      alert('Khi đến viện: 1. Đến Kiosk Thông Minh tại sảnh tiếp nhận. 2. Chọn "Quét thẻ BHYT/CCCD". 3. Đưa mã QR trên màn hình này vào đầu đọc quang học của máy. 4. Nhận số thứ tự khám tự động.');
+    }
+  </script>
+</div></main><footer class="w-full bg-[#00587C] text-white py-10"><div class="max-w-[1200px] mx-auto px-6 flex flex-col gap-8"><div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-white/15"><div><h2 class="font-headline-sm text-headline-sm text-white font-bold tracking-tight uppercase">BỆNH VIỆN NGUYỄN TRI PHƯƠNG</h2><p class="font-body-patient-medium text-body-patient-medium text-white/80 mt-1 italic">"Năng động - Thân thiện - Phát triển"</p></div><div class="flex items-center gap-6 flex-wrap"><div class="flex items-center gap-3 bg-white/10 px-4 py-2.5 rounded-xl"><span class="material-symbols-outlined text-[28px] text-white">emergency</span><div><div class="text-xs text-white/70 uppercase font-medium">Cấp cứu khẩn cấp</div><a class="text-lg font-bold text-white tracking-wide hover:underline" href="tel:115">115</a></div></div><div class="flex items-center gap-3 bg-white/10 px-4 py-2.5 rounded-xl"><span class="material-symbols-outlined text-[28px] text-white">call</span><div><div class="text-xs text-white/70 uppercase font-medium">Tổng đài tư vấn</div><a class="text-lg font-bold text-white tracking-wide hover:underline" href="tel:19001234">1900 1234</a></div></div></div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-6 font-body-base text-body-base text-white/90"><div><h3 class="font-body-patient-bold text-body-patient-bold text-white mb-2 flex items-center gap-2"><span class="material-symbols-outlined text-[20px]">schedule</span>Giờ làm việc khám bệnh</h3><p class="font-caption text-caption text-white/80">Thứ Hai - Thứ Sáu: 06:30 - 16:30<br/>Thứ Bảy: 07:00 - 11:30<br/>Khoa Cấp cứu: Trực 24/24 tất cả các ngày</p></div><div><h3 class="font-body-patient-bold text-body-patient-bold text-white mb-2 flex items-center gap-2"><span class="material-symbols-outlined text-[20px]">location_on</span>Địa chỉ bệnh viện</h3><p class="font-caption text-caption text-white/80">468 Nguyễn Trãi, Phường 8, Quận 5, TP. Hồ Chí Minh<br/>Email: contact@bvnguyentriphuong.com.vn</p></div><div><h3 class="font-body-patient-bold text-body-patient-bold text-white mb-2 flex items-center gap-2"><span class="material-symbols-outlined text-[20px]">info</span>Ghi chú hệ thống</h3><p class="font-caption text-caption text-white/80">Dữ liệu mẫu - Bệnh viện Nguyễn Tri Phương.<br/>Cổng thông tin phục vụ theo dõi hồ sơ y khoa điện tử và chăm sóc sức khỏe người bệnh.</p></div></div><div class="pt-4 text-center font-caption text-caption text-white/70">© 2024 Bệnh viện Nguyễn Tri Phương. Bảo lưu mọi quyền.</div></div></footer></div>
+</body></html>

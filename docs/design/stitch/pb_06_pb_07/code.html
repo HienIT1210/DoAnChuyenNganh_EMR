@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Cổng thông tin người bệnh - Bệnh viện Nguyễn Tri Phương</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-container":"#fffbff","on-primary-fixed":"#001e2f","secondary-container":"#e2261a","tertiary":"#176287","secondary-fixed":"#ffdad5","on-surface-variant":"#3f4850","tertiary-fixed":"#c7e7ff","inverse-surface":"#1b3342","inverse-on-surface":"#e4f3ff","secondary-fixed-dim":"#ffb4a8","outline-variant":"#bec8d1","error":"#ba1a1a","on-tertiary-container":"#fcfcff","surface-variant":"#cde6f9","on-secondary-fixed":"#410000","surface-bright":"#f5faff","primary":"#00628d","surface-container":"#def0ff","inverse-primary":"#89ceff","on-error-container":"#93000a","on-error":"#ffffff","tertiary-fixed-dim":"#8fcef7","surface":"#f5faff","background":"#f5faff","on-tertiary":"#ffffff","on-primary":"#ffffff","on-secondary-fixed-variant":"#930001","tertiary-container":"#397ba1","surface-container-low":"#eaf5ff","secondary":"#bc0002","primary-fixed-dim":"#89ceff","surface-dim":"#c4ddf0","on-primary-container":"#fcfcff","surface-container-high":"#d2ecff","surface-container-lowest":"#ffffff","primary-fixed":"#c9e6ff","on-secondary":"#ffffff","surface-container-highest":"#cde6f9","on-primary-fixed-variant":"#004c6e","surface-tint":"#006591","on-tertiary-fixed":"#001e2e","error-container":"#ffdad6","outline":"#6f7881","on-tertiary-fixed-variant":"#004c6c","on-background":"#031e2c","on-surface":"#031e2c","primary-container":"#007cb1"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-md":"1.5rem","space-lg":"1.5rem",gutter:"1rem",margin:"1rem","space-md":"1rem","space-xl":"2rem","margin-lg":"3rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter-lg":"2rem","space-2xl":"3rem","margin-md":"2rem"},fontFamily:{"headline-xl-mobile":["Be Vietnam Pro"],"headline-lg-mobile":["Be Vietnam Pro"],"body-patient-primary":["Be Vietnam Pro"],caption:["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"],"body-base":["Be Vietnam Pro"],"body-base-medium":["Be Vietnam Pro"],"button-text":["Be Vietnam Pro"],"headline-xl":["Be Vietnam Pro"],"headline-lg":["Be Vietnam Pro"],"headline-sm":["Be Vietnam Pro"],"body-patient-medium":["Be Vietnam Pro"],"body-patient-bold":["Be Vietnam Pro"],"badge-label":["Be Vietnam Pro"]},fontSize:{"headline-xl-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-patient-primary":["18px",{lineHeight:"28px",fontWeight:"400"}],caption:["16px",{lineHeight:"22px",fontWeight:"400"}],"headline-md":["22px",{lineHeight:"30px",fontWeight:"600"}],"body-base":["16px",{lineHeight:"24px",fontWeight:"400"}],"body-base-medium":["16px",{lineHeight:"24px",fontWeight:"500"}],"button-text":["18px",{lineHeight:"24px",fontWeight:"700"}],"headline-xl":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"body-patient-medium":["18px",{lineHeight:"28px",fontWeight:"500"}],"body-patient-bold":["18px",{lineHeight:"28px",fontWeight:"700"}],"badge-label":["14px",{lineHeight:"18px",letterSpacing:"0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-base text-on-surface min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-6 flex items-center justify-between"><div class="flex items-center gap-3 shrink-0"><div class="h-11 w-11 rounded-lg bg-surface-container-lowest border border-outline-variant flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined text-[28px]">local_hospital</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">BV NGUYỄN TRI PHƯƠNG</span><span class="font-caption text-caption text-on-surface-variant font-medium leading-none">Cổng thông tin người bệnh</span></div></div><nav class="hidden md:flex items-center gap-2 h-full" data-active-classes="bg-surface-container-high text-primary font-bold border-b-2 border-primary rounded-t-lg"><a class="px-5 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-body-patient-medium text-body-patient-medium transition-colors" data-path="trang-chu" href="#">Trang chủ</a><a class="px-5 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-body-patient-medium text-body-patient-medium transition-colors" data-path="ho-so-ca-nhan" href="#">Hồ sơ cá nhân</a><a class="px-5 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-body-patient-medium text-body-patient-medium transition-colors" data-path="dat-lich-kham" href="#">Đặt lịch khám</a></nav><div class="flex items-center gap-4 shrink-0"><div class="flex items-center bg-surface-container-low rounded-lg p-1 border border-outline-variant"><button class="px-2.5 py-1 text-xs font-bold text-on-surface hover:bg-surface-container-highest rounded transition-colors" title="Cỡ chữ tiêu chuẩn" type="button">A</button><button class="px-2.5 py-1 text-sm font-bold text-on-surface hover:bg-surface-container-highest rounded transition-colors" title="Cỡ chữ lớn" type="button">A+</button><button class="px-2.5 py-1 text-base font-bold text-on-surface hover:bg-surface-container-highest rounded transition-colors" title="Cỡ chữ rất lớn" type="button">A++</button></div><button class="relative p-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Thông báo" type="button"><span class="material-symbols-outlined text-[26px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-secondary rounded-full ring-2 ring-surface-container-lowest"></span></button><div class="h-8 w-px bg-outline-variant"></div><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-surface-container-high border border-outline-variant flex items-center justify-center text-primary font-bold text-sm select-none">NH</div><div class="hidden lg:flex flex-col text-left"><span class="font-body-base-medium text-body-base-medium text-on-surface leading-tight font-semibold">Nguyễn Văn Hùng</span><span class="font-caption text-caption text-on-surface-variant text-xs">68 tuổi</span></div><button class="flex items-center gap-1 pl-2 text-on-surface-variant hover:text-secondary transition-colors" title="Đăng xuất" type="button"><span class="material-symbols-outlined text-[22px]">logout</span></button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 flex-1"><div class="max-w-[1200px] mx-auto px-6 py-8"><div class="flex flex-col w-full">
+<!-- Stepper Bar (5 Steps: 1, 2, 3 Done, 4 Active, 5 Next) -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-6 shadow-sm mb-8">
+<div class="flex items-center justify-between relative max-w-4xl mx-auto">
+<div class="absolute top-1/2 left-0 w-full h-1 bg-surface-container -translate-y-1/2 z-0"></div>
+<div class="absolute top-1/2 left-0 w-[78%] h-1 bg-primary -translate-y-1/2 z-0 transition-all duration-500"></div>
+<!-- Step 1 -->
+<div class="relative z-10 flex flex-col items-center gap-2">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-body-patient-bold shadow-sm">
+<span class="material-symbols-outlined text-[24px]">check</span>
+</div>
+<span class="font-badge-label text-badge-label text-primary font-bold text-center">1. Đối tượng</span>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10 flex flex-col items-center gap-2">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-body-patient-bold shadow-sm">
+<span class="material-symbols-outlined text-[24px]">check</span>
+</div>
+<span class="font-badge-label text-badge-label text-primary font-bold text-center">2. Loại khám</span>
+</div>
+<!-- Step 3 -->
+<div class="relative z-10 flex flex-col items-center gap-2">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-body-patient-bold shadow-sm">
+<span class="material-symbols-outlined text-[24px]">check</span>
+</div>
+<span class="font-badge-label text-badge-label text-primary font-bold text-center">3. Chuyên khoa</span>
+</div>
+<!-- Step 4 (Current) -->
+<div class="relative z-10 flex flex-col items-center gap-2">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-body-patient-bold ring-4 ring-primary/20 shadow-md">
+          4
+        </div>
+<span class="font-badge-label text-badge-label text-primary font-bold text-center">4. Ngày &amp; Giờ</span>
+</div>
+<!-- Step 5 (Confirmation) -->
+<div class="relative z-10 flex flex-col items-center gap-2">
+<div class="w-12 h-12 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-bold text-body-patient-bold">
+          5
+        </div>
+<span class="font-badge-label text-badge-label text-on-surface-variant font-medium text-center">5. Xác nhận</span>
+</div>
+</div>
+</section>
+<!-- Main 2-Column Content Layout (Left: 720px equivalent, Right: Summary Card) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT COLUMN (Span 8 - ~720px) -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<!-- Selected Specialty Ribbon -->
+<div class="bg-surface-container-low rounded-xl p-6 shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[28px]">medical_services</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-3">
+<span class="font-badge-label text-badge-label px-3 py-1 rounded-full bg-surface-container-high text-primary font-bold">Chuyên khoa đã chọn</span>
+<span class="text-caption font-caption text-on-surface-variant">Phòng khám Ngoại trú</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">Khoa Nội tiêu hóa</h2>
+<p class="font-body-base text-body-base text-on-surface-variant mt-0.5 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">location_on</span>
+            Phòng 104, Tầng 1 Khu khám ngoại trú - Nhà A
+          </p>
+</div>
+<button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-body-base-medium text-body-base-medium transition-colors shrink-0" type="button">
+          Đổi khoa
+        </button>
+</div>
+<!-- STEP 4 CONTAINER: Date & Time Picker -->
+<section class="bg-surface-container-lowest rounded-xl p-8 shadow-sm flex flex-col gap-8">
+<div>
+<span class="font-badge-label text-badge-label text-primary font-bold tracking-wider uppercase">Bước 4 trên 5</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">Chọn ngày và khung giờ khám</h1>
+<p class="font-body-patient-primary text-body-patient-primary text-on-surface-variant mt-1">
+            Bác vui lòng chọn ngày thăm khám thuận tiện và khung giờ phù hợp bên dưới.
+          </p>
+</div>
+<!-- Visual Calendar Header & Interactive Month View (October 2026) -->
+<div class="bg-surface-container-low rounded-xl p-6">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[28px]">calendar_month</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Tháng 10 / 2026</h3>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-10 h-10 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors shadow-sm" title="Tháng trước" type="button">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors shadow-sm" title="Tháng sau" type="button">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Calendar Days Grid -->
+<div class="grid grid-cols-7 gap-3 text-center">
+<!-- Day labels -->
+<div class="font-body-base-medium text-body-base-medium text-on-surface-variant py-2">Thứ 2</div>
+<div class="font-body-base-medium text-body-base-medium text-on-surface-variant py-2">Thứ 3</div>
+<div class="font-body-base-medium text-body-base-medium text-on-surface-variant py-2">Thứ 4</div>
+<div class="font-body-base-medium text-body-base-medium text-on-surface-variant py-2">Thứ 5</div>
+<div class="font-body-base-medium text-body-base-medium text-on-surface-variant py-2">Thứ 6</div>
+<div class="font-body-base-medium text-body-base-medium text-on-surface-variant py-2">Thứ 7</div>
+<div class="font-body-base-medium text-body-base-medium text-error py-2 font-bold">Chủ Nhật</div>
+<!-- Faded Previous Month Days -->
+<div class="p-3 bg-surface-container/40 rounded-xl opacity-40">
+<span class="font-body-base text-body-base">19</span>
+<span class="block text-xs mt-1">Đã qua</span>
+</div>
+<div class="p-3 bg-surface-container/40 rounded-xl opacity-40">
+<span class="font-body-base text-body-base">20</span>
+<span class="block text-xs mt-1">Đã qua</span>
+</div>
+<div class="p-3 bg-surface-container/40 rounded-xl opacity-40">
+<span class="font-body-base text-body-base">21</span>
+<span class="block text-xs mt-1">Đã qua</span>
+</div>
+<div class="p-3 bg-surface-container/40 rounded-xl opacity-40">
+<span class="font-body-base text-body-base">22</span>
+<span class="block text-xs mt-1">Đã qua</span>
+</div>
+<div class="p-3 bg-surface-container/40 rounded-xl opacity-40">
+<span class="font-body-base text-body-base">23</span>
+<span class="block text-xs mt-1">Đã qua</span>
+</div>
+<div class="p-3 bg-surface-container/40 rounded-xl opacity-40">
+<span class="font-body-base text-body-base">24</span>
+<span class="block text-xs mt-1">Đã qua</span>
+</div>
+<div class="p-3 bg-error-container/40 rounded-xl opacity-50 text-error">
+<span class="font-body-base text-body-base">25</span>
+<span class="block text-xs mt-1">Nghỉ</span>
+</div>
+<!-- Target Week Active Schedule -->
+<!-- 26/10 Today Selected -->
+<button class="p-3 rounded-xl bg-primary text-on-primary ring-4 ring-primary/25 shadow-md flex flex-col items-center justify-between min-h-[96px] text-left transition-transform scale-102" type="button">
+<div class="w-full flex justify-between items-start">
+<span class="font-body-patient-bold text-body-patient-bold text-xl leading-none">26</span>
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+<div class="mt-2 text-center w-full">
+<span class="block text-xs font-bold bg-white/20 px-1.5 py-0.5 rounded uppercase tracking-wide">Hôm nay</span>
+<span class="block text-xs font-semibold mt-0.5 text-on-primary">Còn chỗ</span>
+</div>
+</button>
+<!-- 27/10 Available -->
+<button class="p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-high text-on-surface shadow-sm flex flex-col items-center justify-between min-h-[96px] transition-colors" type="button">
+<span class="font-body-patient-bold text-body-patient-bold text-lg self-start">27</span>
+<div class="mt-2 text-center w-full">
+<span class="block text-xs font-bold text-primary bg-surface-container px-2 py-0.5 rounded-full">Còn chỗ</span>
+</div>
+</button>
+<!-- 28/10 Low capacity -->
+<button class="p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-high text-on-surface shadow-sm flex flex-col items-center justify-between min-h-[96px] transition-colors" type="button">
+<span class="font-body-patient-bold text-body-patient-bold text-lg self-start">28</span>
+<div class="mt-2 text-center w-full">
+<span class="block text-xs font-bold text-tertiary bg-tertiary-fixed px-2 py-0.5 rounded-full">Còn ít</span>
+</div>
+</button>
+<!-- 29/10 Full -->
+<button class="p-3 rounded-xl bg-surface-container/60 text-on-surface-variant/50 shadow-none flex flex-col items-center justify-between min-h-[96px] cursor-not-allowed" disabled="" type="button">
+<span class="font-body-patient-bold text-body-patient-bold text-lg self-start">29</span>
+<div class="mt-2 text-center w-full">
+<span class="block text-xs font-semibold text-on-surface-variant/60 bg-surface-container px-2 py-0.5 rounded-full">Hết chỗ</span>
+</div>
+</button>
+<!-- 30/10 Available -->
+<button class="p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-high text-on-surface shadow-sm flex flex-col items-center justify-between min-h-[96px] transition-colors" type="button">
+<span class="font-body-patient-bold text-body-patient-bold text-lg self-start">30</span>
+<div class="mt-2 text-center w-full">
+<span class="block text-xs font-bold text-primary bg-surface-container px-2 py-0.5 rounded-full">Còn chỗ</span>
+</div>
+</button>
+<!-- 31/10 Low capacity -->
+<button class="p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-high text-on-surface shadow-sm flex flex-col items-center justify-between min-h-[96px] transition-colors" type="button">
+<span class="font-body-patient-bold text-body-patient-bold text-lg self-start">31</span>
+<div class="mt-2 text-center w-full">
+<span class="block text-xs font-bold text-tertiary bg-tertiary-fixed px-2 py-0.5 rounded-full">Còn ít</span>
+</div>
+</button>
+<!-- 01/11 Sunday - Closed -->
+<div class="p-3 rounded-xl bg-error-container/30 text-error flex flex-col items-center justify-between min-h-[96px]">
+<span class="font-body-patient-bold text-body-patient-bold text-lg self-start">01</span>
+<div class="mt-2 text-center w-full">
+<span class="block text-xs font-bold bg-error/10 text-error px-2 py-0.5 rounded-full">Nghỉ khám</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Time Slot Section (Morning & Afternoon) -->
+<div class="space-y-6">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">schedule</span>
+              Khung giờ tiếp nhận bệnh: Thứ Hai, 26/10/2026
+            </h3>
+<span class="text-caption font-caption text-on-surface-variant">Thời lượng: 30 phút / lượt</span>
+</div>
+<!-- Morning Slots -->
+<div class="space-y-3">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-base-medium text-body-base-medium">
+<span class="material-symbols-outlined text-[20px] text-tertiary">wb_sunny</span>
+<span>Buổi Sáng (07:30 - 11:30)</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+<!-- Selected Slot: 8h00 - 8h30 -->
+<button class="min-h-[52px] px-5 py-3 rounded-xl bg-surface-container-high text-primary font-body-patient-bold text-body-patient-bold flex items-center justify-between shadow-sm ring-2 ring-primary" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[22px]">radio_button_checked</span>
+<span>08:00 - 08:30</span>
+</div>
+<span class="text-xs font-bold bg-primary text-on-primary px-2.5 py-1 rounded-full">Còn 3 chỗ</span>
+</button>
+<!-- 8h30 - 9h00 -->
+<button class="min-h-[52px] px-5 py-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface font-body-patient-medium text-body-patient-medium flex items-center justify-between shadow-sm transition-colors" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-outline text-[22px]">radio_button_unchecked</span>
+<span>08:30 - 09:00</span>
+</div>
+<span class="text-xs font-semibold text-primary bg-surface-container px-2.5 py-1 rounded-full">Còn 5 chỗ</span>
+</button>
+<!-- 9h00 - 9h30 Disabled Full -->
+<button class="min-h-[52px] px-5 py-3 rounded-xl bg-surface-container-low text-on-surface-variant/40 font-body-patient-medium text-body-patient-medium flex items-center justify-between cursor-not-allowed opacity-60" disabled="" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[22px]">block</span>
+<span>09:00 - 09:30</span>
+</div>
+<span class="text-xs font-semibold text-on-surface-variant/60 bg-surface-container px-2.5 py-1 rounded-full">Hết chỗ</span>
+</button>
+<!-- 9h30 - 10h00 -->
+<button class="min-h-[52px] px-5 py-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface font-body-patient-medium text-body-patient-medium flex items-center justify-between shadow-sm transition-colors" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-outline text-[22px]">radio_button_unchecked</span>
+<span>09:30 - 10:00</span>
+</div>
+<span class="text-xs font-semibold text-tertiary bg-tertiary-fixed px-2.5 py-1 rounded-full">Còn 2 chỗ</span>
+</button>
+</div>
+</div>
+<!-- Afternoon Slots -->
+<div class="space-y-3 pt-2">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-base-medium text-body-base-medium">
+<span class="material-symbols-outlined text-[20px] text-tertiary">wb_twilight</span>
+<span>Buổi Chiều (13:00 - 16:30)</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+<!-- 13h30 - 14h00 -->
+<button class="min-h-[52px] px-5 py-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface font-body-patient-medium text-body-patient-medium flex items-center justify-between shadow-sm transition-colors" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-outline text-[22px]">radio_button_unchecked</span>
+<span>13:30 - 14:00</span>
+</div>
+<span class="text-xs font-semibold text-primary bg-surface-container px-2.5 py-1 rounded-full">Còn 8 chỗ</span>
+</button>
+<!-- 14h00 - 14h30 -->
+<button class="min-h-[52px] px-5 py-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface font-body-patient-medium text-body-patient-medium flex items-center justify-between shadow-sm transition-colors" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-outline text-[22px]">radio_button_unchecked</span>
+<span>14:00 - 14:30</span>
+</div>
+<span class="text-xs font-semibold text-primary bg-surface-container px-2.5 py-1 rounded-full">Còn 4 chỗ</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Attending Doctor Card -->
+<div class="bg-surface-container-low rounded-xl p-5 flex items-center justify-between gap-5">
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container-high shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Chân dung bác sĩ chuyên khoa một nam, 45 tuổi, đeo kính, mặc áo blouse trắng bệnh viện với ống nghe y khoa, ánh mắt nhân hậu, tông màu xanh y tế chuyên nghiệp BV Nguyễn Tri Phương" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhv2UlfJliDbEaDcx1tBOvvTDfZkEG1VHVeR6xwC-4Nf4GYh9QnS5Vdz1oJFEY-qmmpGQ1w3tjn4YVL6xZSu5SQQ4_MMhNd3iqyrSuoJke9LWxqh2Zod2_URkpfBof9fu_QxroWOxKKViGaLrFToTRxziKn4rlSr3692Qmx9kOVMz2tqGHob9glE1kGUJqNvQMCLVNCdJDKDWWSHrQOIs5fVEGV3E3Z_xdF3nWJbwetMapaBVhmm4C7g"/>
+</div>
+<div>
+<span class="text-xs uppercase font-bold text-tertiary tracking-wider block">Bác sĩ phụ trách phòng khám</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">BS.CKI Phạm Quốc Bảo</h4>
+<p class="font-body-base text-body-base text-on-surface-variant">Trưởng đơn vị Nội soi Tiêu hóa can thiệp</p>
+</div>
+</div>
+<span class="font-badge-label text-badge-label px-3.5 py-1.5 rounded-full bg-surface-container-highest text-primary font-bold shrink-0">
+            Lịch trực cố định
+          </span>
+</div>
+</section>
+<!-- STEP 5 CONTAINER: Confirmation & Legal Acknowledgement -->
+<section class="bg-surface-container-lowest rounded-xl p-8 shadow-sm flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-badge-label text-badge-label text-primary font-bold tracking-wider uppercase">Bước 5 trên 5</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">Xác nhận thông tin đặt khám</h2>
+<p class="font-body-patient-primary text-body-patient-primary text-on-surface-variant mt-1">
+              Bác vui lòng rà soát lại thông tin trước khi nhấn xác nhận gửi hồ sơ tới bệnh viện.
+            </p>
+</div>
+</div>
+<!-- Summary Table Breakdown with Edit Buttons -->
+<div class="bg-surface-container-low rounded-xl p-6 space-y-4">
+<!-- Item 1: Patient -->
+<div class="flex items-center justify-between py-2 border-b-0">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">person</span>
+<div>
+<span class="text-caption font-caption text-on-surface-variant block">Người khám</span>
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface">Nguyễn Văn Hùng (68 tuổi)</span>
+</div>
+</div>
+<button class="text-primary hover:text-on-primary-fixed-variant font-body-base-medium text-body-base-medium flex items-center gap-1 px-3 py-1.5 rounded-lg hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+              Sửa
+            </button>
+</div>
+<div class="h-px bg-surface-container-highest"></div>
+<!-- Item 2: Insurance Mode -->
+<div class="flex items-center justify-between py-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">verified_user</span>
+<div>
+<span class="text-caption font-caption text-on-surface-variant block">Loại hình khám</span>
+<div class="flex items-center gap-2">
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface">Khám BHYT đúng tuyến</span>
+<span class="text-xs font-bold px-2 py-0.5 rounded bg-surface-container-high text-primary">Mã: GD4792...</span>
+</div>
+</div>
+</div>
+<button class="text-primary hover:text-on-primary-fixed-variant font-body-base-medium text-body-base-medium flex items-center gap-1 px-3 py-1.5 rounded-lg hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+              Sửa
+            </button>
+</div>
+<div class="h-px bg-surface-container-highest"></div>
+<!-- Item 3: Specialty & Room -->
+<div class="flex items-center justify-between py-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">domain</span>
+<div>
+<span class="text-caption font-caption text-on-surface-variant block">Chuyên khoa &amp; Phòng</span>
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface">Khoa Nội tiêu hóa - Phòng 104 (Nhà A)</span>
+</div>
+</div>
+<button class="text-primary hover:text-on-primary-fixed-variant font-body-base-medium text-body-base-medium flex items-center gap-1 px-3 py-1.5 rounded-lg hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+              Sửa
+            </button>
+</div>
+<div class="h-px bg-surface-container-highest"></div>
+<!-- Item 4: Schedule -->
+<div class="flex items-center justify-between py-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">alarm</span>
+<div>
+<span class="text-caption font-caption text-on-surface-variant block">Giờ hẹn thăm khám</span>
+<span class="font-body-patient-bold text-body-patient-bold text-primary">08:00 - 08:30 | Thứ Hai, 26/10/2026</span>
+</div>
+</div>
+<button class="text-primary hover:text-on-primary-fixed-variant font-body-base-medium text-body-base-medium flex items-center gap-1 px-3 py-1.5 rounded-lg hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+              Sửa
+            </button>
+</div>
+<div class="h-px bg-surface-container-highest"></div>
+<!-- Item 5: Doctor -->
+<div class="flex items-center justify-between py-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">badge</span>
+<div>
+<span class="text-caption font-caption text-on-surface-variant block">Bác sĩ tiếp nhận</span>
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface">BS.CKI Phạm Quốc Bảo</span>
+</div>
+</div>
+<button class="text-primary hover:text-on-primary-fixed-variant font-body-base-medium text-body-base-medium flex items-center gap-1 px-3 py-1.5 rounded-lg hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+              Sửa
+            </button>
+</div>
+</div>
+<!-- Big Accessible Confirmation Checkbox -->
+<label class="flex items-start gap-4 p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer select-none">
+<input checked="" class="w-7 h-7 mt-0.5 rounded text-primary focus:ring-primary accent-primary shrink-0 cursor-pointer" type="checkbox"/>
+<div class="space-y-1">
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface leading-snug block">
+              Tôi xác nhận thông tin trên là chính xác và cam kết đến đúng giờ hẹn.
+            </span>
+<p class="font-body-base text-body-base text-on-surface-variant">
+              Nhân viên bệnh viện sẽ duyệt lịch trong vòng 15 phút. Bác có thể xem kết quả tại mục Lịch hẹn của tôi.
+            </p>
+</div>
+</label>
+<!-- CTA Actions Bar: Secondary Back & Sole Critical Red Submit -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4">
+<button class="w-full sm:w-auto min-h-[52px] px-8 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-button-text text-button-text flex items-center justify-center gap-2 transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+            Quay lại
+          </button>
+<!-- The Sole Crimson Red Button per guidelines -->
+<button class="w-full sm:w-auto min-h-[52px] px-10 rounded-xl bg-secondary text-on-secondary hover:bg-secondary-container active:bg-on-secondary-fixed-variant font-button-text text-button-text shadow-md flex items-center justify-center gap-2.5 transition-all transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+            Xác nhận đặt lịch khám
+          </button>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN: Sticky Complete Appointment Summary Card -->
+<aside class="lg:col-span-4 sticky top-24 flex flex-col gap-6">
+<!-- Summary Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-md flex flex-col gap-6">
+<!-- Header -->
+<div class="flex items-center justify-between pb-4 border-b-0">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">receipt_long</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Tóm tắt lịch khám</h3>
+</div>
+<span class="font-badge-label text-badge-label px-3 py-1 rounded-full bg-surface-container-high text-primary font-bold">
+            Chờ gửi
+          </span>
+</div>
+<!-- Main Appointment Badge Callout -->
+<div class="p-4 rounded-xl bg-primary text-on-primary shadow-sm flex flex-col gap-2">
+<span class="text-xs uppercase tracking-wider font-semibold opacity-90">Thời gian hẹn đã chọn</span>
+<div class="font-headline-sm text-headline-sm font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px]">event</span>
+            08:00 - 08:30
+          </div>
+<div class="font-body-patient-medium text-body-patient-medium text-white/95">
+            Thứ Hai, 26 tháng 10, 2026
+          </div>
+</div>
+<!-- Hospital Location & Facility -->
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[24px] mt-0.5">apartment</span>
+<div>
+<span class="text-caption font-caption text-on-surface-variant">Địa điểm khám bệnh</span>
+<p class="font-body-patient-bold text-body-patient-bold text-on-surface">BV Nguyễn Tri Phương</p>
+<p class="font-body-base text-body-base text-on-surface-variant">468 Nguyễn Trãi, P.8, Q.5, TP.HCM</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[24px] mt-0.5">meeting_room</span>
+<div>
+<span class="text-caption font-caption text-on-surface-variant">Khu vực tiếp đón</span>
+<p class="font-body-patient-bold text-body-patient-bold text-on-surface">Phòng 104 - Nhà A</p>
+<p class="font-body-base text-body-base text-on-surface-variant">Khoa Khám bệnh Ngoại trú</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[24px] mt-0.5">stethoscope</span>
+<div>
+<span class="text-caption font-caption text-on-surface-variant">Bác sĩ thăm khám</span>
+<p class="font-body-patient-bold text-body-patient-bold text-on-surface">BS.CKI Phạm Quốc Bảo</p>
+<p class="font-caption text-caption text-on-surface-variant">Nội tiêu hóa can thiệp</p>
+</div>
+</div>
+</div>
+<div class="h-px bg-surface-container"></div>
+<!-- Cost & Insurance Breakdown -->
+<div class="space-y-2">
+<div class="flex justify-between font-body-base text-body-base text-on-surface-variant">
+<span>Tiền công khám theo lượt:</span>
+<span class="font-medium text-on-surface">42.100 đ</span>
+</div>
+<div class="flex justify-between font-body-base text-body-base text-on-surface-variant">
+<span>BHYT chi trả (Đúng tuyến 80%):</span>
+<span class="font-medium text-primary">- 33.680 đ</span>
+</div>
+<div class="h-px bg-surface-container my-1"></div>
+<div class="flex justify-between items-baseline pt-1">
+<span class="font-body-patient-bold text-body-patient-bold text-on-surface">Tạm tính đồng chi trả:</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">8.420 đ</span>
+</div>
+<p class="text-xs text-on-surface-variant italic">
+            * Chi phí chưa bao gồm các xét nghiệm hoặc cận lâm sàng phát sinh nếu có theo chỉ định của bác sĩ.
+          </p>
+</div>
+<!-- Patient Instructions Callout -->
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary text-[22px] shrink-0 mt-0.5">info</span>
+<div class="text-caption font-caption text-on-surface-variant space-y-1">
+<span class="font-bold text-on-surface block">Lưu ý khi đến viện:</span>
+<p>1. Bác có mặt trước 15 phút tại Quầy số 3 Nhà A để lấy số thứ tự ưu tiên.</p>
+<p>2. Vui lòng mang theo Thẻ BHYT &amp; CCCD gắn chip gốc.</p>
+</div>
+</div>
+<!-- Emergency Support hotline widget in card -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container">
+<div class="flex items-center gap-2 text-on-surface font-body-base-medium text-body-base-medium">
+<span class="material-symbols-outlined text-secondary text-[20px]">headset_mic</span>
+<span>Hỗ trợ đặt khám:</span>
+</div>
+<a class="font-body-patient-bold text-body-patient-bold text-primary hover:underline" href="tel:02839234332">
+            028 3923 4332
+          </a>
+</div>
+</div>
+</aside>
+</div>
+</div></div></main><aside class="fixed bottom-6 left-6 z-40"><div class="flex items-center gap-2 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-full shadow-lg border border-outline/30 backdrop-blur-md"><span class="material-symbols-outlined text-sm text-tertiary-fixed">swap_horiz</span><span class="text-xs font-bold tracking-wide uppercase">Demo Navigator</span><span class="h-3 w-px bg-outline/50"></span><span class="text-xs text-inverse-on-surface/80">Bệnh nhân: Ông Hùng</span></div></aside><footer class="w-full bg-[#00587C] text-white py-8 mt-auto"><div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row justify-between gap-6 items-start md:items-center"><div class="space-y-2"><div class="font-headline-sm text-headline-sm font-bold tracking-wide text-white uppercase">BV NGUYỄN TRI PHƯƠNG</div><div class="font-body-patient-medium text-body-patient-medium italic text-tertiary-fixed">Năng động - Thân thiện - Phát triển</div><p class="font-caption text-caption text-white/90">Địa chỉ: 468 Nguyễn Trãi, Phường 8, Quận 5, TP.HCM</p></div><div class="flex flex-col space-y-1.5 font-caption text-caption text-white/90"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">emergency</span><span class="font-bold text-secondary-fixed">Hotline cấp cứu: 115</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">call</span><span>Tổng đài tư vấn: 028 3923 4332</span></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">schedule</span><span>Giờ làm việc: Thứ 2 - Thứ 7 (06:30 - 16:30)</span></div></div><div class="text-xs text-white/60 md:text-right border-t border-white/20 pt-4 md:border-0 md:pt-0"><p class="font-caption text-caption">Dữ liệu mẫu - Bệnh viện Nguyễn Tri Phương</p><p class="text-[12px] text-white/50">© 2024 Cổng thông tin người bệnh. Bản quyền thuộc BV Nguyễn Tri Phương.</p></div></div></footer></body></html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"outline-variant":"#bec8d1","surface-container-high":"#d2ecff","tertiary-fixed":"#c7e7ff","secondary":"#bc0002","primary-container":"#007cb1","surface-dim":"#c4ddf0","on-background":"#031e2c","secondary-fixed-dim":"#ffb4a8","outline":"#6f7881","on-primary":"#ffffff","surface-container-lowest":"#ffffff","inverse-surface":"#1b3342","on-primary-fixed-variant":"#004c6e","on-tertiary-container":"#fcfcff","inverse-on-surface":"#e4f3ff","primary":"#00628d","on-error-container":"#93000a","on-secondary-fixed-variant":"#930001","on-error":"#ffffff","on-primary-fixed":"#001e2f","surface":"#f5faff","on-secondary":"#ffffff","surface-container":"#def0ff","error-container":"#ffdad6","secondary-container":"#e2261a","tertiary-container":"#397ba1","on-secondary-container":"#fffbff","primary-fixed-dim":"#89ceff","error":"#ba1a1a","on-tertiary-fixed-variant":"#004c6c","inverse-primary":"#89ceff","surface-tint":"#006591","surface-container-highest":"#cde6f9","tertiary-fixed-dim":"#8fcef7","tertiary":"#176287","on-surface-variant":"#3f4850","on-surface":"#031e2c","surface-bright":"#f5faff","primary-fixed":"#c9e6ff","on-secondary-fixed":"#410000","surface-container-low":"#eaf5ff","on-tertiary":"#ffffff","on-tertiary-fixed":"#001e2e","surface-variant":"#cde6f9","background":"#f5faff","on-primary-container":"#fcfcff","secondary-fixed":"#ffdad5"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1rem","margin-lg":"3rem","space-2xl":"3rem","space-xl":"2rem","gutter-lg":"2rem","margin":"1rem","gutter-md":"1.5rem","space-md":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","space-sm":"0.5rem","margin-md":"2rem"},"fontFamily":{"caption":["Be Vietnam Pro"],"body-patient-medium":["Be Vietnam Pro"],"badge-label":["Be Vietnam Pro"],"headline-lg":["Be Vietnam Pro"],"headline-lg-mobile":["Be Vietnam Pro"],"body-base":["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"],"body-patient-bold":["Be Vietnam Pro"],"body-patient-primary":["Be Vietnam Pro"],"headline-xl-mobile":["Be Vietnam Pro"],"button-text":["Be Vietnam Pro"],"headline-xl":["Be Vietnam Pro"],"body-base-medium":["Be Vietnam Pro"],"headline-sm":["Be Vietnam Pro"]},"fontSize":{"caption":["16px",{"lineHeight":"22px","fontWeight":"400"}],"body-patient-medium":["18px",{"lineHeight":"28px","fontWeight":"500"}],"badge-label":["14px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-base":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"30px","fontWeight":"600"}],"body-patient-bold":["18px",{"lineHeight":"28px","fontWeight":"700"}],"body-patient-primary":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"button-text":["18px",{"lineHeight":"24px","fontWeight":"700"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-base-medium":["16px",{"lineHeight":"24px","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-base text-body-base text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none"><div class="flex flex-col h-full overflow-hidden"><div class="h-16 flex items-center gap-3 px-space-md bg-surface-container-low shrink-0"><div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-on-primary shrink-0"><span class="material-symbols-outlined text-[24px]">local_hospital</span></div><div class="flex flex-col min-w-0"><span class="font-badge-label text-badge-label uppercase text-primary truncate leading-tight">BV Nguyễn Tri Phương</span><span class="font-caption text-caption text-on-surface-variant text-xs truncate leading-none mt-0.5">Phân hệ Khám bệnh EMR</span></div></div><div class="flex-1 overflow-y-auto py-space-sm px-space-xs"><div class="px-space-sm pt-space-xs pb-1"><span class="font-badge-label text-badge-label text-outline uppercase tracking-wider text-[11px]">Khu bác sĩ điều trị</span></div><nav class="space-y-1 mb-space-sm" data-active-classes="bg-surface-container-high text-primary font-bold rounded-lg"><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-base text-body-base" data-path="bang-dieu-khien-bac-si-bs-01" href="#"><span class="truncate">BS-01: Bảng điều khiển bác sĩ</span></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-base text-body-base" data-path="ca-chuyen-len-xem-xet-bs-02" href="#"><span class="truncate">BS-02: Ca chuyển lên xem xét</span></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-base text-body-base" data-path="man-hinh-kham-benh-emr-bs-03" href="#"><span class="truncate">BS-03: Màn hình khám bệnh EMR</span></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-base text-body-base" data-path="chi-dinh-can-lam-sang-bs-04" href="#"><span class="truncate">BS-04: Chỉ định cận lâm sàng</span></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-base text-body-base" data-path="ke-don-thuoc-dien-tu-bs-05" href="#"><span class="truncate">BS-05: Kê đơn thuốc điện tử</span></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-base text-body-base" data-path="hen-tai-kham-bs-06" href="#"><span class="truncate">BS-06: Hẹn tái khám</span></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-base text-body-base" data-path="cap-giay-chuyen-tuyen-bs-07" href="#"><span class="truncate">BS-07: Cấp giấy chuyển tuyến</span></a></nav><div class="px-space-sm pt-space-xs pb-1"><span class="font-badge-label text-badge-label text-outline uppercase tracking-wider text-[11px]">Khu tiếp nhận &amp; Đón tiếp</span></div><nav class="space-y-1" data-active-classes="bg-surface-container-high text-primary font-bold rounded-lg"><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-base text-body-base" data-path="bang-dieu-khien-tiep-nhan-nv-01" href="#"><span class="truncate">NV-01: Tiếp nhận bệnh nhân</span></a><a class="flex items-center px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-base text-body-base" data-path="quet-cccd-va-don-tiep-nv-02" href="#"><span class="truncate">NV-02: Quét CCCD &amp; Đón tiếp</span></a></nav></div><div class="p-space-sm bg-surface-container-low shrink-0 text-xs space-y-1.5"><div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-tertiary">schedule</span><span class="font-body-base-medium text-body-base-medium text-xs text-on-surface">Ca trực: Sáng 26/10/2026</span></div><div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-outline">support_agent</span><span class="truncate text-[11px]">Tổng đài IT nội bộ: Ext 101</span></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg select-none"><div class="flex items-center gap-space-md min-w-0 max-w-xl flex-1"><div class="flex items-center gap-2 px-space-sm py-1.5 rounded-lg bg-surface-container-low text-primary shrink-0"><span class="material-symbols-outlined text-[20px]">meeting_room</span><span class="font-badge-label text-badge-label text-xs truncate font-semibold">Phòng khám 104 - Nội tiêu hóa</span></div><div class="relative flex-1 max-w-md hidden md:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-14 py-2 bg-surface-container-lowest rounded-lg font-caption text-caption text-xs text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" placeholder="Tìm hồ sơ bệnh nhân (CCCD, Mã BN)..." type="text"/><span class="absolute right-2.5 top-1/2 -translate-y-1/2 font-badge-label text-badge-label text-[10px] px-1.5 py-0.5 rounded bg-surface-container text-outline">Ctrl+K</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high text-primary font-badge-label text-badge-label text-xs"><span class="w-2 h-2 rounded-full bg-primary"></span><span>Đang khám bệnh</span></div><button aria-label="Thông báo ca khám" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary-container"></span></button><div class="flex items-center gap-2.5 pl-2 border-l border-outline-variant/30"><div class="flex flex-col text-right hidden sm:flex"><span class="font-body-base-medium text-body-base-medium text-xs text-on-surface leading-tight font-semibold">BS.CKI Phạm Quốc Bảo</span><span class="text-[11px] text-on-surface-variant leading-none">Bác sĩ điều trị chính</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">stethoscope</span></div><button aria-label="Tài khoản và Đăng xuất" class="p-1 text-on-surface-variant hover:text-secondary-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></div></header><main class="w-full pt-16 bg-background min-h-screen max-w-[1440px] mx-auto"><div class="flex flex-col w-full">
+<!-- Dynamic Clinical Context Header -->
+<div class="w-full px-space-md py-space-sm bg-surface-container-low shadow-sm">
+<div class="max-w-[1240px] mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[24px]">assignment_turned_in</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-badge-label text-badge-label uppercase text-primary font-bold">BS-07</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-caption text-caption text-xs text-on-surface-variant font-medium">Hồ sơ bệnh án điện tử EMR</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface font-bold leading-tight">
+            Cấp giấy chuyển tuyến khám chữa bệnh BHYT
+          </h1>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-badge-label text-badge-label text-xs font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          Đúng tuyến KCB 95%
+        </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-tertiary font-badge-label text-badge-label text-xs">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+          Mẫu số 14 / BYT
+        </span>
+</div>
+</div>
+</div>
+<!-- Pinned Patient Header Ribbon (Identity Bar) -->
+<div class="w-full bg-surface-container-lowest shadow-sm mb-space-md">
+<div class="max-w-[1240px] mx-auto px-space-md py-3.5">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-3 items-center">
+<!-- Patient ID & Avatar -->
+<div class="md:col-span-4 flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary font-headline-md font-bold shrink-0">
+            H
+          </div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug truncate">
+                NGUYỄN VĂN HÙNG
+              </span>
+<span class="px-2 py-0.5 rounded text-xs font-badge-label bg-surface-container-high text-primary">Nam • 68 tuổi</span>
+</div>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-caption text-caption text-xs text-on-surface-variant">Mã BN (PID):</span>
+<span class="font-body-base-medium text-body-base-medium text-xs font-bold text-on-surface">BN-1956-0883</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-caption text-caption text-xs text-on-surface-variant">Khoa Nội tiêu hóa</span>
+</div>
+</div>
+</div>
+<!-- Insurance Information -->
+<div class="md:col-span-5 flex flex-col justify-center px-0 md:px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">featured_play_list</span>
+<span class="font-body-base-medium text-body-base-medium text-xs font-bold text-primary">
+              BHYT: GD4 79 123 456 789 (Hưởng 95%)
+            </span>
+</div>
+<p class="font-caption text-caption text-xs text-on-surface-variant truncate mt-0.5">
+            Đăng ký ban đầu: <span class="font-medium text-on-surface">BV Nguyễn Tri Phương (Mã KCB: 79029)</span>
+</p>
+</div>
+<!-- Allergy Critical Banner -->
+<div class="md:col-span-3 flex items-center justify-start md:justify-end">
+<div class="w-full flex items-center gap-2 px-3 py-2 rounded-xl bg-secondary-fixed/50 text-secondary">
+<span class="material-symbols-outlined text-[20px] text-secondary shrink-0">emergency</span>
+<div class="min-w-0 leading-tight">
+<span class="font-badge-label text-badge-label text-[11px] font-bold block uppercase tracking-wide">Cảnh báo lâm sàng</span>
+<span class="font-body-base-medium text-body-base-medium text-xs font-bold truncate block">Dị ứng Penicillin nặng</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Layout (1200px max, 2-column: 680px left, 480px right) -->
+<div class="w-full max-w-[1240px] mx-auto px-space-md pb-28">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Medical Transfer Order Form (approx. 680px / 7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Section 1: Episode Details & Receiving Facility -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">domain_add</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">1. Thông tin tiếp nhận &amp; Tuyến chuyển</h2>
+</div>
+<span class="font-caption text-caption text-xs text-primary font-semibold">Quy chuẩn Thông tư 14/2014/TT-BYT</span>
+</div>
+<!-- Current Treatment Dept -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 p-3.5 rounded-xl bg-surface-container-low text-xs">
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Đơn vị lập hồ sơ:</span>
+<span class="font-body-base-medium text-body-base-medium text-on-surface font-bold">Khoa Nội tiêu hóa - BV Nguyễn Tri Phương</span>
+</div>
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Thời điểm vào viện điều trị:</span>
+<span class="font-body-base-medium text-body-base-medium text-on-surface font-bold">07:45 - 26/10/2026</span>
+</div>
+</div>
+<!-- Transfer Destination Picker -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body-base-medium text-body-base-medium text-xs font-bold text-on-surface flex items-center gap-1.5">
+<span>Cơ sở khám bệnh, chữa bệnh tiếp nhận (Tuyến trên)</span>
+<span class="text-secondary">*</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-primary text-[20px]">local_hospital</span>
+<input class="w-full pl-11 pr-24 py-3 bg-surface-container-lowest rounded-xl font-body-base-medium text-body-base-medium text-xs text-on-surface shadow-sm focus:outline-none" placeholder="Tìm bệnh viện tuyến tỉnh, tuyến TW tiếp nhận..." type="text" value="Bệnh viện Chợ Rẫy (Khoa Tiêu hóa gan mật)"/>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 px-2.5 py-1 rounded-md bg-surface-container-high text-primary font-badge-label text-badge-label text-[11px] font-bold">
+                Tuyến TW (Hạng 1)
+              </span>
+</div>
+<!-- Quick Suggestion Chips -->
+<div class="flex items-center gap-2 flex-wrap mt-1">
+<span class="font-caption text-caption text-[11px] text-on-surface-variant font-medium">Gợi ý nhanh:</span>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container text-primary font-badge-label text-badge-label text-[11px] font-semibold hover:bg-surface-container-high transition-colors" type="button">
+                BV Chợ Rẫy (Đã chọn)
+              </button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest text-on-surface-variant font-badge-label text-badge-label text-[11px] hover:bg-surface-container transition-colors shadow-sm" type="button">
+                BV Đại học Y Dược TP.HCM
+              </button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest text-on-surface-variant font-badge-label text-badge-label text-[11px] hover:bg-surface-container transition-colors shadow-sm" type="button">
+                Viện Tim TP.HCM
+              </button>
+</div>
+</div>
+<!-- Referral Legal Reason -->
+<div class="flex flex-col gap-2 mt-1">
+<label class="font-body-base-medium text-body-base-medium text-xs font-bold text-on-surface">
+              Lý do chuyển viện (Quy chuẩn thanh toán BHYT) <span class="text-secondary">*</span>
+</label>
+<div class="space-y-2">
+<label class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low cursor-pointer transition-all">
+<input checked="" class="mt-0.5 text-primary focus:ring-0 w-4 h-4" name="transfer_reason" type="radio"/>
+<div class="flex flex-col text-xs leading-relaxed">
+<span class="font-body-base-medium text-body-base-medium text-primary font-bold">
+                    Điều trị chuyên môn kỹ thuật chuyên sâu vượt quá khả năng bệnh viện (Đúng tuyến 95%)
+                  </span>
+<span class="font-caption text-caption text-on-surface-variant text-[11px]">
+                    Căn cứ Mục a Khoản 1 Điều 4 Thông tư 14/2014/TT-BYT: Cần can thiệp nội soi can thiệp &amp; sinh thiết tế bào học chuyên sâu.
+                  </span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-all shadow-sm">
+<input class="text-primary focus:ring-0 w-4 h-4" name="transfer_reason" type="radio"/>
+<span class="font-body-base text-body-base text-xs text-on-surface">
+                  Theo yêu cầu của người bệnh / Đại diện hợp pháp người bệnh (Trái tuyến / Tự nguyện)
+                </span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-all shadow-sm">
+<input class="text-primary focus:ring-0 w-4 h-4" name="transfer_reason" type="radio"/>
+<span class="font-body-base text-body-base text-xs text-on-surface">
+                  Chuyển theo phác đồ hội chẩn liên viện (Biên bản kèm theo)
+                </span>
+</label>
+</div>
+</div>
+</div>
+<!-- Section 2: Clinical Summary & Medical History -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">clinical_notes</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">2. Tóm tắt bệnh án &amp; Diễn biến lâm sàng</h2>
+</div>
+<!-- ICD-10 Primary Diagnosis -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body-base-medium text-body-base-medium text-xs font-bold text-on-surface flex items-center gap-1">
+<span>Chẩn đoán xác định bệnh (Kèm mã ICD-10)</span>
+<span class="text-secondary">*</span>
+</label>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-badge-label text-badge-label text-[11px] font-bold">K29.5</span>
+<span class="font-body-base-medium text-body-base-medium text-xs text-on-surface font-semibold">Viêm dạ dày mạn tính</span>
+<span class="text-outline text-xs">•</span>
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-badge-label text-badge-label text-[11px] font-bold">K21.9</span>
+<span class="font-body-base-medium text-body-base-medium text-xs text-on-surface font-semibold">Trào ngược dạ dày - thực quản</span>
+</div>
+<p class="font-body-base text-body-base text-xs text-secondary font-medium">
+                Kèm theo: Nghi ngờ polyp hang vị biến xuất huyết vi thể / Cần loại trừ tân sinh biểu mô.
+              </p>
+</div>
+</div>
+<!-- Paraclinical / Test Findings -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body-base-medium text-body-base-medium text-xs font-bold text-on-surface">
+              Tóm tắt kết quả cận lâm sàng có giá trị chuyển viện
+            </label>
+<div class="p-3 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-1 text-xs">
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-[16px]">biotech</span>
+<span>Nội soi thực quản - dạ dày - tá tràng (26/10/2026 - NTP):</span>
+</div>
+<p class="font-body-base text-body-base text-on-surface-variant pl-6 leading-relaxed">
+                Viêm xung huyết niêm mạc hang vị lan tỏa, trào ngược dịch mật độ A, CLO test (-). Phát hiện 01 polyp cuống ngắn kích thước ~12mm tại hang vị, rỉ máu nhẹ khi chạm dụng cụ. Mẫu sinh thiết niêm mạc đã lưu mã STP-24-991, gửi kèm chuyển tuyến để làm xét nghiệm giải phẫu bệnh chuyên sâu tại BV Chợ Rẫy.
+              </p>
+</div>
+</div>
+<!-- Treatment Rendered & Allergy -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div class="flex flex-col gap-1">
+<label class="font-body-base-medium text-body-base-medium text-xs font-bold text-on-surface">
+                Thuốc và phương pháp đã điều trị:
+              </label>
+<div class="p-3 rounded-xl bg-surface-container-low text-xs leading-relaxed text-on-surface">
+                Đã điều trị thử phác đồ Esomeprazole 40mg (1v/ngày) + Domperidone 10mg (2v/ngày). Cầm máu niêm mạc tạm ổn.
+              </div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-body-base-medium text-body-base-medium text-xs font-bold text-on-surface">
+                Tình trạng người bệnh lúc chuyển:
+              </label>
+<div class="p-3 rounded-xl bg-surface-container-low text-xs leading-relaxed text-on-surface">
+                Tỉnh táo, tiếp xúc tốt, Glasgow 15đ. Dấu hiệu sinh tồn ổn định (HA: 130/80 mmHg, Mạch: 78 ck/ph, SpO2: 98%). Không nôn ra máu.
+              </div>
+</div>
+</div>
+<!-- Recommended Management Plan at Receiving Hospital -->
+<div class="flex flex-col gap-1.5">
+<label class="font-body-base-medium text-body-base-medium text-xs font-bold text-on-surface">
+              Hướng điều trị tiếp theo đề nghị tuyến trên tiếp nhận:
+            </label>
+<textarea class="w-full p-3 bg-surface-container-lowest rounded-xl font-body-base text-body-base text-xs text-on-surface shadow-sm focus:outline-none" rows="2">Đề nghị Hội chẩn chuyên khoa Tiêu hóa can thiệp nội soi cắt polyp hang vị (EMR/ESD) và tiếp nhận mẫu sinh thiết đọc giải phẫu bệnh mô học chuyên sâu.</textarea>
+</div>
+</div>
+<!-- Section 3: Logistics & Validity Period -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">commute</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">3. Phương tiện vận chuyển &amp; Thời hạn giấy</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+<div class="flex flex-col gap-1.5">
+<span class="font-body-base-medium text-body-base-medium font-bold text-on-surface">Phương tiện vận chuyển:</span>
+<div class="p-2.5 rounded-xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">directions_car</span>
+<span class="font-medium text-on-surface">Tự túc phương tiện của người bệnh</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<span class="font-body-base-medium text-body-base-medium font-bold text-on-surface">Người hộ tống / Đại diện:</span>
+<div class="p-2.5 rounded-xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">group</span>
+<span class="font-medium text-on-surface">Có người nhà đi cùng (Con trai)</span>
+</div>
+</div>
+</div>
+<!-- Validity Scope Box -->
+<div class="p-3.5 rounded-xl bg-surface-container flex items-center justify-between gap-3 text-xs">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-primary">date_range</span>
+<div>
+<span class="font-body-base-medium text-body-base-medium font-bold text-on-surface block">
+                  Thời hạn giá trị của giấy chuyển tuyến BHYT:
+                </span>
+<span class="font-caption text-caption text-on-surface-variant text-[11px]">
+                  Từ ngày 26/10/2026 đến hết ngày 31/12/2026 (Có giá trị trong năm dương lịch)
+                </span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container-highest text-primary font-badge-label text-badge-label text-[11px] font-bold shrink-0">
+              67 ngày
+            </span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Medical Referral Live Preview (Mẫu 14 A5 format) & Digital Sign Info (approx. 480px / 5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md sticky top-20">
+<!-- Status Workflow Pill Step Bar (Rule B7 - sec 13) -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between text-xs">
+<span class="font-badge-label text-badge-label font-bold text-on-surface-variant uppercase tracking-wider text-[11px]">
+              Quy trình xử lý hồ sơ BHYT
+            </span>
+<span class="font-caption text-caption text-[11px] text-primary font-bold">Mục 13 - Quy chuẩn B7</span>
+</div>
+<!-- Stepper Visualization -->
+<div class="grid grid-cols-3 gap-2">
+<div class="flex flex-col items-center gap-1 p-2 rounded-xl bg-surface-container-high text-center">
+<div class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center text-[10px] font-bold">1</div>
+<span class="font-badge-label text-badge-label text-[11px] font-bold text-primary">Lập hồ sơ</span>
+<span class="text-[9px] text-on-surface-variant leading-none">Hoàn tất</span>
+</div>
+<div class="flex flex-col items-center gap-1 p-2 rounded-xl bg-surface-container text-center">
+<div class="w-5 h-5 rounded-full bg-tertiary text-on-primary flex items-center justify-center text-[10px] font-bold">2</div>
+<span class="font-badge-label text-badge-label text-[11px] font-bold text-tertiary">Ký số BS</span>
+<span class="text-[9px] text-on-surface-variant leading-none">Chờ ký</span>
+</div>
+<div class="flex flex-col items-center gap-1 p-2 rounded-xl bg-surface-container-low text-center opacity-60">
+<div class="w-5 h-5 rounded-full bg-outline-variant text-on-surface flex items-center justify-center text-[10px] font-bold">3</div>
+<span class="font-badge-label text-badge-label text-[11px] font-semibold text-on-surface-variant">Lãnh đạo duyệt</span>
+<span class="text-[9px] text-on-surface-variant leading-none">Tự động đẩy BHXH</span>
+</div>
+</div>
+<!-- Notification Pill -->
+<div class="flex items-start gap-2 p-2.5 rounded-xl bg-surface-container-low text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">sync</span>
+<p class="leading-snug">
+              Hồ sơ sẽ <strong class="text-on-surface">tự động đồng bộ sang hồ sơ người bệnh (PB-19)</strong> và gửi tới Cổng Giám định BHYT Quốc gia sau khi hoàn tất ký số.
+            </p>
+</div>
+</div>
+<!-- A5 Document Sheet Physical Preview Container -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-md overflow-hidden relative">
+<!-- Top Utility Toolbar for A5 Doc -->
+<div class="px-4 py-2.5 bg-surface-container-low flex items-center justify-between text-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
+<span class="font-badge-label text-badge-label font-bold text-on-surface">Bản in xem trước (Khổ A5 Chuẩn)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="p-1 rounded text-on-surface-variant hover:bg-surface-container transition-colors" title="Phóng to xem tài liệu">
+<span class="material-symbols-outlined text-[16px]">zoom_in</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:bg-surface-container transition-colors" title="Khổ in chuẩn">
+<span class="material-symbols-outlined text-[16px]">fit_screen</span>
+</button>
+</div>
+</div>
+<!-- The A5 Paper Sheet Itself (Simulating Medical Print Layout) -->
+<div class="p-6 bg-surface-container-lowest text-on-surface text-[11px] leading-tight select-none">
+<!-- Standard Header of Ministry of Health -->
+<div class="grid grid-cols-12 gap-2 pb-3 mb-3">
+<div class="col-span-6 flex flex-col">
+<span class="font-bold uppercase text-[10px] text-on-surface">SỞ Y TẾ TP. HỒ CHÍ MINH</span>
+<span class="font-bold uppercase text-[10px] text-primary">BV NGUYỄN TRI PHƯƠNG</span>
+<span class="text-[9px] text-on-surface-variant">Khoa: Nội Tiêu hóa - P.104</span>
+<span class="text-[9px] text-on-surface-variant">Mã KCB: 79-029</span>
+</div>
+<div class="col-span-6 flex flex-col text-right">
+<span class="font-bold text-[9px]">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</span>
+<span class="font-medium text-[8px] italic">Độc lập - Tự do - Hạnh phúc</span>
+<span class="text-[9px] text-on-surface-variant mt-1">Số: <strong class="text-on-surface">2408/GCT-NTP</strong></span>
+<span class="text-[8px] text-on-surface-variant font-mono">Tra cứu: VN-NTP-BHYT-8834</span>
+</div>
+</div>
+<!-- Title of Form 14 -->
+<div class="text-center my-2">
+<h3 class="font-headline-sm text-sm font-bold text-primary uppercase tracking-tight">
+                GIẤY CHUYỂN TUYẾN KHÁM BỆNH, CHỮA BỆNH BẢO HIỂM Y TẾ
+              </h3>
+<p class="text-[9px] italic text-on-surface-variant mt-0.5">
+                (Kèm theo Thông tư số 14/2014/TT-BYT ngày 14/4/2014 của Bộ Y tế)
+              </p>
+</div>
+<!-- Essential Form Content Simulation -->
+<div class="space-y-1.5 my-3 text-[10.5px]">
+<div><strong>Kính gửi:</strong> Bệnh viện Chợ Rẫy (Khoa Tiêu hóa gan mật)</div>
+<div>Bệnh viện Nguyễn Tri Phương trân trọng giới thiệu:</div>
+<div class="grid grid-cols-2 gap-2">
+<div>- Họ tên NB: <strong class="uppercase font-bold">Nguyễn Văn Hùng</strong></div>
+<div>- Giới tính: <strong>Nam</strong>   Tuổi: <strong>68</strong></div>
+</div>
+<div>- Địa chỉ: Phường 8, Quận 5, TP. Hồ Chí Minh</div>
+<div>- Mã thẻ BHYT: <strong class="font-mono text-primary">GD4 79 123 456 789</strong> (Mức hưởng 95%)</div>
+<div>- Đã được khám/điều trị tại: BV Nguyễn Tri Phương từ ngày 26/10/2026</div>
+<div class="pt-1">
+<strong>TÓM TẮT BỆNH ÁN:</strong>
+<ul class="list-disc pl-4 mt-0.5 space-y-0.5 text-on-surface-variant">
+<li>Chẩn đoán: K29.5 - Viêm dạ dày mạn; K21.9 - GERD; Polyp hang vị.</li>
+<li>CLS: Nội soi rỉ máu polyp hang vị ~12mm; CLO test (-); mẫu STP-24-991.</li>
+<li>Lý do chuyển: Điều trị kỹ thuật chuyên sâu vượt khả năng bệnh viện.</li>
+</ul>
+</div>
+<div>- Tình trạng lúc chuyển: Tỉnh táo, sinh hiệu ổn định (HA: 130/80 mmHg).</div>
+<div>- Giá trị sử dụng: Đến hết ngày <strong class="text-on-surface">31/12/2026</strong>.</div>
+</div>
+<!-- QR Verification & Digital Signatures Box -->
+<div class="mt-4 pt-3 grid grid-cols-12 gap-2 items-end">
+<!-- QR Code Portal Verification -->
+<div class="col-span-4 flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-low text-center">
+<!-- Inline SVG QR Code Simulation -->
+<svg class="w-16 h-16 text-primary" fill="currentColor" viewbox="0 0 100 100">
+<path d="M0,0 h30 v30 h-30 z M4,4 v22 h22 v-22 z M8,8 h14 v14 h-14 z"></path>
+<path d="M70,0 h30 v30 h-30 z M74,4 v22 h22 v-22 z M78,8 h14 v14 h-14 z"></path>
+<path d="M0,70 h30 v30 h-30 z M4,74 v22 h22 v-22 z M8,78 h14 v14 h-14 z"></path>
+<rect height="8" width="8" x="36" y="10"></rect>
+<rect height="8" width="12" x="48" y="10"></rect>
+<rect height="6" width="24" x="36" y="24"></rect>
+<rect height="24" width="10" x="10" y="36"></rect>
+<rect height="8" width="8" x="26" y="44"></rect>
+<rect height="20" width="20" x="40" y="38"></rect>
+<rect height="10" width="10" x="68" y="36"></rect>
+<rect height="18" width="12" x="84" y="44"></rect>
+<rect height="24" width="10" x="38" y="68"></rect>
+<rect height="8" width="16" x="54" y="74"></rect>
+<rect height="20" width="20" x="76" y="72"></rect>
+</svg>
+<span class="text-[8px] text-on-surface-variant font-mono mt-1">Cổng BHYT Quốc Gia</span>
+</div>
+<!-- Signer 1: Treating Doctor (BS PKI Ready) -->
+<div class="col-span-4 flex flex-col items-center text-center">
+<span class="text-[9px] font-bold">BÁC SĨ ĐIỀU TRỊ</span>
+<div class="my-1 px-1.5 py-1 rounded bg-surface-container-high/60 flex flex-col items-center w-full">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[13px]">verified</span>
+<span class="text-[8px] font-bold">USB Token PKI</span>
+</div>
+<span class="text-[8px] text-on-surface font-semibold truncate">BS.CKI Phạm Quốc Bảo</span>
+</div>
+<span class="text-[8px] text-on-surface-variant italic leading-none">Đã nạp chứng thư số</span>
+</div>
+<!-- Signer 2: Hospital Director / Approver -->
+<div class="col-span-4 flex flex-col items-center text-center">
+<span class="text-[9px] font-bold">GIÁM ĐỐC BỆNH VIỆN</span>
+<div class="my-1 px-1.5 py-1 rounded bg-surface-container-low flex flex-col items-center w-full">
+<span class="text-[8px] text-on-surface-variant italic">Ký số điện tử cơ sở</span>
+<span class="text-[8px] text-primary font-bold">DUYỆT TỰ ĐỘNG</span>
+</div>
+<span class="text-[8px] text-on-surface-variant italic leading-none">Ký số HSM Tổ chức</span>
+</div>
+</div>
+</div>
+<!-- Document Action Toolbar -->
+<div class="p-3 bg-surface-container-low flex items-center justify-between gap-2">
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container-lowest text-primary hover:bg-surface-container font-badge-label text-badge-label text-xs font-semibold shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>In giấy A5 (F8)</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container text-tertiary hover:bg-surface-container-high font-badge-label text-badge-label text-xs font-semibold transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Tải file PDF ký số</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- FIXED BOTTOM ACTION BAR -->
+<div class="fixed bottom-0 left-64 right-0 h-20 bg-surface/95 backdrop-blur-xl shadow-lg z-40 px-space-lg flex items-center justify-between">
+<!-- Back to EMR Consultation -->
+<a class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-body-base-medium text-body-base-medium text-sm transition-colors shadow-sm" data-path="man-hinh-kham-benh-emr-bs-03" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span>Quay lại bệnh án EMR (BS-03)</span>
+</a>
+<!-- Primary Operations -->
+<div class="flex items-center gap-3">
+<!-- Save Draft Button -->
+<button class="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-primary font-body-base-medium text-body-base-medium text-sm transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Lưu bản nháp</span>
+</button>
+<!-- The Single Solid Red Conversion Button (#E02519 equivalent to secondary-container) -->
+<button class="h-12 px-6 rounded-xl bg-secondary-container text-on-secondary-container hover:bg-secondary font-button-text text-button-text text-sm flex items-center gap-2.5 shadow-md hover:shadow-lg transition-all active:scale-[0.99]" id="btn-sign-referral" type="button">
+<span class="material-symbols-outlined text-[22px]">draw</span>
+<span>Ký số &amp; Cấp giấy chuyển tuyến BHYT</span>
+</button>
+</div>
+</div>
+<!-- Client-side Toast & Modal micro-interaction simulation -->
+<script>
+    (function() {
+      const signBtn = document.getElementById('btn-sign-referral');
+      if (signBtn) {
+        signBtn.addEventListener('click', function() {
+          const originalContent = signBtn.innerHTML;
+          signBtn.innerHTML = `
+            <span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span>
+            <span>Đang xác thực PKI Token & Ký số...</span>
+          `;
+          signBtn.disabled = true;
+
+          setTimeout(() => {
+            signBtn.innerHTML = `
+              <span class="material-symbols-outlined text-[22px]">check_circle</span>
+              <span>Đã cấp giấy chuyển tuyến thành công!</span>
+            `;
+            signBtn.classList.remove('bg-secondary-container', 'hover:bg-secondary');
+            signBtn.classList.add('bg-primary');
+
+            // Quick alert notification simulation
+            const toast = document.createElement('div');
+            toast.className = 'fixed top-20 right-8 z-50 p-4 rounded-2xl bg-surface-container-lowest shadow-xl flex items-center gap-3 transition-all duration-300';
+            toast.innerHTML = `
+              <div class="w-9 h-9 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-[20px]">task_alt</span>
+              </div>
+              <div class="flex flex-col text-xs pr-2">
+                <span class="font-bold text-on-surface">Giấy chuyển tuyến #2408/GCT-NTP đã ký số</span>
+                <span class="text-on-surface-variant">Đã gửi dữ liệu sang Cổng Giám định BHYT Quốc gia & BV Chợ Rẫy.</span>
+              </div>
+            `;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 4000);
+          }, 1200);
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

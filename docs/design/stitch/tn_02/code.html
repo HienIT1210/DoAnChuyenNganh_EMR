@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed-dim":"#89ceff","on-tertiary-fixed-variant":"#004c6c","inverse-surface":"#1b3342","background":"#f5faff","surface-container-high":"#d2ecff","primary-fixed":"#c9e6ff","on-primary-container":"#fcfcff","inverse-primary":"#89ceff","surface-container":"#def0ff","primary":"#00628d","on-secondary-fixed":"#410000","surface-container-highest":"#cde6f9","on-error-container":"#93000a","surface-bright":"#f5faff","on-surface-variant":"#3f4850","secondary-fixed":"#ffdad5","on-background":"#031e2c","error":"#ba1a1a","on-error":"#ffffff","primary-container":"#007cb1","surface":"#f5faff","error-container":"#ffdad6","tertiary-container":"#397ba1","on-tertiary":"#ffffff","surface-container-low":"#eaf5ff","on-primary":"#ffffff","on-secondary":"#ffffff","secondary":"#bc0002","tertiary-fixed-dim":"#8fcef7","surface-tint":"#006591","secondary-container":"#e2261a","tertiary":"#176287","outline-variant":"#bec8d1","surface-dim":"#c4ddf0","tertiary-fixed":"#c7e7ff","surface-variant":"#cde6f9","secondary-fixed-dim":"#ffb4a8","on-secondary-container":"#fffbff","outline":"#6f7881","on-secondary-fixed-variant":"#930001","on-tertiary-fixed":"#001e2e","surface-container-lowest":"#ffffff","on-tertiary-container":"#fcfcff","inverse-on-surface":"#e4f3ff","on-primary-fixed":"#001e2f","on-primary-fixed-variant":"#004c6e","on-surface":"#031e2c"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","gutter":"1rem","margin-md":"2rem","gutter-md":"1.5rem","gutter-lg":"2rem","space-md":"1rem","space-lg":"1.5rem","margin":"1rem","space-2xl":"3rem","space-xl":"2rem","margin-lg":"3rem"},"fontFamily":{"button-text":["Be Vietnam Pro"],"headline-lg":["Be Vietnam Pro"],"body-base-medium":["Be Vietnam Pro"],"badge-label":["Be Vietnam Pro"],"headline-sm":["Be Vietnam Pro"],"body-patient-bold":["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"],"body-base":["Be Vietnam Pro"],"body-patient-medium":["Be Vietnam Pro"],"headline-xl-mobile":["Be Vietnam Pro"],"headline-xl":["Be Vietnam Pro"],"headline-lg-mobile":["Be Vietnam Pro"],"body-patient-primary":["Be Vietnam Pro"],"caption":["Be Vietnam Pro"]},"fontSize":{"button-text":["18px",{"lineHeight":"24px","fontWeight":"700"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-base-medium":["16px",{"lineHeight":"24px","fontWeight":"500"}],"badge-label":["14px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-patient-bold":["18px",{"lineHeight":"28px","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","fontWeight":"600"}],"body-base":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-patient-medium":["18px",{"lineHeight":"28px","fontWeight":"500"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-patient-primary":["18px",{"lineHeight":"28px","fontWeight":"400"}],"caption":["16px",{"lineHeight":"22px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-base text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-low"><div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-on-primary font-headline-sm font-bold text-headline-sm">NTP</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">BV NGUYỄN TRI PHƯƠNG</span><span class="font-caption text-caption text-on-surface-variant text-xs">Hệ thống Quản trị &amp; Điều hành</span></div></div><div class="px-space-md py-space-sm"><div class="p-space-sm rounded-xl bg-surface-container-low flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px]">schedule</span><div class="flex flex-col"><span class="font-badge-label text-badge-label text-on-surface">Ca Sáng • 26/10/2026</span><span class="font-caption text-caption text-on-surface-variant text-xs">07:00 - 15:30</span></div></div></div><nav class="px-space-md flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-xl"><div class="pt-space-xs pb-space-xs"><span class="px-space-sm font-badge-label text-badge-label text-tertiary uppercase tracking-wider">Phân Hệ Cận Lâm Sàng</span></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="danh-sach-chi-dinh" href="#"><span class="material-symbols-outlined text-[20px]">checklist</span><span class="font-body-base-medium text-body-base-medium">CLS-01: DS Chỉ định</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="nhap-ket-qua-xet-nghiem" href="#"><span class="material-symbols-outlined text-[20px]">chips</span><span class="font-body-base-medium text-body-base-medium">CLS-02: Nhập kết quả</span></a><div class="pt-space-sm pb-space-xs"><span class="px-space-sm font-badge-label text-badge-label text-tertiary uppercase tracking-wider">Phân Hệ Viện Phí &amp; Thu Ngân</span></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="hoa-don-cho-thu" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-base-medium text-body-base-medium">TN-01: Hóa đơn chờ thu</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="chi-tiet-vien-phi-thu-tien" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span class="font-body-base-medium text-body-base-medium">TN-02: Thu tiền viện phí</span></a><div class="pt-space-sm pb-space-xs"><span class="px-space-sm font-badge-label text-badge-label text-tertiary uppercase tracking-wider">Phân Hệ Dược &amp; Phát Thuốc</span></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="quet-ma-don-thuoc" href="#"><span class="material-symbols-outlined text-[20px]">qr_code_scanner</span><span class="font-body-base-medium text-body-base-medium">PT-01: Quét mã đơn thuốc</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ket-qua-xac-thuc-phat-thuoc" href="#"><span class="material-symbols-outlined text-[20px]">medication</span><span class="font-body-base-medium text-body-base-medium">PT-02: Xác thực &amp; Phát thuốc</span></a><div class="pt-space-sm pb-space-xs"><span class="px-space-sm font-badge-label text-badge-label text-tertiary uppercase tracking-wider">Quản Trị &amp; Báo Cáo</span></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="thong-ke-bao-cao" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-body-base-medium text-body-base-medium">QT-01: Thống kê &amp; Báo cáo</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="phan-quyen-nguoi-dung" href="#"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span><span class="font-body-base-medium text-body-base-medium">QT-02: Phân quyền</span></a></nav></div><div class="p-space-md"><div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">wifi</span><span class="font-badge-label text-badge-label text-on-surface-variant">HIS Online</span></div><span class="w-2.5 h-2.5 rounded-full bg-primary-container inline-block"></span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">search</span><input class="w-full pl-10 pr-4 py-2 bg-surface-container-low rounded-xl text-on-surface placeholder:text-on-surface-variant font-caption text-caption focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Tìm kiếm bệnh nhân, mã hồ sơ... (Ctrl+K)" type="text"/></div><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container-high text-primary font-badge-label text-badge-label"><span class="material-symbols-outlined text-[16px]">domain</span><span>Khoa Xét Nghiệm / Thu Ngân / Nhà Thuốc</span></div></div><div class="flex items-center gap-space-md"><button class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right"><span class="font-body-base-medium text-body-base-medium text-on-surface font-semibold">KTV Huỳnh Văn Phúc</span><span class="font-caption text-caption text-on-surface-variant text-xs">ID: NV-8834 • Khu C</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen w-full px-space-lg py-space-md"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1240px] mx-auto flex flex-col gap-space-md pb-space-2xl">
+<!-- Breadcrumb & Status Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pt-space-xs">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs font-caption text-caption text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[18px]">desktop_windows</span>
+<span>Bàn làm việc</span>
+</a>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Thu ngân &amp; Viện phí</a>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+<span class="font-body-base-medium text-body-base-medium text-primary">TN-02: Chi tiết &amp; Thu tiền viện phí</span>
+</nav>
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-badge-label text-badge-label">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          Quầy Thu Ngân 03 • Nhà B
+        </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-[16px]">person_check</span>
+          Thu ngân: Trương Thị Hồng (ID: TN-109)
+        </span>
+</div>
+</div>
+<!-- Page Title & Primary Document ID Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-64 h-64 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-1 z-10">
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-badge-label text-badge-label">
+            Mẫu số 01/BV - Ngoại trú
+          </span>
+<span class="text-on-surface-variant font-caption text-caption">• Mã biên nhận: HD-261026-0215</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Chi tiết hóa đơn viện phí &amp; Xác nhận thanh toán
+        </h1>
+<div class="flex flex-wrap items-center gap-y-1 gap-x-4 text-on-surface-variant font-caption text-caption">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 08:20 26/10/2026
+          </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">sync_saved_locally</span> Cổng giám định BHXH 79: Đã thông tuyến
+          </span>
+<span>•</span>
+<span class="text-primary font-body-base-medium text-body-base-medium">Hạn hiệu lực: Trong ngày</span>
+</div>
+</div>
+<!-- Quick Action Voucher Info -->
+<div class="flex items-center gap-space-sm z-10 self-start lg:self-center">
+<div class="bg-surface-container-low px-4 py-2.5 rounded-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-badge-label text-badge-label text-on-surface">Ký hiệu mẫu: 01BV-2026</span>
+<span class="font-caption text-caption text-on-surface-variant text-xs">Số seri: NTP/26E-00215</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Patient Highlight Header Box -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-on-primary font-headline-md text-headline-md shrink-0 shadow-sm">
+          NH
+        </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface">NGUYỄN VĂN HÙNG</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest text-primary font-badge-label text-badge-label">Nam, 68 tuổi (1958)</span>
+<span class="px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-badge-label text-badge-label flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">elderly</span> Người cao tuổi / Ưu tiên
+            </span>
+</div>
+<div class="flex flex-wrap items-center gap-y-1 gap-x-3 font-caption text-caption text-on-surface-variant mt-1">
+<span>CCCD: <strong class="text-on-surface font-body-base-medium">079 058 004 892</strong></span>
+<span>•</span>
+<span>SĐT: 0918 *** 421</span>
+<span>•</span>
+<span>Địa chỉ: P.1, Q.5, TP. Hồ Chí Minh</span>
+</div>
+</div>
+</div>
+<!-- BHYT Badge Card -->
+<div class="bg-surface-container-lowest p-3 px-4 rounded-xl flex items-center gap-3 shrink-0 shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">health_and_safety</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-badge-label text-badge-label text-primary font-bold">MÃ THẺ: GD4 79 123 456 789</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-primary text-xs font-bold">Mức hưởng 95%</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant text-xs">
+            Hạn dùng: 31/12/2026 • Đúng tuyến BV Nguyễn Tri Phương (KCBBĐ: 79-015)
+          </span>
+</div>
+</div>
+</div>
+<!-- Main Two-Column Workflow Container -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Itemized Bill & Calculation (7 Cols ~ 58%) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Breakdown Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">receipt_long</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Bảng kê chi phí khám &amp; dịch vụ kỹ thuật</h2>
+</div>
+<span class="text-on-surface-variant font-caption text-caption text-xs">5 danh mục dịch vụ</span>
+</div>
+<!-- Table of items -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-caption text-caption">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant">
+<th class="py-2.5 px-3 rounded-l-lg font-badge-label text-badge-label">STT / Tên dịch vụ y tế</th>
+<th class="py-2.5 px-2 text-right font-badge-label text-badge-label">Đơn giá</th>
+<th class="py-2.5 px-2 text-right font-badge-label text-badge-label text-primary">BHYT trả (95%)</th>
+<th class="py-2.5 px-3 rounded-r-lg text-right font-badge-label text-badge-label text-on-surface">BN cùng trả</th>
+</tr>
+</thead>
+<tbody class="text-on-surface">
+<!-- Item 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-body-base-medium text-body-base-medium text-on-surface">1. Tiền công khám bệnh Ngoại trú</span>
+<span class="text-on-surface-variant text-xs">Khoa Nội tiêu hóa • Phòng khám 104 • BS.CKII Lê Thành Tâm</span>
+</div>
+</td>
+<td class="py-3 px-2 text-right text-on-surface-variant font-body-base">39.000 đ</td>
+<td class="py-3 px-2 text-right text-primary font-body-base">37.050 đ</td>
+<td class="py-3 px-3 text-right font-body-base-medium text-on-surface">1.950 đ</td>
+</tr>
+<!-- Item 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-low/20">
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-body-base-medium text-body-base-medium text-on-surface">2. Tổng phân tích tế bào máu ngoại vi (18 thông số)</span>
+<span class="text-on-surface-variant text-xs">Mã DVKT: 23.0102.019 • Khoa Huyết học - Truyền máu</span>
+</div>
+</td>
+<td class="py-3 px-2 text-right text-on-surface-variant font-body-base">45.000 đ</td>
+<td class="py-3 px-2 text-right text-primary font-body-base">42.750 đ</td>
+<td class="py-3 px-3 text-right font-body-base-medium text-on-surface">2.250 đ</td>
+</tr>
+<!-- Item 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-body-base-medium text-body-base-medium text-on-surface">3. Định lượng Glucose máu &amp; HbA1c</span>
+<span class="text-on-surface-variant text-xs">Mã DVKT: 23.0118.041 • Khoa Sinh hóa lâm sàng</span>
+</div>
+</td>
+<td class="py-3 px-2 text-right text-on-surface-variant font-body-base">112.700 đ</td>
+<td class="py-3 px-2 text-right text-primary font-body-base">107.065 đ</td>
+<td class="py-3 px-3 text-right font-body-base-medium text-on-surface">5.635 đ</td>
+</tr>
+<!-- Item 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-low/20">
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-body-base-medium text-body-base-medium text-on-surface">4. Siêu âm ổ bụng tổng quát màu Doppler</span>
+<span class="text-on-surface-variant text-xs">Mã DVKT: 23.0205.008 • Khoa Chẩn đoán hình ảnh • Phòng SA-02</span>
+</div>
+</td>
+<td class="py-3 px-2 text-right text-on-surface-variant font-body-base">150.000 đ</td>
+<td class="py-3 px-2 text-right text-primary font-body-base">142.500 đ</td>
+<td class="py-3 px-3 text-right font-body-base-medium text-on-surface">7.500 đ</td>
+</tr>
+<!-- Item 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-body-base-medium text-body-base-medium text-on-surface">5. Nội soi thực quản - dạ dày - tá tràng ống mềm có CLO test</span>
+<span class="text-on-surface-variant text-xs">Mã DVKT: 23.0304.012 • Đơn vị Nội soi Tiêu hóa</span>
+</div>
+</td>
+<td class="py-3 px-2 text-right text-on-surface-variant font-body-base">337.000 đ</td>
+<td class="py-3 px-2 text-right text-primary font-body-base">320.150 đ</td>
+<td class="py-3 px-3 text-right font-body-base-medium text-on-surface">16.850 đ</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Total Accounting Card -->
+<div class="bg-surface-container rounded-xl p-space-md mt-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-body-base">
+<span>Tổng chi phí phát sinh (theo danh mục BHYT):</span>
+<span class="font-body-base-medium text-on-surface">683.700 đ</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-base">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">security</span>
+                Quỹ BHYT chi trả (95% quy định):
+              </span>
+<span class="font-body-base-medium text-primary">- 649.515 đ</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-base">
+<span>Miễn giảm phụ cấp chế độ ưu tiên:</span>
+<span class="font-body-base-medium text-on-surface">0 đ</span>
+</div>
+<!-- Grand Total Highlight -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl mt-space-xs shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-badge-label text-badge-label text-primary uppercase tracking-wider">Số tiền người bệnh cần thanh toán</span>
+<span class="text-on-surface-variant font-caption text-caption text-xs">Đã trừ toàn bộ phần BHYT giám định</span>
+</div>
+<div class="text-right">
+<div class="font-headline-xl text-headline-xl text-primary tracking-tight font-bold">
+                  34.185 <span class="text-headline-md font-headline-md">đ</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant text-xs italic">(Ba mươi bốn nghìn một trăm tám mươi lăm đồng)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Payment Method Selection -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">payments</span>
+              Phương thức thanh toán
+            </h2>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-badge-label text-badge-label">
+              Chọn 1 trong 3 phương thức
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm mt-space-xs" id="payment-options">
+<!-- Option 1: Tiền mặt (Default Selected) -->
+<label class="cursor-pointer bg-surface-container-low rounded-xl p-space-sm flex flex-col justify-between transition-all relative overflow-hidden group shadow-sm">
+<input checked="" class="peer sr-only" name="payment_method" type="radio" value="cash"/>
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">point_of_sale</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px] opacity-100">check_circle</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-body-base-medium text-body-base-medium text-on-surface block">Tiền mặt</span>
+<span class="font-caption text-caption text-on-surface-variant text-xs mt-1 block">
+                  Đã nhận: <strong>35.000 đ</strong>
+</span>
+<span class="font-caption text-caption text-primary font-bold text-xs block">
+                  Thối lại: <strong>815 đ</strong>
+</span>
+</div>
+</label>
+<!-- Option 2: VietQR / VNeID -->
+<label class="cursor-pointer bg-surface rounded-xl p-space-sm flex flex-col justify-between hover:bg-surface-container-low transition-all relative overflow-hidden group shadow-sm">
+<input class="peer sr-only" name="payment_method" type="radio" value="vietqr"/>
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">qr_code_2</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[24px]">radio_button_unchecked</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-body-base-medium text-body-base-medium text-on-surface block">VietQR / VNeID</span>
+<span class="font-caption text-caption text-on-surface-variant text-xs mt-1 block">
+                  Hiển thị mã QR động trên màn hình phụ của bệnh nhân
+                </span>
+</div>
+</label>
+<!-- Option 3: Thẻ ATM / POS -->
+<label class="cursor-pointer bg-surface rounded-xl p-space-sm flex flex-col justify-between hover:bg-surface-container-low transition-all relative overflow-hidden group shadow-sm">
+<input class="peer sr-only" name="payment_method" type="radio" value="pos"/>
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">credit_card</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[24px]">radio_button_unchecked</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-body-base-medium text-body-base-medium text-on-surface block">Thẻ ATM / POS</span>
+<span class="font-caption text-caption text-on-surface-variant text-xs mt-1 block">
+                  Cổng quẹt thẻ liên ngân hàng Napas / Chip EMV
+                </span>
+</div>
+</label>
+</div>
+<!-- Cash Drawer Assist Line -->
+<div class="bg-surface-container-low p-space-sm rounded-xl flex items-center justify-between text-on-surface-variant font-caption text-caption mt-space-xs">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">keyboard_double_arrow_right</span>
+              Tiền khách đưa: <strong>35.000 đ</strong> • Thối tiền thừa cho BN: <strong class="text-primary font-bold">815 đ</strong>
+</span>
+<button class="px-3 py-1 bg-surface-container-highest text-primary font-badge-label text-badge-label rounded-lg hover:bg-surface-container transition-colors" type="button">
+              Đổi mệnh giá
+            </button>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Receipt Preview & Printing Specs (5 Cols ~ 42%) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Physical Receipt Preview Sheet -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm relative">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">print</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Xem trước Hóa đơn điện tử</h2>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-badge-label text-badge-label text-xs">
+              Mẫu K80 / A5
+            </span>
+</div>
+<!-- Thermal Receipt Visual Paper Mockup -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm text-on-surface flex flex-col gap-3 font-caption text-caption relative">
+<!-- Hospital Logo & Heading -->
+<div class="text-center flex flex-col items-center gap-1 pb-3">
+<span class="font-body-patient-bold text-body-patient-bold tracking-tight text-primary">BỆNH VIỆN NGUYỄN TRI PHƯƠNG</span>
+<span class="text-xs text-on-surface-variant">468 Nguyễn Trãi, Phường 8, Quận 5, TP.HCM</span>
+<span class="text-xs text-on-surface-variant">MST: 0301456789 • Hotline: (028) 3923 4332</span>
+<div class="my-2 text-center">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase block">Biên lai thu viện phí</span>
+<span class="text-xs text-on-surface-variant block">(Hóa đơn điện tử theo TT 78/2021/TT-BTC)</span>
+</div>
+</div>
+<!-- Receipt Meta -->
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col gap-1 text-xs">
+<div class="flex justify-between">
+<span>Số HĐ: <strong class="text-on-surface">NTP-HD-2610-0215-XML</strong></span>
+<span>Ngày: <strong>26/10/2026</strong></span>
+</div>
+<div class="flex justify-between">
+<span>Người bệnh: <strong class="text-on-surface">NGUYỄN VĂN HÙNG</strong></span>
+<span>Năm sinh: <strong>1958</strong></span>
+</div>
+<div>
+<span>Thẻ BHYT: <strong>GD4 79 123 456 789 (95%)</strong></span>
+</div>
+</div>
+<!-- Receipt Items Preview List -->
+<div class="flex flex-col gap-2 py-2">
+<div class="flex justify-between font-badge-label text-badge-label text-on-surface-variant text-xs">
+<span>DỊCH VỤ</span>
+<span>BN TRẢ</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="truncate max-w-[200px]">1. Tiền công khám Nội tiêu hóa</span>
+<span>1.950 đ</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="truncate max-w-[200px]">2. Tổng phân tích máu 18 thông số</span>
+<span>2.250 đ</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="truncate max-w-[200px]">3. Định lượng Glucose &amp; HbA1c</span>
+<span>5.635 đ</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="truncate max-w-[200px]">4. Siêu âm Doppler ổ bụng</span>
+<span>7.500 đ</span>
+</div>
+<div class="flex justify-between text-xs">
+<span class="truncate max-w-[200px]">5. Nội soi dạ dày - tá tràng test CLO</span>
+<span>16.850 đ</span>
+</div>
+</div>
+<!-- Receipt Total Block -->
+<div class="bg-surface-container-high/40 p-3 rounded-xl flex flex-col gap-1">
+<div class="flex justify-between text-xs text-on-surface-variant">
+<span>Tổng viện phí BHYT:</span>
+<span>683.700 đ</span>
+</div>
+<div class="flex justify-between text-xs text-primary font-medium">
+<span>BHYT chi trả:</span>
+<span>- 649.515 đ</span>
+</div>
+<div class="flex justify-between font-headline-sm text-headline-sm text-on-surface pt-1">
+<span>THỰC THU:</span>
+<span class="text-primary font-bold">34.185 đ</span>
+</div>
+</div>
+<!-- QR Code & Digital Signature Mockup -->
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-2">
+<!-- SVG Vector of QR Code Stamp -->
+<div class="w-16 h-16 bg-surface-container-low p-1 rounded-lg flex items-center justify-center">
+<svg class="w-full h-full text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<path d="M0 0h35v35H0V0zm5 5v25h25V5H5zm5 5h15v15H10V10zM65 0h35v35H65V0zm5 5v25h25V5H70zm5 5h15v15H75V10zM0 65h35v35H0V65zm5 5v25h25V70H5zm5 5h15v15H10V75zM45 10h10v10H45v-10zm0 25h10v10H45V35zm15 15h10v10H60V50zm-15 15h10v10H45V65zm15 15h10v10H60V80zm15-15h10v10H75V65zm15 15h10v10H90V80zm-45 0h10v10H45V80zm35-35h10v10H80V45z"></path>
+</svg>
+</div>
+<div class="flex flex-col text-xs text-on-surface-variant">
+<span class="font-badge-label text-badge-label text-on-surface">Cổng tra cứu e-Invoice</span>
+<span>Quét để tải hóa đơn VAT</span>
+<span>bvnguyentriphuong.com.vn</span>
+</div>
+</div>
+<div class="flex flex-col items-end text-xs text-right">
+<span class="text-on-surface-variant italic">Người lập phiếu</span>
+<span class="font-body-base-medium text-body-base-medium text-on-surface">Trương Thị Hồng</span>
+<span class="text-primary text-[10px] flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[12px]">verified_user</span> Đã ký số CA hợp lệ
+                </span>
+</div>
+</div>
+</div>
+<!-- Dispatching Channels Config -->
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-2">
+<span class="font-badge-label text-badge-label text-on-surface">Đồng bộ &amp; Chuyển tiếp chứng từ:</span>
+<label class="flex items-center gap-2 cursor-pointer text-xs text-on-surface">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0" type="checkbox"/>
+<span>In tự động 02 liên giấy (01 liên lưu KT, 01 liên gửi BN)</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer text-xs text-on-surface">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0" type="checkbox"/>
+<span>Gửi biên lai điện tử &amp; Mã tra cứu qua Zalo OA Bệnh viện / SMS</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer text-xs text-on-surface">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0" type="checkbox"/>
+<span>Đồng bộ hồ sơ khám &amp; hóa đơn vào Sổ sức khỏe điện tử VNeID</span>
+</label>
+</div>
+</div>
+<!-- System Flow Guidance Banner -->
+<div class="bg-surface-container-high/60 rounded-xl p-space-sm flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[24px] shrink-0 mt-0.5">info</span>
+<div class="flex flex-col text-xs text-on-surface">
+<span class="font-badge-label text-badge-label text-primary">Quy trình liên thông kế tiếp</span>
+<span>Ngay sau khi xác nhận thu tiền, hệ thống sẽ tự động chuyển trạng thái đơn thuốc sang <strong class="text-primary font-bold">"Sẵn sàng chuẩn bị thuốc"</strong> tại Phân hệ Dược (PT-01 / PT-02) và cập nhật số thứ tự nhận thuốc trên App bệnh nhân.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- STICKY ACTION BAR AT BOTTOM OF DESKTOP CANVAS -->
+<div class="sticky bottom-4 z-30 bg-surface-container-lowest/95 backdrop-blur-md rounded-2xl p-space-md shadow-xl flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<!-- Left side of action bar: Return & auxiliary actions -->
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<a class="h-12 px-4 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-body-base-medium text-body-base-medium flex items-center justify-center gap-2 transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span>Quay lại DS (TN-01)</span>
+</a>
+<button class="h-12 px-4 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-body-base-medium text-body-base-medium flex items-center justify-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">print</span>
+<span>In thử bản nháp</span>
+</button>
+</div>
+<!-- Right side: Single Red Conversion Action Button & Summary Pill -->
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-end">
+<div class="hidden md:flex flex-col text-right">
+<span class="text-xs text-on-surface-variant">Tổng thu thực nhận:</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">34.185 đ</span>
+</div>
+<!-- The ONLY High-intent Solid Crimson Button -->
+<button class="w-full sm:w-auto min-h-[52px] px-8 rounded-xl bg-secondary hover:bg-secondary-container active:scale-[0.99] text-on-secondary font-button-text text-button-text flex items-center justify-center gap-3 shadow-md hover:shadow-lg transition-all focus:outline-none" id="btn-confirm-payment" type="button">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+<span>Xác nhận thu tiền &amp; Xuất biên lai (F4)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Payment option toggle highlight
+      const paymentCards = document.querySelectorAll('#payment-options label');
+      const radioInputs = document.querySelectorAll('#payment-options input[type="radio"]');
+
+      radioInputs.forEach((radio) => {
+        radio.addEventListener('change', () => {
+          paymentCards.forEach((card) => {
+            const isChecked = card.querySelector('input').checked;
+            const icon = card.querySelector('.material-symbols-outlined:last-child');
+            if (isChecked) {
+              card.classList.remove('bg-surface');
+              card.classList.add('bg-surface-container-low');
+              if (icon) {
+                icon.textContent = 'check_circle';
+                icon.classList.remove('text-outline-variant');
+                icon.classList.add('text-primary');
+              }
+            } else {
+              card.classList.remove('bg-surface-container-low');
+              card.classList.add('bg-surface');
+              if (icon) {
+                icon.textContent = 'radio_button_unchecked';
+                icon.classList.remove('text-primary');
+                icon.classList.add('text-outline-variant');
+              }
+            }
+          });
+        });
+      });
+
+      // Confirm button interaction feedback
+      const confirmBtn = document.getElementById('btn-confirm-payment');
+      if (confirmBtn) {
+        confirmBtn.addEventListener('click', () => {
+          confirmBtn.disabled = true;
+          confirmBtn.innerHTML = `
+            <span class="material-symbols-outlined text-[24px] animate-spin">progress_activity</span>
+            <span>Đang xuất hóa đơn & đồng bộ...</span>
+          `;
+          setTimeout(() => {
+            confirmBtn.className = "w-full sm:w-auto min-h-[52px] px-8 rounded-xl bg-primary text-on-primary font-button-text text-button-text flex items-center justify-center gap-3 shadow-md";
+            confirmBtn.innerHTML = `
+              <span class="material-symbols-outlined text-[24px]">check_circle</span>
+              <span>Đã hoàn tất thanh toán & In xong!</span>
+            `;
+          }, 1200);
+        });
+
+        // F4 Shortcut trigger
+        window.addEventListener('keydown', (e) => {
+          if (e.key === 'F4') {
+            e.preventDefault();
+            confirmBtn.click();
+          }
+        });
+      }
+    });
+  </script>
+</div></main></div></body></html>
